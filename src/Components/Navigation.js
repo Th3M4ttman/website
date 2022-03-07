@@ -1,15 +1,11 @@
-import { Navbar, Nav, Container, NavItem, NavDropdown} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import React, { Component } from 'react';
 
 export default class Navigation extends Component{
-  constructor(props) {
-        super(props);
-
-    }
 
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
                 <Navbar.Brand href="Home">
         <img
           alt=""
