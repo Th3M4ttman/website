@@ -17,6 +17,8 @@
     align-items: center;
     width:60%;
     color: #61DBFB;
+    text-align: center;
+    vertical-align: middle;
 }
 .imabutton{
   background-color: transparent;
