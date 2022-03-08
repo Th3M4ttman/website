@@ -61,15 +61,10 @@
 .wtext{
   color: var(--twhite);
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  right: 5%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   font-size: 150%;
   vertical-align: middle;
   justify-content: center;
+  width: 100%;
 }
 
 
