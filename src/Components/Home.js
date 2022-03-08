@@ -19,14 +19,22 @@ export class ImaSelect extends Component {
         return "Web Developer"
         
       } else if (this.state.chosen === 2){
-        return "Wanker"
+        return "Software Developer"
+      } else if (this.state.chosen === 3){
+        return "Video Game Developer"
+      } else if (this.state.chosen === 4){
+        return "Musician"
+      } else if (this.state.chosen === 5){
+        return "Artist"
+      } else if (this.state.chosen === 6){
+        return "Person"
       } else {
         return "Please Select"
       }
       
     }
     right(){
-      if (this.state.chosen >= 2){
+      if (this.state.chosen >= 6){
         this.setState({chosen:0})
       } else {
         this.setState({chosen:this.state.chosen + 1})
