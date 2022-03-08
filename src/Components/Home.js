@@ -52,8 +52,10 @@ export class ImaSelect extends Component {
       <>
       <br/>
       <div className="imaselect">
-          <button className="imabutton" onClick={this.left} >&lt;</button><span className="imaselected">{this.chosen()}</span><button className="imabutton" onClick={this.right}>&gt;</button>
-        </div>
+        <span className="imaselected">
+          <button className="imabutton" onClick={this.left} >&lt;</button>{this.chosen()}<button className="imabutton" onClick={this.right}>&gt;</button>
+        </span>
+      </div>
       </>
     );
   }
