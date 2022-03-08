@@ -23,6 +23,7 @@
   border: 2px solid var(--torange);
   border-radius: 25%;
   transition-duration: 0.4s;
+  height: 10%;
 }
 .imabutton:hover{
   background-color: var(--torange);
