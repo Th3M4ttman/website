@@ -68,6 +68,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 150%;
+  vertical-align: middle;
 }
 
 
