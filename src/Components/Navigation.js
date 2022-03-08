@@ -1,5 +1,6 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Navigation extends Component{
 
@@ -19,12 +20,21 @@ export default class Navigation extends Component{
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link href="#deets">More details</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Good stuff
-                        </Nav.Link>
+                        <Nav.Link href="/Home">Home</Nav.Link>
+                        <Nav.Link href="/Programming">Programming</Nav.Link>
+                        <Nav.Link href="/Music">Music</Nav.Link>
+                        <Nav.Link href="/Art">Art</Nav.Link>
+                        <Nav.Link eventKey={2} href="/Contact">Contact</Nav.Link>
+                    <NavDropdown
+          title="I'm a:"
+          menuVariant="dark"
+        >
+          <NavDropdown.Item href="/Programming">Programming</NavDropdown.Item>
+          <NavDropdown.Item href="/Music">Music</NavDropdown.Item>
+          <NavDropdown.Item href="/Art">Art</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="/Person">Person</NavDropdown.Item>
+        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
