@@ -27,6 +27,7 @@
   border-radius: 25%;
   transition-duration: 0.4s;
   height: 10%;
+  vertical-align: middle;
 }
 .imabutton:hover{
   background-color: var(--torange);
