@@ -61,7 +61,7 @@
 .wtext{
   color: var(--twhite);
   margin: 0;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 5%;
   right: 5%;
