@@ -36,7 +36,7 @@
 .imaselect{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     
 }
 
@@ -45,7 +45,7 @@
 
 .bgimg {
     background-image: url("../public/mbackground.jpg");
-    height: 70vh;
+    height: 100vh;
     
     min-width: 100%;
     background-size: 100% 100%;
