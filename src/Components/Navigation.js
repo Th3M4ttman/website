@@ -25,16 +25,7 @@ export default class Navigation extends Component{
                         <Nav.Link href="/Music">Music</Nav.Link>
                         <Nav.Link href="/Art">Art</Nav.Link>
                         <Nav.Link eventKey={2} href="/Contact">Contact</Nav.Link>
-                    <NavDropdown
-          title="I'm a:"
-          menuVariant="dark"
-        >
-          <NavDropdown.Item href="/Programming">Programming</NavDropdown.Item>
-          <NavDropdown.Item href="/Music">Music</NavDropdown.Item>
-          <NavDropdown.Item href="/Art">Art</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="/Person">Person</NavDropdown.Item>
-        </NavDropdown>
+                    
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
