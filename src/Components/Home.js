@@ -2,6 +2,9 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
+import { useMediaQuery } from 'react-responsive'
+import {BrowserView, MobileView} from 'react-device-detect';
+
 
 export class ImaSelect extends Component {
     constructor(props)
@@ -80,26 +83,63 @@ export class Ima extends Component {
 }
 
 
-export default class Home extends Component {
-    render() {
+function Home() {
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+  });
+
+  const isTabletDevice = useMediaQuery({
+    query: "(min-device-width: 768px)",
+  });
+
+  const isLaptop = useMediaQuery({
+    query: "(min-device-width: 1024px)",
+  });
+
+  const isDesktop = useMediaQuery({
+    query: "(min-device-width: 1200px)",
+  });
+
+  const isBigScreen = useMediaQuery({
+    query: "(min-device-width: 1201px )",
+  });
+  
   return (
     <>
+      <BrowserView>
       <div className="App-header">
         
         <div className="bgimg">
+        <div className="holder">
+          <Ima />
+        </div>
+        </div>
+        <div className="App-header">
+          <br/>
+          Desktop
+          <br/><br/><br/><br/><br/><br/>
+        </div>
+      </div>
+      </BrowserView>
+      <MobileView>
+
+      <div className="App-header">
+        
+        <div className="mbgimg">
         
           <Ima />
         </div>
         <div className="App-header">
           <br/>
-          Yo
+          Mobile
           <br/><br/><br/><br/><br/><br/>
         </div>
       </div>
+      </MobileView>
+      </>);
       
-      </>
-    );
   }
 
-}
+
+export default Home;
 

@@ -9,16 +9,22 @@
   color: var(--twhite);
 }
 
+.holder{
+ position: relative;
+ top: 35vh;
+}
+
+
 
 .imaselected{
     display: flex; 
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width:50%;
     color: #61DBFB;
     text-align: center;
     vertical-align: middle;
+    width: 50%;
 }
 .imabutton{
   background-color: transparent;
@@ -36,19 +42,28 @@
 .imaselect{
     display: flex;
     justify-content: center;
-    width: 100%;
     
 }
 
 
 
 
-.bgimg {
+.mbgimg {
     background-image: url("../public/mbackground.jpg");
     height: 100vh;
     
     min-width: 100%;
     background-size: 100% 100%;
+    margin: 0;
+    
+    
+}
+.bgimg {
+    background-image: url("../public/background.jpg");
+    height: 80vh;
+    
+    min-width: 100%;
+    background-size: 100% 120%;
     margin: 0;
     
     
