@@ -8,6 +8,7 @@ export default class Contact extends Component {
   return (
       
       <div className="App-header">
+       <div className="mbgimg">
       <br/><br/><br/>
       <form action="https://public.herotofu.com/v1/59fb9260-a169-11ec-bdf8-dd9c99f898ec" method="post">
   
@@ -15,18 +16,18 @@ export default class Contact extends Component {
     <br/>
     <input name="Name" id="name" type="text" required />
   
-    <br/>
+    <br/><br/>
     <label for="email">Your Email</label>
     <br/>
     <input name="Email" id="email" type="email" required  />
-    <br/>
+    <br/><br/>
     <label for="message">Message</label>
     <br/>
     <textarea name="Message" id="message" type="text" required rows="10" />
-    <br/>
+    <br/><br/>
     <input type="submit" value="Send" />
 </form>
-          
+      </div>
       </div>
     );
   }

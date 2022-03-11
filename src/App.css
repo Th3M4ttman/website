@@ -130,7 +130,7 @@
 
 .mbgimg {
     background-image: url("../public/mbackground.jpg");
-    height: 100vh;
+    height: 720px;
     
     min-width: 100%;
     background-size: 100% 100%;
@@ -232,7 +232,36 @@ html,body
   font-size: calc(10px + 2vmin);
   color: var(--twhite);
 }
-
+input{
+  width: 90%;
+  border: 2px solid var(--torange);
+  border-radius: 4px;
+  background-color: var(--tblack);
+  color: var(--twhite);
+}
+input:focus{
+  width: 90%;
+  border: 2px solid var(--torange);
+  border-radius: 4px;
+  background-color: var(--tblack);
+  color: var(--twhite);
+}
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--torange);;
+  border-radius: 4px;
+  background-color: var(--tblack);
+  resize: none;
+}
+textarea:focus {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--torange);;
+  border-radius: 4px;
+  background-color: var(--tblack);
+  resize: none;
+}
 .App-link {
   color: var(--torange);
 }
