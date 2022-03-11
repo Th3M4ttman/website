@@ -5,30 +5,49 @@ import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
 
 
+class Content extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      p: props.p
+    }
+  }
+  render(){
+    let chosen = this.state.p.state.chosen;
+    let parent = this.state.p;
+    let sections = ["", "Web", "Software", "Video Games", "Music", "Art", "Person"]
+    if (chosen === 0){return <p></p>}
+    return(
+      <p>{sections[chosen]} Content Goes Here</p>
+    );
+  }
+}
+
 export class ImaSelect extends Component {
     constructor(props)
     {
       super(props);
       this.state = {
-        chosen: 0
+        p: props.p
       };
       this.left = this.left.bind(this);
       this.right = this.right.bind(this);
       this.chosen = this.chosen.bind(this);
     }
     chosen(){
-      if (this.state.chosen === 1){
+      console.log(this.state.p)
+      if (this.state.p.state.chosen === 1){
         return "Web Developer"
         
-      } else if (this.state.chosen === 2){
+      } else if (this.state.p.state.chosen === 2){
         return "Software Developer"
-      } else if (this.state.chosen === 3){
+      } else if (this.state.p.state.chosen === 3){
         return "Video Game Developer"
-      } else if (this.state.chosen === 4){
+      } else if (this.state.p.state.chosen === 4){
         return "Musician"
-      } else if (this.state.chosen === 5){
+      } else if (this.state.p.state.chosen === 5){
         return "Artist"
-      } else if (this.state.chosen === 6){
+      } else if (this.state.p.state.chosen === 6){
         return "Person"
       } else {
         return "Please Select"
@@ -36,17 +55,19 @@ export class ImaSelect extends Component {
       
     }
     right(){
-      if (this.state.chosen >= 6){
-        this.setState({chosen:0})
+    document.documentElement.scrollTop = document.body.scrollTop = 150;
+      if (this.state.p.state.chosen >= 6){
+        this.state.p.setState({chosen:1})
       } else {
-        this.setState({chosen:this.state.chosen + 1})
+        this.state.p.setState({chosen:this.state.p.state.chosen + 1})
       }
     }
     left(){
-      if (this.state.chosen <= 0){
-        this.setState({chosen:1})
+    document.documentElement.scrollTop = document.body.scrollTop = 150;
+      if (this.state.p.state.chosen <= 0){
+        this.state.p.setState({chosen:1})
       } else {
-        this.setState({chosen:this.state.chosen - 1})
+        this.state.p.setState({chosen:this.state.p.state.chosen - 1})
       }
     }
     render() {
@@ -65,6 +86,12 @@ export class ImaSelect extends Component {
 
 
 export class Ima extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      p: props.p
+    }
+  }
     render() {
   return (
       <>
@@ -73,7 +100,7 @@ export class Ima extends Component {
         </span>
          att and I'm a:
       
-      <ImaSelect/>
+      <ImaSelect p={this.state.p}/>
       </div>
       
       </>
@@ -82,7 +109,14 @@ export class Ima extends Component {
 }
 
 
-function Home() {
+export default class Home extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      chosen: 0
+    }
+  }
+  render(){
   return (
     <>
       <BrowserView>
@@ -90,12 +124,13 @@ function Home() {
         
         <div className="bgimg">
         <div className="holder">
-          <Ima />
+          <Ima p={this}/>
         </div>
         </div>
         <div className="App-header">
           <br/>
           Desktop
+          <Content p={this}/>
           <br/><br/><br/><br/><br/><br/>
         </div>
       </div>
@@ -106,11 +141,12 @@ function Home() {
         
         <div className="mbgimg">
         
-          <Ima />
+          <Ima p={this}/>
         </div>
         <div className="App-header">
           <br/>
           Mobile
+          <Content p={this}/>
           <br/><br/><br/><br/><br/><br/>
         </div>
       </div>
@@ -118,7 +154,6 @@ function Home() {
       </>);
       
   }
+}
 
-
-export default Home;
 
