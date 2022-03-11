@@ -36,20 +36,19 @@ export class ImaSelect extends Component {
     chosen(){
       console.log(this.state.p)
       if (this.state.p.state.chosen === 1){
-        return "Web Developer"
-        
+        return (<span className="webdev">Web Developer</span>);
       } else if (this.state.p.state.chosen === 2){
-        return "Software Developer"
+        return (<span className="softdev">Software Developer</span>);
       } else if (this.state.p.state.chosen === 3){
-        return "Video Game Developer"
+        return (<span className="gamedev">Video Game Developer</span>);
       } else if (this.state.p.state.chosen === 4){
-        return "Musician"
+        return (<span className="music">Musician</span>);
       } else if (this.state.p.state.chosen === 5){
-        return "Artist"
+        return (<span className="art">Artist</span>);
       } else if (this.state.p.state.chosen === 6){
-        return "Person"
+        return (<span className="person">Person</span>);
       } else {
-        return "Please Select"
+        return (<span className="selected">Please Select</span>);
       }
       
     }
@@ -75,7 +74,7 @@ export class ImaSelect extends Component {
       <br/>
       <div className="imaselect">
         
-          <button className="imabutton" onClick={this.left} >&lt;</button><span className="imaselected">{this.chosen()}</span><button className="imabutton" onClick={this.right}>&gt;</button>
+          <button className="imabutton" onClick={this.left} >&lt;</button>{this.chosen()}<button className="imabutton" onClick={this.right}>&gt;</button>
         
       </div>
       </>
