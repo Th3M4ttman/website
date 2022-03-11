@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
 import App from './App';
 import reportWebVitals from"./reportWebVitals";
-import Contact from "./Contact.jsx";
+import Contact, {Thanks} from "./Contact.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,19 +27,20 @@ ReactDOM.render(
       <Route path="Contact-Us" element={<Contact/>} />
       <Route path="Contact" element={<Contact/>} />
       <Route path="Privacy" element={<Privacy/>} />
+      <Route path="Thanks" element={<Thanks/>} />
       <Route path="Home" element={<App />} />
       <Route path="*" element={<App />} />
   </Routes>
   </Router>
-  </div>
   <div className="foot">
-  <br/>
+  <br/><br/><br/>
   Copyright © 2022 Matthew Harris - All Rights Reserved.
   <br/>
   <a className="priv" href="/privacy">
     Privacy Policy
   </a>
   <br/>
+  </div>
   </div>
   </>,
     rootElement

@@ -167,6 +167,17 @@
   
 }
 
+.thankstext{
+  position: relative;
+  color: var(--twhite);
+  margin: auto;
+  font-size: 150%;
+  vertical-align: middle;
+  justify-content: center;
+  top: 35%;
+  
+}
+
 
 :root {
   --tblack: #282726;
@@ -205,6 +216,19 @@ html,body
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--twhite);
+}
+
+.contact{
+  background-color: var(--tblack);
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--twhite);
 }
@@ -227,6 +251,8 @@ html,body
 }
 
 .foot{
+  position: relative;
+  bottom: 0;
   background-color: #000;
   width: 100%;
   margin: 0;

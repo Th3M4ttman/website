@@ -1,40 +1,50 @@
-import logo from './logo.png';
-import biglogo from './biglogo.png'
+
 import './App.css';
 
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 
 export default class Contact extends Component {
     render() {
   return (
-      <div className="App">
-      <div width="80%">
-        <header className="App-header">
-       
-          <img src={logo} className="App-logo" alt="logo" />
-          <nav>
-          <ul>
-          <li>Test</li>
-          </ul>
-          </nav>
-          <p>
-            Contact us bruh
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <br/>
-          <Link className="App-link" to="/">Home</Link>
-          <br/>
-          <br/>
-          <img width="100%" src={biglogo} alt="biglogo"/>
-        </header>
+      
+      <div className="App-header">
+      <br/><br/><br/>
+      <form action="https://public.herotofu.com/v1/59fb9260-a169-11ec-bdf8-dd9c99f898ec" method="post">
+  
+    <label for="name">Your Name</label>
+    <br/>
+    <input name="Name" id="name" type="text" required />
+  
+    <br/>
+    <label for="email">Your Email</label>
+    <br/>
+    <input name="Email" id="email" type="email" required  />
+    <br/>
+    <label for="message">Message</label>
+    <br/>
+    <textarea name="Message" id="message" type="text" required rows="10" />
+    <br/>
+    <input type="submit" value="Send" />
+</form>
+          
+      </div>
+    );
+  }
+
+}
+
+export class Thanks extends Component {
+    render() {
+  return (
+      
+      <div className="App-header">
+      <br/><br/><br/>
+      <div className="mbgimg">
+      <div className="thankstext">Thank you for getting in contact.
+      I will try to respond promptly.
+      <br/>
+      <a className="App-link" href="/home">Home</a>
+      </div>
       </div>
       </div>
     );
