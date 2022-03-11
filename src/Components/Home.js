@@ -14,7 +14,6 @@ class Content extends Component {
   }
   render(){
     let chosen = this.state.p.state.chosen;
-    let parent = this.state.p;
     let sections = ["", "Web", "Software", "Video Games", "Music", "Art", "Person"]
     if (chosen === 0){return <p></p>}
     return(
