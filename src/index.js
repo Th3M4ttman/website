@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navigation from "./Components/Navigation";
 import Privacy from "./Components/privacy"
-
+import Particletest from "./Components/particletest"
 import { Route, Routes } from 'react-router-dom';
 
 import { BrowserRouter as Router} from 'react-router-dom';
@@ -19,8 +19,8 @@ const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <>
-  <div className="App">
   <Navigation/>
+  <div className="App">
   <Router>
   <Routes>
     <Route path="/" element={<App />} />
@@ -28,10 +28,12 @@ ReactDOM.render(
       <Route path="Contact" element={<Contact/>} />
       <Route path="Privacy" element={<Privacy/>} />
       <Route path="Thanks" element={<Thanks/>} />
+      <Route path="particles" element={<Particletest/>} />
       <Route path="Home" element={<App />} />
       <Route path="*" element={<App />} />
   </Routes>
   </Router>
+  </div>
   <div className="foot">
   <br/><br/><br/>
   Copyright © 2022 Matthew Harris - All Rights Reserved.
@@ -40,7 +42,6 @@ ReactDOM.render(
     Privacy Policy
   </a>
   <br/>
-  </div>
   </div>
   </>,
     rootElement

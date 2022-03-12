@@ -130,10 +130,10 @@
 
 .mbgimg {
     background-image: url("../public/mbackground.jpg");
-    height: 720px;
     
-    min-width: 100%;
-    background-size: 100% 100%;
+    width:100%;
+    height: 500px;
+    background-size: 100%;
     margin: 0;
     
     
@@ -280,7 +280,7 @@ textarea:focus {
 }
 
 .foot{
-  position: relative;
+  
   bottom: 0;
   background-color: #000;
   width: 100%;
