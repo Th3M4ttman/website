@@ -5,6 +5,7 @@ import './App.css';
 import App from './App';
 import reportWebVitals from"./reportWebVitals";
 import Contact, {Thanks} from "./Contact.jsx";
+import Notfound from "./Notfound";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -30,7 +31,7 @@ ReactDOM.render(
       <Route path="Thanks" element={<Thanks/>} />
       <Route path="particles" element={<Particletest />} />
       <Route path="Home" element={<App />} />
-      <Route path="*" element={<App />} />
+      <Route path="*" element={<Notfound />} />
   </Route>
   </Routes>
   </Router>

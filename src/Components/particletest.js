@@ -23,7 +23,7 @@ const Particle = () => {
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            value: "#00000000",
           },
         },
         fpsLimit: 120,
@@ -105,7 +105,7 @@ export default class Particletest extends Component{
 render(){
   return(
   
-  <div className="App">
+  <div className="ParticleBox">
      <br/><br/><br/>
      <Particle/>
   </div>
