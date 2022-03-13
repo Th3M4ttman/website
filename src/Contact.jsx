@@ -9,7 +9,6 @@ export default class Contact extends Component {
       
       <div className="App-header">
        <div className="mbgimg">
-      <br/><br/><br/>
       <form action="https://public.herotofu.com/v1/59fb9260-a169-11ec-bdf8-dd9c99f898ec" method="post">
   
     <label for="name">Your Name</label>

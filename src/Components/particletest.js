@@ -1,6 +1,10 @@
 import Particles from "react-tsparticles";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../App.css";
+import React, { Component } from 'react';
 
-const Particletest = () => {
+
+const Particle = () => {
   const particlesInit = (main) => {
     console.log(main);
 
@@ -11,6 +15,7 @@ const Particletest = () => {
     console.log(container);
   };
   return (
+<>
     <Particles
       id="tsparticles"
       init={particlesInit}
@@ -32,7 +37,7 @@ const Particletest = () => {
               enable: true,
               mode: "repulse",
             },
-            resize: true,
+            resize: false,
           },
           modes: {
             bubble: {
@@ -92,8 +97,18 @@ const Particletest = () => {
         },
         detectRetina: true,
       }}
-    />
+    /></>
   );
 };
 
-export default Particletest;
+export default class Particletest extends Component{
+render(){
+  return(
+  
+  <div className="App">
+     <br/><br/><br/>
+     <Particle/>
+  </div>
+ );
+};
+}

@@ -1,12 +1,15 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../App.css";
+import { Outlet } from "react-router-dom";
 
 export default class Navigation extends Component{
 
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="Home">
         <img
           alt=""
@@ -18,7 +21,8 @@ export default class Navigation extends Component{
       Matthew Harris
       </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="collapse">
+<Container>
                     <Nav>
                         <Nav.Link href="/Home">Home</Nav.Link>
                         <Nav.Link href="/Programming">Programming</Nav.Link>
@@ -27,8 +31,16 @@ export default class Navigation extends Component{
                         <Nav.Link eventKey={2} href="/Contact">Contact</Nav.Link>
                     
                     </Nav>
+</Container>
                 </Navbar.Collapse>
             </Navbar>
+            <div className="App">
+            <Outlet />
+            </div>
+            
+            
+  
+</>
     );
   }
 }

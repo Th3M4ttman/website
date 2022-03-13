@@ -19,21 +19,21 @@ const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <>
-  <Navigation/>
-  <div className="App">
   <Router>
   <Routes>
-    <Route path="/" element={<App />} />
+   
+    <Route path="/" element={<Navigation/>}>
+      <Route exact path="/" element={<App />} />
       <Route path="Contact-Us" element={<Contact/>} />
       <Route path="Contact" element={<Contact/>} />
       <Route path="Privacy" element={<Privacy/>} />
       <Route path="Thanks" element={<Thanks/>} />
-      <Route path="particles" element={<Particletest/>} />
+      <Route path="particles" element={<Particletest />} />
       <Route path="Home" element={<App />} />
       <Route path="*" element={<App />} />
+  </Route>
   </Routes>
   </Router>
-  </div>
   <div className="foot">
   <br/><br/><br/>
   Copyright © 2022 Matthew Harris - All Rights Reserved.
