@@ -16,39 +16,75 @@ import { Route, Routes } from 'react-router-dom';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 
+import { DemoCard } from "./Demos";
+
 const rootElement = document.getElementById("root");
 
-ReactDOM.render(
-  <>
-  <Router>
-  <Routes>
-   
-    <Route path="/" element={<Navigation/>}>
-      <Route exact path="/" element={<App />} />
-      <Route path="Contact-Us" element={<Contact/>} />
-      <Route path="Contact" element={<Contact/>} />
-      <Route path="Privacy" element={<Privacy/>} />
-      <Route path="Thanks" element={<Thanks/>} />
-      <Route path="particles" element={<Particletest />} />
-      <Route path="Home" element={<App />} />
-      <Route path="*" element={<Notfound />} />
-  </Route>
-  </Routes>
-  </Router>
-  <div className="foot">
-  <br/><br/><br/>
-  Copyright © 2022 Matthew Harris - All Rights Reserved.
-  <br/>
-  <a className="priv" href="/privacy">
-    Privacy Policy
-  </a>
-  <br/>
-  </div>
-  </>,
-    rootElement
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+if (window.location.host.split('.')[0] === 'demo'){
+    ReactDOM.render(
+    <>
+    <Router>
+    <Routes>
+     
+      <Route path="/" element={<Navigation/>}>
+        <Route exact path="/" element={<DemoCard />} />
+        <Route path="Demo" element={<DemoCard />} />
+        <Route path="*" element={<Notfound />} />
+    </Route>
+    </Routes>
+    </Router>
+    <div className="foot">
+    <br/><br/><br/>
+    Copyright © 2022 Matthew Harris - All Rights Reserved.
+    <br/>
+    <a className="priv" href="/privacy">
+      Privacy Policy
+    </a>
+    <br/>
+    </div>
+    </>,
+      rootElement
+  );
+  
+  // If you want to start measuring performance in your app, pass a function
+  // to log results (for example: reportWebVitals(console.log))
+  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+  reportWebVitals();
+}
+else {
+  ReactDOM.render(
+    <>
+    <Router>
+    <Routes>
+     
+      <Route path="/" element={<Navigation/>}>
+        <Route exact path="/" element={<App />} />
+        <Route path="Contact-Us" element={<Contact/>} />
+        <Route path="Contact" element={<Contact/>} />
+        <Route path="Demo" element={<DemoCard />} />
+        <Route path="Privacy" element={<Privacy/>} />
+        <Route path="Thanks" element={<Thanks/>} />
+        <Route path="particles" element={<Particletest />} />
+        <Route path="Home" element={<App />} />
+        <Route path="*" element={<Notfound />} />
+    </Route>
+    </Routes>
+    </Router>
+    <div className="foot">
+    <br/><br/><br/>
+    Copyright © 2022 Matthew Harris - All Rights Reserved.
+    <br/>
+    <a className="priv" href="/privacy">
+      Privacy Policy
+    </a>
+    <br/>
+    </div>
+    </>,
+      rootElement
+  );
+  
+  // If you want to start measuring performance in your app, pass a function
+  // to log results (for example: reportWebVitals(console.log))
+  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+  reportWebVitals();
+}
