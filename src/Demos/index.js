@@ -131,7 +131,7 @@ export class DemoCard extends Component {
   }
   collapsemsg(){
     if (!this.state.active){
-      return(<span className="expandmsg">click to expand</span>);
+      return(<span className="expandmsg"onClick={() => {this.toggleActive()}}>Click Header To Expand</span>);
     } else {
       return
     }
@@ -139,7 +139,7 @@ export class DemoCard extends Component {
   render(){
     return(
       <div className="App-header">
-      <div className="democard" onClick={() => {this.toggleActive()}}>
+      <div className="democard">
     <div className="panel-header" onClick={() => {this.toggleActive()}}>
       {this.demo.split_title(this.state.active)}
     </div>

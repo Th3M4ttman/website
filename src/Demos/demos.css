@@ -336,6 +336,7 @@
 	--wisp : #7582D1;
 }
 .democard{
+  width: 100%;
   padding: 25px 5%;
   color: var(--torange);
   background-color: var(--tblack);
@@ -517,5 +518,4 @@
 }
 .expandmsg{
   font-size: 10px;
-  height: 10px;
 }
