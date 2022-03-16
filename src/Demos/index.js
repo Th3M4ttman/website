@@ -100,11 +100,13 @@ class TAG extends Component{
   }
 }
 
+
+
 export class DemoCard extends Component {
   constructor(props){
     super(props);
     this.state = {active: false}
-    this.demo = new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer")
+    this.demo = props.demo
   }
   toggleActive(){
     if (this.state.active === true){
@@ -151,5 +153,17 @@ export class DemoCard extends Component {
         </div>{this.collapsemsg()}</div>
       </div>
     );
+  }
+}
+
+const demos = [
+  new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer"),
+  new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors")
+]
+
+export class DemoSearch extends Component{
+  render(){
+    let cards = demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
+    return(<div>{cards}</div>);
   }
 }

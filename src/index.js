@@ -16,7 +16,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 
-import { DemoCard } from "./Demos";
+import { DemoSearch } from "./Demos";
 
 const rootElement = document.getElementById("root");
 
@@ -27,8 +27,8 @@ if (window.location.host.split('.')[0] === 'demo'){
     <Routes>
      
       <Route path="/" element={<Navigation/>}>
-        <Route exact path="/" element={<DemoCard />} />
-        <Route path="Demo" element={<DemoCard />} />
+        <Route exact path="/" element={<DemoSearch />} />
+        <Route path="Demo" element={<DemoSearch />} />
         <Route path="*" element={<Notfound />} />
     </Route>
     </Routes>
@@ -61,7 +61,7 @@ else {
         <Route exact path="/" element={<App />} />
         <Route path="Contact-Us" element={<Contact/>} />
         <Route path="Contact" element={<Contact/>} />
-        <Route path="Demo" element={<DemoCard />} />
+        <Route path="Demo" element={<DemoSearch />} />
         <Route path="Privacy" element={<Privacy/>} />
         <Route path="Thanks" element={<Thanks/>} />
         <Route path="particles" element={<Particletest />} />
