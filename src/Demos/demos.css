@@ -352,6 +352,13 @@
   border-bottom: 3px solid var(--torange);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.ctitle{
+  color: var(--twhite);
+  font-size: 150%;
+  width: 100%;
+  background-color: var(--tblack);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .titlef{
   color: var(--torange);
@@ -363,7 +370,6 @@
   font-size: 150%;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 
 .desc{
   color: var(--twhite);
@@ -478,4 +484,38 @@
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: var(--twhite);
   width:80px;
+}
+
+.panel-wrap {
+  margin-bottom: 5px;
+}
+
+.panel-wrap.active-panel .panel-header {
+  background: #396ea5;
+}
+.panel-wrap.active-panel .panel-header button {
+  color: #ffffff;
+}
+
+.panel-header {
+  background-color: var(--tblack);
+}
+
+.panel-header button {
+  border: none;
+  background: transparent;
+}
+.panel-header button:focus {
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  background: #efefef;
+  color: #333333;
+  padding: 5px;
+  border-top: none;
+}
+.expandmsg{
+  font-size: 10px;
+  height: 10px;
 }

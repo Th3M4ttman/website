@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 //import {BrowserView, MobileView} from 'react-device-detect';
 
-
 class Demo{
   constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, priority=0){
     this.title = title;
@@ -46,15 +45,26 @@ class Demo{
     let x = this._tags.map(tag => {return(<TAG tag={tag} key={tag}/>)});
     return x;
   }
-  split_title(){
-    return(<div className="title">
-      <span className="titlef">
-        {this.title.substring(0, 1)}
-      </span>
-      <span className="titlerest">
-        {this.title.substring(1, this.title.length)}
-      </span>
-      </div>);
+  split_title(active){
+    if (active){
+      return(<div className="title">
+        <span className="titlef">
+          {this.title.substring(0, 1)}
+        </span>
+        <span className="titlerest">
+          {this.title.substring(1, this.title.length)}
+        </span>
+        </div>);
+    }
+    return(<div className="ctitle">
+        <span className="titlef">
+          {this.title.substring(0, 1)}
+        </span>
+        <span className="titlerest">
+          {this.title.substring(1, this.title.length)}
+        </span>
+        </div>
+    );
   }
 }
 
@@ -93,23 +103,52 @@ class TAG extends Component{
 export class DemoCard extends Component {
   constructor(props){
     super(props);
+    this.state = {active: false}
     this.demo = new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer")
   }
-  render(){
-    return(
-      <div className="App-header">
-      <div className="democard">
-        {this.demo.split_title()}
+  toggleActive(){
+    if (this.state.active === true){
+      this.setState({active: false});
+    } else {
+      this.setState({active: true});
+    }
+    console.log(this.state.active)
+  }
+  
+  isCollapsed(){
+    if (this.state.active === true){
+      return(
+        <>
         <p className="desc">Description:<br/>{this.demo.description}</p>
         <img className="demoimg" src={this.demo.imgurl} alt="Demo" />
         <br/><br/>
         {this.demo.buttons()}
+        </>
+      );
+    } else {
+      return;
+    }
+  }
+  collapsemsg(){
+    if (!this.state.active){
+      return(<span className="expandmsg">click to expand</span>);
+    } else {
+      return
+    }
+  }
+  render(){
+    return(
+      <div className="App-header">
+      <div className="democard" onClick={() => {this.toggleActive()}}>
+    <div className="panel-header" onClick={() => {this.toggleActive()}}>
+      {this.demo.split_title(this.state.active)}
+    </div>
+    {this.isCollapsed()}
         <div className="tags">
         Languages: {this.demo.languages()}<br/>
         Frameworks: {this.demo.frameworks()}<br/>
         Tags: {this.demo.tags()}
-        </div>
-      </div>
+        </div>{this.collapsemsg()}</div>
       </div>
     );
   }
