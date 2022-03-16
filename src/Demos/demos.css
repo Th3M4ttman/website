@@ -340,7 +340,7 @@
   color: var(--torange);
   background-color: var(--tblack);
   border-radius: 10px;
-  border: 3px solid var(--torange);
+  border: 3px solid var(--twhite);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -388,6 +388,7 @@
 }
 
 .onlyrun{
+  vertical-align: center;
   width: 100%;
   background-color: none;
   color: #00ffa0;
@@ -396,6 +397,7 @@
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .run{
+  vertical-align: center;
   width: 50%;
   background-color: var(--tblack);
   color: #00ffa0;
@@ -404,7 +406,20 @@
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.buttonicon{
+  height: 20px;
+  vertical-align: center;
+}
+.sourceicon{
+  height: 20px;
+  vertical-align: center;
+  background-color: #00a0ff;
+  border-radius: 100%;
+}
+
+
 .source{
+  vertical-align: center;
   width: 50%;
   background-color: var(--tblack);
   color: #00a0ff;
@@ -420,6 +435,14 @@
   vertical-align: center;
 }
 
+.tag{
+  background-color: var(--tblack);
+  color: var(--twhite);
+  border: 2px solid var(--torange);
+  border-radius: 15px;
+  font-size: 10px;
+}
+
 .langlogo{
   background-color: var(--tblack);
   border-radius: 5px;
@@ -432,9 +455,10 @@
 }
 
 .Python{
-  background-color: var(--python);
+  background-color: var(--tblack);
   font-size: 10px;
-  border-radius: 5px;
+  border-radius: 15px;
+  border: 2px solid var(--python);
   vertical-align: center;
   text-align: left;
   padding-left: 5px;
@@ -446,7 +470,8 @@
 .Javascript{
   font-size: 10px;
   background-color: var(--tblack);
-  border-radius: 5px;
+  border-radius: 15px;
+  border: 2px solid var(--javascript);
   vertical-align: center;
   text-align: left;
   padding-left: 5px;

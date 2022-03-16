@@ -21,38 +21,30 @@ class Demo{
   buttons(){
     if (this.source_url === null){
       return(
-      <span><button className="onlyrun">Run</button></span>
+      <span>
+        <a href={this.url}><button className="onlyrun">Run <img className="buttonicon" src="run.svg" alt=""/></button></a>
+      </span>
       );
     } else {
       return(
       <span>
-      <a href={this.url}><button className="run">Run</button></a>
-      <a href={this.source_url}><button className="source">Source</button></a><br/><br/>
+      <a href={this.url}><button className="run">Run <img className="buttonicon" src="run.svg" alt=""/></button></a>
+      <a href={this.source_url}><button className="source">Source <img className="sourceicon" src="github.svg" alt=""/></button></a><br/><br/>
       </span>
       );
     }
     }
   languages(){
     let x = this._languages.map(lang => {return(<LANGUAGE_TAG language={lang}/>)});
-    console.log(x)
     return x;
   }
   frameworks(){
-    var out = "Frameworks: ";
-    if (this._frameworks.length === 0){
-      return out
-    }
-    for (var fram of this._frameworks){
-      out += fram + ", "
-    }
-    return out.substring(0, out.length - 2)
+    let x = this._frameworks.map(tag => {return(<TAG tag={tag} key={tag}/>)});
+    return x;
   }
   tags(){
-    var out = "Tags: ";
-    for (var tag of this._tags){
-      out += tag + ", "
-    }
-    return out.substring(0, out.length - 2)
+    let x = this._tags.map(tag => {return(<TAG tag={tag} key={tag}/>)});
+    return x;
   }
   split_title(){
     return(<div className="title">
@@ -74,14 +66,34 @@ class LANGUAGE_TAG extends Component{
   render(){
     var lang = this.props.language;
     
-    return(<button className={lang}><div className="logo">{lang}<img className="langlogo" src={lang+".svg"} alt={lang}/></div></button>);
+    return(<button className={lang}><div className="logo">{lang}<img className="langlogo" src={lang+".svg"} alt=""/></div></button>);
+  }
+}
+
+class TAG extends Component{
+  constructor(props){
+    super(props);
+    console.log(this);
+  }
+  render(){
+    var tag = this.props.tag;
+    if (this.props.icon != null){
+      var tagicon = this.props.icon;
+      return(
+      <button className="tag">
+       {tag}<img className="tagicon" src={tagicon} alt=""/>
+      </button>);
+    } else {
+      return(
+      <button className="tag">{tag}</button>);
+    }
   }
 }
 
 export class DemoCard extends Component {
   constructor(props){
     super(props);
-    this.demo = new Demo("Test Project", "Project Description blahblahblah", "https://demo.matthewharris.tech/TestProject", ["Javascript", "Python"], ["Web"], [], "/demo.png", "https://github.com")
+    this.demo = new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer")
   }
   render(){
     return(
@@ -94,8 +106,9 @@ export class DemoCard extends Component {
         {this.demo.buttons()}
         <div className="tags">
         Languages: {this.demo.languages()}<br/>
-        {this.demo.frameworks()}<br/>
-        {this.demo.tags()}</div>
+        Frameworks: {this.demo.frameworks()}<br/>
+        Tags: {this.demo.tags()}
+        </div>
       </div>
       </div>
     );
