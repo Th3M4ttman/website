@@ -184,12 +184,12 @@ export class Micro_Demo extends Demo{
 }
 
 const micro_demos = {
-  test: new Micro_Demo((e) => {return "Poop"}, "Test", "https://google.com", ["Javascript"])
+  test: new Micro_Demo((e) => {return "Poop"}, "Test", "Text here","https://google.com", ["Javascript"])
 };
 
 export class MicroDemoPage extends Component{
   render(){
-    var url = window.location.href.split('/')[-1];
+    var url = window.location.href.split('/')[4];
     var demo = micro_demos[url];
     if (demo === undefined){
       return(<p>{url} Not Found</p>);
@@ -206,7 +206,7 @@ export class DemoRouter extends Component{
     <Routes>
       <Route path="/" element={<Navigation/>}>
         <Route exact path="/" element={<DemoSearch />} />
-        <Route path="Demo" element={<MicroDemoPage />} />
+        <Route path="Demo/*" element={<MicroDemoPage />} />
         <Route path="Demos" element={<DemoSearch />} />
         <Route path="*" element={<DemoSearch />} />
         </Route>

@@ -72,7 +72,7 @@ if (window.location.host.split('.')[0] === 'demo'){
         <Route exact path="/" element={<App />} />
         <Route path="Contact-Us" element={<Contact/>} />
         <Route path="Contact" element={<Contact/>} />
-        <Route path="Demo/*" element={<MicroDemoPage />} />
+        <Route path="Demo/*" element={<MicroDemoPage />}/>
         <Route path="Privacy" element={<Privacy/>} />
         <Route path="Thanks" element={<Thanks/>} />
         <Route path="Cheat" element={<Cheatsheets/>} />
