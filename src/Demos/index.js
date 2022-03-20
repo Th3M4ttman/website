@@ -206,9 +206,8 @@ export class DemoRouter extends Component{
     <Routes>
       <Route path="/" element={<Navigation/>}>
         <Route exact path="/" element={<DemoSearch />} />
-        <Route path="Demo/*" element={<MicroDemoPage />} />
         <Route path="Demos" element={<DemoSearch />} />
-        <Route path="*" element={<DemoSearch />} />
+        <Route path="*" element={<MicroDemoPage />} />
         </Route>
     </Routes>
     </Router>
