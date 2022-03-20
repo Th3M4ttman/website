@@ -184,7 +184,7 @@ export class Micro_Demo extends Demo{
 }
 
 const micro_demos = {
-  test, Test: new Micro_Demo((e) => {return "Poop"}, "Test", "Text here","https://google.com", ["Javascript"])
+  Test: new Micro_Demo((e) => {return "Poop"}, "Test", "Text here","https://google.com", ["Javascript"])
 };
 
 export class MicroDemoPage extends Component{
