@@ -189,7 +189,7 @@ const micro_demos = {
 
 export class MicroDemoPage extends Component{
   render(){
-    var url = window.location.host.split('/')[-1];
+    var url = window.location.href.split('/')[-1];
     var demo = micro_demos[url];
     if (demo === undefined){
       return(<p>{url} Not Found</p>);
