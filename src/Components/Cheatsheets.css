@@ -1,0 +1,15 @@
+:root {
+  --tblack: #282726;
+  --torange: #F67128;
+  --twhite: #FFF7F0;
+  --tgray: #949494;
+  --tbrown: #B6866F;
+}
+
+.cheat{
+  width: 70%;
+  background-color: var(--tblack);
+  color: var(--torange);
+  border: 2px solid var(--torange);
+  border-radius: 15px;
+}

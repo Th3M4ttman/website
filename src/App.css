@@ -306,6 +306,7 @@ textarea:focus {
 }
 
 .foot{
+  z-index: 5;
   background-color: #000;
   width: 100%;
   margin: 0;
@@ -315,4 +316,26 @@ textarea:focus {
   justify-content: center;
   font-size: calc(5px + 2vmin);
   color: var(--tbrown);
+}
+
+#container {
+    position: relative
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+#particlebox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }

@@ -20,17 +20,14 @@ const Particle = () => {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
+      width="100%"
+      height="50vh"
       options={{
-        background: {
-          color: {
-            value: "#00000000",
-          },
-        },
         fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
@@ -97,18 +94,16 @@ const Particle = () => {
         },
         detectRetina: true,
       }}
-    /></>
+     /></>
   );
 };
 
 export default class Particletest extends Component{
 render(){
   return(
-  
-  <div className="ParticleBox">
-     <br/><br/><br/>
-     <Particle/>
-  </div>
+    <div id="container">
+     <Particle id="particlebox"/>
+    </div>
  );
 };
 }

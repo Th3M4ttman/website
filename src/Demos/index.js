@@ -1,12 +1,15 @@
 import '../App.css';
 import "./demos.css";
-
+import Navigation from "../Components/Navigation";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 //import {BrowserView, MobileView} from 'react-device-detect';
+import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
+import { InputButtonOutput } from "./Projects"
 
-class Demo{
-  constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, priority=0){
+export class Demo{
+  constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, project_type="Full", priority=0){
     this.title = title;
     this.description = "  " + description;
     this._languages = languages;
@@ -16,6 +19,7 @@ class Demo{
     this.imgurl = imgurl;
     this.source_url = source_url;
     this.url = url;
+    this.project_type = project_type;
   }
   buttons(){
     if (this.source_url === null){
@@ -68,7 +72,7 @@ class Demo{
   }
 }
 
-class LANGUAGE_TAG extends Component{
+export class LANGUAGE_TAG extends Component{
   constructor(props){
     super(props);
     console.log(this);
@@ -80,7 +84,7 @@ class LANGUAGE_TAG extends Component{
   }
 }
 
-class TAG extends Component{
+export class TAG extends Component{
   constructor(props){
     super(props);
     console.log(this);
@@ -165,5 +169,59 @@ export class DemoSearch extends Component{
   render(){
     let cards = demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
     return(<div>{cards}</div>);
+  }
+}
+
+
+export class Micro_Demo extends Demo{
+  constructor(func, title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, project_type="Micro", priority=1){
+    super(title, description, url, languages, tags, frameworks, imgurl, source_url, project_type, priority)
+    this.function = func
+  }
+  page(){
+    return(<InputButtonOutput function={this.function} title={this.title} label={this.description} button_text="Go" />);
+  }
+}
+
+const micro_demos = {
+  test: new Micro_Demo((e) => {return "Poop"}, "Test", "https://google.com", ["Javascript"])
+};
+
+export class MicroDemoPage extends Component{
+  render(){
+    var url = window.location.host.split('/');
+    var demo = micro_demos[url];
+    if (demo === undefined){
+      return(<p>{url} Not Found</p>);
+    }
+    return(demo.page());
+  }
+}
+
+export class DemoRouter extends Component{
+  render(){
+    return(
+    <>
+    <Router>
+    <Routes>
+      <Route path="/" element={<Navigation/>}>
+        <Route exact path="/" element={<DemoSearch />} />
+        <Route path="Demo" element={<MicroDemoPage />} />
+        <Route path="Demos" element={<DemoSearch />} />
+        <Route path="*" element={<DemoSearch />} />
+        </Route>
+    </Routes>
+    </Router>
+    <div className="foot">
+    <br/><br/><br/>
+    Copyright © 2022 Matthew Harris - All Rights Reserved.
+    <br/>
+    <a className="priv" href="/privacy">
+      Privacy Policy
+    </a>
+    <br/>
+    </div>
+    </>
+    );
   }
 }
