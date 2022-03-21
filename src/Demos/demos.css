@@ -1,5 +1,5 @@
 
-:root {
+  :root {
   --tblack: #282726;
   --torange: #F67128;
   --twhite: #FFF7F0;
@@ -397,7 +397,7 @@
 .onlyrun{
   vertical-align: center;
   width: 100%;
-  background-color: none;
+  background-color: var(--tblack);
   color: #00ffa0;
   border: 3px solid #00ffa0;
   border-radius: 15px;

@@ -165,16 +165,9 @@ const demos = [
   new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors")
 ]
 
-export class DemoSearch extends Component{
-  render(){
-    let cards = demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
-    return(<div>{cards}</div>);
-  }
-}
-
 
 export class Micro_Demo extends Demo{
-  constructor(func, title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, project_type="Micro", priority=1){
+  constructor(func, title, description, url, languages=[], tags=[], frameworks=[], imgurl="/Javascript.svg", source_url=null, project_type="Micro", priority=1){
     super(title, description, url, languages, tags, frameworks, imgurl, source_url, project_type, priority)
     this.function = func
   }
@@ -183,19 +176,33 @@ export class Micro_Demo extends Demo{
   }
 }
 
-const micro_demos = {
-  Test: new Micro_Demo((e) => {return "Poop"}, "Test", "Text here","https://google.com", ["Javascript"])
-};
+const micro_demos = [
+  new Micro_Demo((e) => {return e}, "Test", "a simple demo","https://demo.matthewharris.tech/Test", ["Javascript"])
+];
 
 export class MicroDemoPage extends Component{
   render(){
     var url = window.location.href.split('/')
     url = url[url.length - 1]
-    var demo = micro_demos[url];
+    var demo = undefined;
+    for (let d of micro_demos){
+      if (d.title === url){
+        demo = d;
+      }
+    }
     if (demo === undefined){
       return(<p>{url} Not Found</p>);
     }
     return(demo.page());
+  }
+}
+
+
+export class DemoSearch extends Component{
+  render(){
+    let cards = demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
+    let microcards = micro_demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
+    return(<div>{cards}{microcards}</div>);
   }
 }
 

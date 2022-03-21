@@ -24,29 +24,38 @@ export class InputButtonOutput extends Component{
     
   }
   output(){
-    return(<p>{this.state.output}</p>);
+    return(this.state.output);
   }
+  split_title(){
+      return(<div className="demotitle">
+        <span className="demotitlef">
+          {this.title.substring(0, 1)}
+        </span>
+        <span className="demotitlerest">
+          {this.title.substring(1, this.title.length)}
+        </span>
+        </div>);
+    }
   render(){
     return(
       <div className="App-header">
         <div className="inoutbox">
-        <h1 className="Project-title">
-          {this.title}
-        </h1>
+        <br/>
+        {this.split_title()}
         <form onSubmit={(e) => {
           e.preventDefault();
+          //console.log(e);
           let res = this.function(e.target[0].value);
           this.setState({output: res});
         }}>
-          <label>{this.label}
-            <input type="text">
-              {this.start_text}
-            </input>
-          </label>
-          <input type="submit" />
-          <span>
-              {this.output()}
-          </span>
+          <p className="demodesc">
+            {this.label}
+          </p>
+          <textarea className="intext" defaultValue={this.start_text} />
+          <br/><br/>
+          <input className="demobutton" type="submit" value="Go" />
+          <br/><br/>
+          <textarea className="outtext" value={this.output()} readOnly />
         </form>
       </div>
       </div>

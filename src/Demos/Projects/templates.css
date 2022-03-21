@@ -1,0 +1,75 @@
+:root{
+  --tblack: #282726;
+  --torange: #F67128;
+  --twhite: #FFF7F0;
+  --tgray: #949494;
+  --tbrown: #B6866F;
+}
+.inoutbox{
+  width: 100%;
+  height: 100%;
+}
+
+.intext{
+  width: 80%;
+  color: var(--twhite);
+  border: 2px solid var(--torange);
+  height: 30vh;
+}
+
+.outtext{
+  width: 80%;
+  color: var(--twhite);
+  border: 2px solid var(--torange);
+  height: 30vh;
+}
+
+.demobutton{
+  width: 60px;
+  color: var(--twhite);
+  border: 2px solid var(--torange);
+  border-radius: 25%;
+  background: var(--tblack);
+  transition-duration: 0.4s;
+}
+.demobutton:hover{
+  width: 60px;
+  color: var(--twhite);
+  border: 2px solid var(--twhite);
+  border-radius: 25%;
+  background: var(--torange);
+  transition-duration: 0.4s;
+}
+
+.demobutton:active{
+  width: 60px;
+  color: var(--torange);
+  border: 2px solid var(--torange);
+  border-radius: 25%;
+  background: var(--twhite);
+}
+
+.demodesc{
+  color: var(--twhite);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.demotitle{
+  color: var(--twhite);
+  font-size: 150%;
+  width: 100%;
+  background-color: var(--tblack);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.demotitlef{
+  color: var(--torange);
+  font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.demotitlerest{
+  color: var(--twhite);
+  font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
