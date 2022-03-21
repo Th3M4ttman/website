@@ -167,17 +167,30 @@ const demos = [
 
 
 export class Micro_Demo extends Demo{
-  constructor(func, title, description, url, languages=[], tags=[], frameworks=[], imgurl="/Javascript.svg", source_url=null, project_type="Micro", priority=1){
+  constructor(func, title, description, url, start_text="", languages=[], tags=[], frameworks=[], imgurl="/Javascript.svg", source_url=null, project_type="Micro", priority=1){
     super(title, description, url, languages, tags, frameworks, imgurl, source_url, project_type, priority)
-    this.function = func
+    this.function = func;
+    this.start_text = start_text;
   }
   page(){
-    return(<InputButtonOutput function={this.function} title={this.title} label={this.description} button_text="Go" />);
+    return(<InputButtonOutput function={this.function} title={this.title} label={this.description} button_text="Go" start_text={this.start_text}/>);
   }
 }
 
 const micro_demos = [
-  new Micro_Demo((e) => {return e}, "Test", "a simple demo","https://demo.matthewharris.tech/Test", ["Javascript"])
+  new Micro_Demo((e) => {
+    let out = "";
+    let up = true;
+    for (let ch of e){
+      if (up === true){
+        out += ch.toUpperCase();
+        up = false;
+      } else {
+        out += ch.toLowerCase();
+        up = true;
+      }
+    };
+    return out}, "Sarcastasize", "Turns any text into sarcastic upper-lower case text","https://demo.matthewharris.tech/Sarcastasize", "Input", ["Javascript"], [], ["Micro Demo"], "/spongebob.gif")
 ];
 
 export class MicroDemoPage extends Component{
