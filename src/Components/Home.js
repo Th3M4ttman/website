@@ -43,10 +43,10 @@ class Web extends Component{
       {title("Web")}
       <p>I am a competent web developer with years of experience working with both front end and back end systems.</p>
       <br/>
-      <p>I am comfortable with both Javascropt and Python and some of the many frameworks therein.</p>
+      <p>I am comfortable with both Javascript, Python and some of the many frameworks therein.</p>
       <br/>
       {title("Technologies", true)}
-      <p>Frameworks, languages and technologies im comfortable with go here</p>
+      <p>Frameworks, languages and technologies i'm comfortable with go here</p>
       <br/><br/><br/>
       {title("", false, true)}
       <br/><br/><br/>
@@ -55,6 +55,98 @@ class Web extends Component{
   }
 }
 
+class Software extends Component{
+  render(){
+    return(
+      <div>
+      {title("Software")}
+      <p>preamble</p>
+      <br/>
+      <p>experirence</p>
+      <br/>
+      {title("Technologies", true)}
+      <p>Frameworks, languages and technologies i'm comfortable with go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
+
+class Games extends Component{
+  render(){
+    return(
+      <div>
+      {title("Games")}
+      <p>preamble</p>
+      <br/>
+      <p>experirence</p>
+      <br/>
+      {title("Technologies", true)}
+      <p>Frameworks, languages and technologies i'm comfortable with go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
+
+class Art extends Component{
+  render(){
+    return(
+      <div>
+      {title("Art")}
+      <p>preamble</p>
+      <br/>
+      <p>experirence</p>
+      <br/>
+      {title("Gallery", true)}
+      <p>3D Gallery goes here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
+
+class Music extends Component{
+  render(){
+    return(
+      <div>
+      {title("Music")}
+      <p>preamble</p>
+      <br/>
+      {title("Instruments", true)}
+      <p>Instruments i'm comfortable with go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
+
+class Person extends Component{
+  render(){
+    return(
+      <div>
+      {title("Person")}
+      <p>preamble about me</p>
+      <br/>
+      <p>education</p>
+      <br/>
+      {title("Interests/Hobbies", true)}
+      <p>interests/hobbies go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
 
 export default class Home extends Component {
   constructor(props){
@@ -130,7 +222,7 @@ export default class Home extends Component {
   content(){
     let sections = ["", "Web", "Software", "Games", "Music", "Art", "Person"]
     let section = sections[this.state.chosen];
-    let sectioncontent = ["", <Web />, <p />, "", "", "", ""]
+    let sectioncontent = ["", <Web />, <Software />, <Games />, <Music />, <Art />, <Person />]
     let c = sectioncontent[this.state.chosen]
     if (this.state.chosen === 0){return <p></p>}
     return(
