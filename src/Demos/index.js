@@ -259,7 +259,7 @@ for (let demo of micro_demos){
 }
 
 
-const Tagsearch = (props) => {
+function Tagsearch(props){
   //console.log(props)
   const suggestions = SUGGESTIONS.map(suggestion => {
   return {
@@ -277,6 +277,10 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
   var [tags, setTags] = React.useState([
   ]);
+  tags = props.tags.map((tag) => {
+    return {id: tag, text: tag}
+    }
+  );
   const handleDelete = i => {
     setTags(tags.filter((tag, index) => index !== i));
   };
@@ -354,6 +358,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
           handleTagClick={handleTagClick}
           inputFieldPosition="bottom"
           autocomplete
+          autofocus={false}
         />
       </div>
       <br />
