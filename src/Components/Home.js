@@ -49,7 +49,7 @@ class Web extends Component{
       <p>Frameworks, languages and technologies i'm comfortable with go here</p>
       <br/><br/><br/>
       {title("", false, true)}
-      <br/><br/><br/>
+      <br/>
       </div>
     );
   }
@@ -66,7 +66,7 @@ class Software extends Component{
       <br/>
       {title("Technologies", true)}
       <p>Frameworks, languages and technologies i'm comfortable with go here</p>
-      <br/><br/><br/>
+      <br/>
       {title("", false, true)}
       <br/><br/><br/>
       </div>
@@ -87,7 +87,7 @@ class Games extends Component{
       <p>Frameworks, languages and technologies i'm comfortable with go here</p>
       <br/><br/><br/>
       {title("", false, true)}
-      <br/><br/><br/>
+      <br/>
       </div>
     );
   }
@@ -106,7 +106,7 @@ class Art extends Component{
       <p>3D Gallery goes here</p>
       <br/><br/><br/>
       {title("", false, true)}
-      <br/><br/><br/>
+      <br/>
       </div>
     );
   }
@@ -123,7 +123,7 @@ class Music extends Component{
       <p>Instruments i'm comfortable with go here</p>
       <br/><br/><br/>
       {title("", false, true)}
-      <br/><br/><br/>
+      <br/>
       </div>
     );
   }
@@ -142,7 +142,7 @@ class Person extends Component{
       <p>interests/hobbies go here</p>
       <br/><br/><br/>
       {title("", false, true)}
-      <br/><br/><br/>
+      <br/>
       </div>
     );
   }
