@@ -276,7 +276,7 @@ const KeyCodes = {
 
 const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
-  const [tags, setTags] = React.useState(props.props.map((t)=>{return {id: t, text: t}}));
+  const [tags, setTags] = React.useState(props.props.map((t)=>{return {id: t, text: t}}))
   
   const handleDelete = i => {
     setTags(tags.filter((tag, index) => index !== i));
@@ -342,9 +342,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     });
     return out
   }
-  //handleAddition(props.tags.map((tag) => {
-    //return {id: tag, text: tag}
-    //}))
+  //handleAddition(props.props.map((tag) => {return {id: tag, text: tag}}))
   return (
     <div className="demosearch">
       <div>
@@ -372,74 +370,14 @@ export class DemoSearch extends Component{
   constructor(props){
     super(props);
     this.state = {
-      web: true,
-      software: true,
-      games: true,
-      tags: []
+      section: props.section
+    }
+    if (this.state.section === [undefined]){
+      this.setState({section: []})
     }
   }
-  web(){
-    if (this.state.web === true){
-      return(
-        <button className="webt" onClick={(e)=>{this.setState({web:false})}}>Web</button>
-      );
-    } else {
-      return(
-        <button className="webf" onClick={(e)=>{
-          this.setState({web:true});
-          }}>Web</button>
-      );
-    }
-  }
-  software(){
-    if (this.state.software === true){
-      return(
-        <button className="softwaret" onClick={(e)=>{this.setState({software:false})}}>Software</button>
-      );
-    } else {
-      return(
-        <button className="softwaref" onClick={(e)=>{this.setState({software:true})}}>Software</button>
-      );
-    }
-  }
-  games(){
-    if (this.state.games === true){
-      return(
-        <button className="gamest" onClick={(e)=>{this.setState({games:false})}}>Games</button>
-      );
-    } else {
-      return(
-        <button className="gamesf" onClick={(e)=>{this.setState({games:true})}}>Games</button>
-      );
-    }
-  }
-  buttons(){
-    return(
-      <span className="sectorspan">{this.web()}{this.software()}{this.games()}</span>
-    );
-  }
-  filter(_demos){
-    let cards = _demos.map(demo => {
-      if (this.state.tags.length > 0){
-        //console.log(this.state.tags)
-        for (let t of this.state.tags){
-          if (demo._tags.includes(t)){
-            
-            return(<DemoCard demo={demo} key={demo.title} />)
-          }
-        } return null;
-      }
-      if (demo._tags.includes("Web") && this.state.web === false){
-        return null;
-      }
-      if (demo._tags.includes("Software") && this.state.software === false){
-        return null;
-      }
-      if (demo._tags.includes("Games") && this.state.games === false){
-        return null;
-      }
-      return(<DemoCard demo={demo} key={demo.title} />)});
-    return cards;
+  search(start){
+    return (<Tagsearch props={[start]}/>)
   }
   render(){
     //console.log(process.env);
@@ -454,7 +392,7 @@ export class DemoSearch extends Component{
         </span>
         </div>
     <br/>
-      <Tagsearch props={this.props.tags} />
+      {this.search(this.state.section)}
     </div>);
   }
 }

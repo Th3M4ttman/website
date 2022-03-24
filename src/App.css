@@ -343,3 +343,19 @@ textarea:focus {
   margin: 0;
   padding: 0;
 }
+
+.downbutton{
+  position: absolute;
+  top: 70vh;
+  width: 50px;
+  height: 20px;
+  border: 2px solid var(--torange);
+  border-radius: 15px;
+  background-color: var(--tblack);
+  color: var(--torange);
+}
+.downtext{
+  position: relative;
+  bottom: 6px;
+  vertical-align: center;
+}

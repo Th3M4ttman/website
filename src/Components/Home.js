@@ -5,77 +5,39 @@ import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
 import { DemoSearch } from "../Demos";
 
-class Content extends Component {
+
+export default class Home extends Component {
   constructor(props){
     super(props);
     this.state = {
-      p: props.p
+      chosen: 0
     }
-  }
-  render(){
-    let chosen = this.state.p.state.chosen;
-    let sections = ["", "Web", "Software", "Games", "Music", "Art", "Person"]
-    let section = sections[chosen];
-    if (chosen === 0){return <p></p>}
-    return(
-      <div className="demosearch">
-      <br />
-      <h1>{section}</h1>
-      blahblahblah {section} content goes here
-      <DemoSearch tags={[section]}/>
-      </div>
-      
-    );
-  }
-}
+    this.left = this.left.bind(this);
+    this.right = this.right.bind(this);
+    this.chosen = this.chosen.bind(this);
 
-export class ImaSelect extends Component {
-    constructor(props)
-    {
-      super(props);
-      this.state = {
-        p: props.p
-      };
-      this.left = this.left.bind(this);
-      this.right = this.right.bind(this);
-      this.chosen = this.chosen.bind(this);
-    }
-    chosen(){
-      console.log(this.state.p)
-      if (this.state.p.state.chosen === 1){
+  }
+  
+  chosen(){
+      console.log(this.state.chosen)
+      if (this.state.chosen === 1){
         return (<span className="webdev">Web Developer</span>);
-      } else if (this.state.p.state.chosen === 2){
+      } else if (this.state.chosen === 2){
         return (<span className="softdev">Software Developer</span>);
-      } else if (this.state.p.state.chosen === 3){
+      } else if (this.state.chosen === 3){
         return (<span className="gamedev">Video Game Developer</span>);
-      } else if (this.state.p.state.chosen === 4){
+      } else if (this.state.chosen === 4){
         return (<span className="music">Musician</span>);
-      } else if (this.state.p.state.chosen === 5){
+      } else if (this.state.chosen === 5){
         return (<span className="art">Artist</span>);
-      } else if (this.state.p.state.chosen === 6){
+      } else if (this.state.chosen === 6){
         return (<span className="person">Person</span>);
       } else {
         return (<span className="selected">Please Select</span>);
       }
       
     }
-    right(){
-    document.documentElement.scrollTop = document.body.scrollTop = 150;
-      if (this.state.p.state.chosen >= 6){
-        this.state.p.setState({chosen:1})
-      } else {
-        this.state.p.setState({chosen:this.state.p.state.chosen + 1})
-      }
-    }
-    left(){
-    document.documentElement.scrollTop = document.body.scrollTop = 150;
-      if (this.state.p.state.chosen <= 0){
-        this.state.p.setState({chosen:1})
-      } else {
-        this.state.p.setState({chosen:this.state.p.state.chosen - 1})
-      }
-    }
-    render() {
+  imaselect() {
   return (
       <>
       <br/>
@@ -87,17 +49,21 @@ export class ImaSelect extends Component {
       </>
     );
   }
-}
-
-
-export class Ima extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      p: props.p
+  right(){
+    if (this.state.chosen > 5){
+      this.setState({chosen: 0})
+    } else {
+      this.setState({chosen: this.state.chosen + 1})
     }
   }
-    render() {
+  left(){
+    if (this.state.chosen < 1){
+      this.setState({chosen: 5})
+    } else {
+      this.setState({chosen: this.state.chosen - 1})
+    }
+  }
+  ima(){
   return (
       <>
       <div className="wtext"> Hi I'm 
@@ -105,20 +71,32 @@ export class Ima extends Component {
         </span>
          att and I'm a:
       
-      <ImaSelect p={this.state.p}/>
+      {this.imaselect()}
       </div>
       
       </>
     );
   }
-}
-
-
-export default class Home extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      chosen: 0
+  content(){
+    let sections = ["", "Web", "Software", "Games", "Music", "Art", "Person"]
+    let section = sections[this.state.chosen];
+    if (this.state.chosen === 0){return <p></p>}
+    return(
+      <div className="demosearch">
+      <br />
+      <h1>{section}</h1>
+      blahblahblah {section} content goes here
+      <DemoSearch section={section} key={section} />
+      </div>);
+  }
+  down(){
+    if (this.state.chosen !== 0){
+      return(<button className="downbutton" onClick={(e)=>{
+        document.querySelector("body").scrollTo(0,500)
+        
+      }}><p className="downtext">v</p></button>);
+    } else {
+      return null
     }
   }
   render(){
@@ -129,13 +107,14 @@ export default class Home extends Component {
         
         <div className="bgimg">
         <div className="holder">
-          <Ima p={this}/>
+          {this.ima()}
+          {this.down()}
         </div>
         </div>
         <div className="App-header">
           <br/>
           Desktop
-          <Content p={this}/>
+          {this.content()}
           <br/><br/><br/><br/><br/><br/>
         </div>
       </div>
@@ -143,13 +122,12 @@ export default class Home extends Component {
       <MobileView>
 
       <div className="App-header">
-        
+        {this.down()}
         <div className="mbgimg">
-        
-          <Ima p={this}/>
+          {this.ima()}
         </div>
         <div className="App-header">
-          <Content p={this}/>
+          {this.content()}
         </div>
       </div>
       </MobileView>
