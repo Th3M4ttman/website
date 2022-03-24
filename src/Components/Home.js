@@ -3,7 +3,7 @@ import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
-
+import { DemoSearch } from "../Demos";
 
 class Content extends Component {
   constructor(props){
@@ -15,9 +15,16 @@ class Content extends Component {
   render(){
     let chosen = this.state.p.state.chosen;
     let sections = ["", "Web", "Software", "Video Games", "Music", "Art", "Person"]
+    let section = sections[chosen];
     if (chosen === 0){return <p></p>}
     return(
-      <p>{sections[chosen]} Content Goes Here</p>
+      <div className="demosearch">
+      <br />
+      <h1>{section}</h1>
+      blahblahblah {section} content goes here
+      <DemoSearch tags={[section]}/>
+      </div>
+      
     );
   }
 }
@@ -142,10 +149,7 @@ export default class Home extends Component {
           <Ima p={this}/>
         </div>
         <div className="App-header">
-          <br/>
-          Mobile
           <Content p={this}/>
-          <br/><br/><br/><br/><br/><br/>
         </div>
       </div>
       </MobileView>

@@ -259,7 +259,8 @@ for (let demo of micro_demos){
 }
 
 
-const Tagsearch = () => {
+const Tagsearch = (props) => {
+  //console.log(props)
   const suggestions = SUGGESTIONS.map(suggestion => {
   return {
     id: suggestion,
@@ -274,9 +275,8 @@ const KeyCodes = {
 
 const delimiters = [KeyCodes.comma, KeyCodes.enter];
 
-  const [tags, setTags] = React.useState([
+  var [tags, setTags] = React.useState([
   ]);
-
   const handleDelete = i => {
     setTags(tags.filter((tag, index) => index !== i));
   };
@@ -341,7 +341,6 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     });
     return out
   }
-
   return (
     <div className="demosearch">
       <div>
@@ -450,7 +449,7 @@ export class DemoSearch extends Component{
         </span>
         </div>
     <br/>
-      <Tagsearch />
+      <Tagsearch tags={this.props.tags} />
     </div>);
   }
 }
@@ -481,3 +480,4 @@ export class DemoRouter extends Component{
     );
   }
 }
+export { Tagsearch };

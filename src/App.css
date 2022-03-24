@@ -1,3 +1,13 @@
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: var(--tblack);
+    color: var(--twhite);
+}
+
 .App {
   
   background-color: var(--tblack);
@@ -219,15 +229,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    background-color: var(--tblack);
-    color: var(--twhite);
-}
+
 
 .App-header {
   background-color: var(--tblack);
@@ -302,9 +304,11 @@ textarea:focus {
 }
 
 .foot{
+  top: 100%;
   background-color: #000;
   width: 100%;
   margin: 0;
+  padding: 0;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -332,4 +336,10 @@ textarea:focus {
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.demosearch{
+  position: relative;
+  margin: 0;
+  padding: 0;
 }

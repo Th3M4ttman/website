@@ -1,4 +1,12 @@
-
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: var(--tblack);
+    color: var(--twhite);
+}
 :root {
   --web: #61DBFB;
   --software: #3EB489;

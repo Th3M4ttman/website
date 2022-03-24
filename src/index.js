@@ -64,7 +64,7 @@ if (window.location.host.split('.')[0] === 'demo'){
   reportWebVitals();
 } else {
   ReactDOM.render(
-    <>
+    <div className="bounds">
     <Router>
     <Routes>
      
@@ -94,7 +94,7 @@ if (window.location.host.split('.')[0] === 'demo'){
     </a>
     <br/>
     </div>
-    </>,
+    </div>,
       rootElement
   );
   
