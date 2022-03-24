@@ -1,5 +1,8 @@
 
-  :root {
+:root {
+  --web: #61DBFB;
+  --software: #3EB489;
+  --games: #C8A2C8;
   --tblack: #282726;
   --torange: #F67128;
   --twhite: #FFF7F0;
@@ -335,6 +338,256 @@
 	--wdl : #42f1f4;
 	--wisp : #7582D1;
 }
+
+.ReactTags__suggestions{
+  background-color: var(--tblack);
+  border: 2px solid var(--torange);
+}
+
+.ReactTags__tag{
+  background-color: var(--tblack);
+  border: 2px solid var(--torange);
+  border-radius: 15px;
+  font-size: 70%;
+  padding-left: 10px;
+}
+.ReactTags__remove{
+  background-color: #00000000;
+  border: none;
+  color: var(--twhite);
+}
+
+.ReactTags__suggestions li mark{
+  background: var(--tblack);
+  color: var(--twhite);
+  margin: 0px;
+  border-bottom: 2px solid var(--torange);
+}
+
+
+.react-tags {
+  position: relative;
+  padding: 6px 0 0 6px;
+  border: 1px solid #D1D1D1;
+  border-radius: 1px;
+  width: 80vw;
+  /* shared font styles */
+  font-size: 1em;
+  line-height: 1.2;
+
+  /* clicking anywhere will focus the input */
+  cursor: text;
+}
+
+.react-tags.is-focused {
+  border-color: #B1B1B1;
+  width: 80vw;
+}
+
+.react-tags__selected {
+  
+  width: 80vw;
+}
+
+.react-tags__selected-tag {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 6px 6px 0;
+  padding: 6px 8px;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  background: #F1F1F1;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__selected-tag:after {
+  content: '\2715';
+  color: #AAA;
+  margin-left: 8px;
+}
+
+.react-tags__selected-tag:hover,
+.react-tags__selected-tag:focus {
+  border-color: #B1B1B1;
+  
+}
+
+.react-tags__search {
+position: relative;
+  /* match tag layout */
+  padding: 7px 2px;
+  margin-bottom: 6px;
+  left: 0;
+  right: 0;
+  /* prevent autoresize overflowing the container */
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__search {
+    /* this will become the offsetParent for suggestions */
+    position: relative;
+    width: 80vw;
+  }
+
+}
+
+.react-tags__search-input {
+  /* prevent autoresize overflowing the container */
+  width: 80vw;
+
+  /* remove styles and layout from this element */
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+
+  /* match the font styles */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.react-tags__search-input::-ms-clear {
+  display: none;
+}
+
+.react-tags__suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 80%vw;
+}
+
+@media screen and (min-width: 30em) {
+
+  .react-tags__suggestions {
+    width: 80vw;
+  }
+
+}
+
+.react-tags__suggestions ul {
+  width: 80vw;
+  margin: 4px -1px;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.react-tags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+.react-tags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+
+.react-tags__suggestions li:hover {
+  cursor: pointer;
+  background: #eee;
+}
+
+.react-tags__suggestions li.is-active {
+  background: #b7cfe0;
+}
+
+.react-tags__suggestions li.is-disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.sectorspan{
+  width: 100vw;
+}
+
+.webt{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid #61DBFB;
+  color: #61DBFB;
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.softwaret{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid #3EB489;
+  color: #3EB489;
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.gamest{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid #C8A2C8;
+  color: #C8A2C8;
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.webf{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid var(--tgray);
+  color: var(--twhite);
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+.softwaref{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid var(--tgray);
+  color: var(--twhite);
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.gamesf{
+  background-color: var(--tblack);
+  width: 25%;
+  border: 2px solid var(--tgray);
+  color: var(--twhite);
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"]:checked {
+  content: "";
+  transform: scale(0);
+  width: 1.15em;
+  height: 1.15em;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--torange);
+}
+
+
+
 .democard{
   width: 100%;
   padding: 25px 5%;
@@ -344,6 +597,108 @@
   border: 3px solid var(--twhite);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.democardg{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--games);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px solid var(--games);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.democards{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--software);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px solid var(--software);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.democardw{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--web);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px solid var(--web);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.demosearch{
+  width: 80vw;
+}
+.searchbar{
+  width: 100vw;
+  background-color: #fff;
+}
+.searchform{
+  width: 100%;
+}
+.searchbar:focus{
+  width: 70%;
+}
+.searchbutton{
+  width: 25%;
+}
+.searchbutton:focus{
+  width: 25%;
+}
+.searchradiob{
+  width: 25%;
+}
+.searchradiob:focus{
+  width: 25%;
+}
+.searchradiob:active{
+  width: 25%;
+}
+.searchradio{
+  color: var(--torange);
+}
+.searchlabel{
+  color: var(--torange);
+  font-size: 50%;
+  width:30%;
+  
+}
+
+.microdemocards{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--software);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px dashed var(--software);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.microdemocardw{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--web);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px dashed var(--web);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.microdemocardg{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--games);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px dashed var(--games);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.microdemocard{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--torange);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border: 3px dashed var(--twhite);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .title{
   color: var(--twhite);
@@ -351,6 +706,13 @@
   width: 100%;
   background-color: var(--tblack);
   border-bottom: 3px solid var(--torange);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.titlenu{
+  color: var(--twhite);
+  font-size: 250%;
+  width: 100%;
+  background-color: var(--tblack);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .ctitle{

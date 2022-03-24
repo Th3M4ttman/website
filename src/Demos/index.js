@@ -1,6 +1,7 @@
 import '../App.css';
 import "./demos.css";
 import Navigation from "../Components/Navigation";
+import { WithContext as ReactTags } from 'react-tag-input';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 //import {BrowserView, MobileView} from 'react-device-detect';
@@ -20,6 +21,8 @@ export class Demo{
     this.source_url = source_url;
     this.url = url;
     this.project_type = project_type;
+    this.add = null;
+    this.t = null;
   }
   buttons(){
     if (this.source_url === null){
@@ -38,15 +41,15 @@ export class Demo{
     }
     }
   languages(){
-    let x = this._languages.map(lang => {return(<LANGUAGE_TAG language={lang}/>)});
+    let x = this._languages.map(lang => {return(<LANGUAGE_TAG language={lang} key={lang} add={this.add} t={this.t} />)});
     return x;
   }
   frameworks(){
-    let x = this._frameworks.map(tag => {return(<TAG tag={tag} key={tag}/>)});
+    let x = this._frameworks.map(tag => {return(<TAG tag={tag} key={tag} add={this.add} t={this.t}/>)});
     return x;
   }
   tags(){
-    let x = this._tags.map(tag => {return(<TAG tag={tag} key={tag}/>)});
+    let x = this._tags.map(tag => {return(<TAG tag={tag} key={tag} add={this.add} t={this.t}/>)});
     return x;
   }
   split_title(active){
@@ -73,33 +76,25 @@ export class Demo{
 }
 
 export class LANGUAGE_TAG extends Component{
-  constructor(props){
-    super(props);
-    console.log(this);
-  }
   render(){
     var lang = this.props.language;
-    
-    return(<button className={lang}><div className="logo">{lang}<img className="langlogo" src={lang+".svg"} alt=""/></div></button>);
+    return(<button className={lang} onClick={()=>{this.props.add({id: lang, text: lang})}}><div className="logo">{lang}<img className="langlogo" src={lang+".svg"} alt=""/></div></button>);
   }
 }
 
 export class TAG extends Component{
-  constructor(props){
-    super(props);
-    console.log(this);
-  }
   render(){
     var tag = this.props.tag;
+    //console.log(this.props)
     if (this.props.icon != null){
       var tagicon = this.props.icon;
       return(
-      <button className="tag">
+      <button className="tag" onClick={()=>{this.props.add({id: tag, text: tag})}}>
        {tag}<img className="tagicon" src={tagicon} alt=""/>
       </button>);
     } else {
       return(
-      <button className="tag">{tag}</button>);
+      <button className="tag" onClick={()=>{this.props.add({id: tag, text: tag})}}>{tag}</button>);
     }
   }
 }
@@ -109,8 +104,21 @@ export class TAG extends Component{
 export class DemoCard extends Component {
   constructor(props){
     super(props);
-    this.state = {active: false}
+    this.state = {active: false, tags: []}
     this.demo = props.demo
+    this.boxclass = "democard"
+    if (this.demo.project_type !== "Full"){
+      this.boxclass = "microdemocard"
+    }
+    if (this.demo._tags.includes("Web")){
+      this.boxclass += "w";
+    } else if (this.demo._tags.includes("Games")){
+      this.boxclass += "g";
+    } else if (this.demo._tags.includes("Software")){
+      this.boxclass += "s";
+    }
+    this.demo.add = props.add;
+    this.demo.t = props.t;
   }
   toggleActive(){
     if (this.state.active === true){
@@ -118,7 +126,7 @@ export class DemoCard extends Component {
     } else {
       this.setState({active: true});
     }
-    console.log(this.state.active)
+    //console.log(this.state.active)
   }
   
   isCollapsed(){
@@ -144,8 +152,8 @@ export class DemoCard extends Component {
   }
   render(){
     return(
-      <div className="App-header">
-      <div className="democard">
+      <>
+      <div className={this.boxclass}>
     <div className="panel-header" onClick={() => {this.toggleActive()}}>
       {this.demo.split_title(this.state.active)}
     </div>
@@ -155,7 +163,8 @@ export class DemoCard extends Component {
         Frameworks: {this.demo.frameworks()}<br/>
         Tags: {this.demo.tags()}
         </div>{this.collapsemsg()}</div>
-      </div>
+      <br/>
+      </>
     );
   }
 }
@@ -190,7 +199,7 @@ const micro_demos = [
         up = true;
       }
     };
-    return out}, "Sarcastasize", "Turns any text into sarcastic upper-lower case text","https://demo.matthewharris.tech/Sarcastasize", "Input", ["Javascript"], [], ["Micro Demo"], "/spongebob.gif")
+    return out}, "Sarcastasize", "Turns any text into sarcastic upper-lower case text","https://demo.matthewharris.tech/Sarcastasize", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/spongebob.gif")
 ];
 
 export class MicroDemoPage extends Component{
@@ -210,12 +219,239 @@ export class MicroDemoPage extends Component{
   }
 }
 
+const SUGGESTIONS = [
+  "Web", "Software", "Games"]
+  
+for (let demo of demos){
+  for (let tag of demo._tags){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+  for (let tag of demo._frameworks){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+  for (let tag of demo._languages){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+}
+
+for (let demo of micro_demos){
+  for (let tag of demo._tags){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+  for (let tag of demo._frameworks){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+  for (let tag of demo._languages){
+    if (!SUGGESTIONS.includes(tag)){
+      SUGGESTIONS.push(tag);
+    }
+  }
+}
+
+
+const Tagsearch = () => {
+  const suggestions = SUGGESTIONS.map(suggestion => {
+  return {
+    id: suggestion,
+    text: suggestion
+  };
+});
+
+const KeyCodes = {
+  comma: 188,
+  enter: 13
+};
+
+const delimiters = [KeyCodes.comma, KeyCodes.enter];
+
+  const [tags, setTags] = React.useState([
+  ]);
+
+  const handleDelete = i => {
+    setTags(tags.filter((tag, index) => index !== i));
+  };
+
+  const handleAddition = tag => {
+    setTags([...tags, tag]);
+  };
+
+  const handleDrag = (tag, currPos, newPos) => {
+    const newTags = tags.slice();
+
+    newTags.splice(currPos, 1);
+    newTags.splice(newPos, 0, tag);
+
+    // re-render
+    setTags(newTags);
+  };
+
+  const handleTagClick = index => {
+    console.log('The tag at index ' + index + ' was clicked');
+  };
+  const results = (_tags) => {
+    let t = []
+    if (_tags.length === 0){
+      let out = []
+      for (let demo of demos){
+        out.push(<DemoCard demo={demo} key={demo.title} add={handleAddition} t={tags}/>)
+      }
+      for (let demo of micro_demos){
+        out.push(<DemoCard demo={demo} key={demo.title} add={handleAddition} t={_tags} />)
+      }
+      return out
+    }
+    for (let demo of demos){
+      let inc = []
+      for (let tag of tags){
+        if (demo._tags.includes(tag.text) || demo._frameworks.includes(tag.text) || demo._languages.includes(tag.text)){
+          inc.push(true);
+        } else {
+          inc.push(false);
+        }
+      }
+      if (!inc.includes(false)){
+        t.push(demo);
+      }
+    }
+    for (let demo of micro_demos){
+      let inc = []
+      for (let tag of tags){
+        if (demo._tags.includes(tag.text) || demo._frameworks.includes(tag.text) || demo._languages.includes(tag.text)){
+          inc.push(true);
+        } else {
+          inc.push(false);
+        }
+      }
+      if (!inc.includes(false)){
+        t.push(demo);
+      }
+    }
+    let out = t.map((demo) => {
+      return (<DemoCard demo={demo} key={demo.title} t={tags} add={handleAddition} />)
+    });
+    return out
+  }
+
+  return (
+    <div className="demosearch">
+      <div>
+        <ReactTags
+          tags={tags}
+          suggestions={suggestions}
+          delimiters={delimiters}
+          handleDelete={handleDelete}
+          handleAddition={handleAddition}
+          handleDrag={handleDrag}
+          handleTagClick={handleTagClick}
+          inputFieldPosition="bottom"
+          autocomplete
+        />
+      </div>
+      <br />
+      {results(tags)}
+    </div>
+  );
+};
+
 
 export class DemoSearch extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      web: true,
+      software: true,
+      games: true,
+      tags: []
+    }
+  }
+  web(){
+    if (this.state.web === true){
+      return(
+        <button className="webt" onClick={(e)=>{this.setState({web:false})}}>Web</button>
+      );
+    } else {
+      return(
+        <button className="webf" onClick={(e)=>{
+          this.setState({web:true});
+          }}>Web</button>
+      );
+    }
+  }
+  software(){
+    if (this.state.software === true){
+      return(
+        <button className="softwaret" onClick={(e)=>{this.setState({software:false})}}>Software</button>
+      );
+    } else {
+      return(
+        <button className="softwaref" onClick={(e)=>{this.setState({software:true})}}>Software</button>
+      );
+    }
+  }
+  games(){
+    if (this.state.games === true){
+      return(
+        <button className="gamest" onClick={(e)=>{this.setState({games:false})}}>Games</button>
+      );
+    } else {
+      return(
+        <button className="gamesf" onClick={(e)=>{this.setState({games:true})}}>Games</button>
+      );
+    }
+  }
+  buttons(){
+    return(
+      <span className="sectorspan">{this.web()}{this.software()}{this.games()}</span>
+    );
+  }
+  filter(_demos){
+    let cards = _demos.map(demo => {
+      if (this.state.tags.length > 0){
+        //console.log(this.state.tags)
+        for (let t of this.state.tags){
+          if (demo._tags.includes(t)){
+            
+            return(<DemoCard demo={demo} key={demo.title} />)
+          }
+        } return null;
+      }
+      if (demo._tags.includes("Web") && this.state.web === false){
+        return null;
+      }
+      if (demo._tags.includes("Software") && this.state.software === false){
+        return null;
+      }
+      if (demo._tags.includes("Games") && this.state.games === false){
+        return null;
+      }
+      return(<DemoCard demo={demo} key={demo.title} />)});
+    return cards;
+  }
   render(){
-    let cards = demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
-    let microcards = micro_demos.map(demo => {return(<DemoCard demo={demo} key={demo.title}/>)});
-    return(<div>{cards}{microcards}</div>);
+    //console.log(process.env);
+    return(
+    <div className="App-header">
+    <div className="titlenu">
+        <span className="titlef">
+          D
+        </span>
+        <span className="titlerest">
+          emos
+        </span>
+        </div>
+    <br/>
+      <Tagsearch />
+    </div>);
   }
 }
 
