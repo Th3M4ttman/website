@@ -5,6 +5,56 @@ import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
 import { DemoSearch } from "../Demos";
 
+const title = (title, sub, un) => {
+  if (sub === true){
+    return(<div className="subtitlenu">
+        <span className="subtitlef">
+          {title.substring(0, 1)}
+        </span>
+        <span className="subtitlerest">
+          {title.substring(1, title.length)}
+        </span>
+        </div>);
+  }
+  if (un === true){
+    return(<div className="title">
+        <span className="titlef">
+          {title.substring(0, 1)}
+        </span>
+        <span className="titlerest">
+          {title.substring(1, title.length)}
+        </span>
+        </div>);
+  }
+  return(<div className="titlenu">
+        <span className="titlef">
+          {title.substring(0, 1)}
+        </span>
+        <span className="titlerest">
+          {title.substring(1, title.length)}
+        </span>
+        </div>);
+}
+
+class Web extends Component{
+  render(){
+    return(
+      <div>
+      {title("Web")}
+      <p>I am a competent web developer with years of experience working with both front end and back end systems.</p>
+      <br/>
+      <p>I am comfortable with both Javascropt and Python and some of the many frameworks therein.</p>
+      <br/>
+      {title("Technologies", true)}
+      <p>Frameworks, languages and technologies im comfortable with go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/><br/><br/>
+      </div>
+    );
+  }
+}
+
 
 export default class Home extends Component {
   constructor(props){
@@ -80,12 +130,13 @@ export default class Home extends Component {
   content(){
     let sections = ["", "Web", "Software", "Games", "Music", "Art", "Person"]
     let section = sections[this.state.chosen];
+    let sectioncontent = ["", <Web />, <p />, "", "", "", ""]
+    let c = sectioncontent[this.state.chosen]
     if (this.state.chosen === 0){return <p></p>}
     return(
       <div className="demosearch">
       <br />
-      <h1>{section}</h1>
-      blahblahblah {section} content goes here
+      {c}
       <DemoSearch section={section} key={section} />
       </div>);
   }

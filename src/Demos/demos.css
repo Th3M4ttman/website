@@ -723,6 +723,13 @@ input[type="checkbox"]:checked {
   background-color: var(--tblack);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.subtitlenu{
+  color: var(--twhite);
+  font-size: 200%;
+  width: 100%;
+  background-color: var(--tblack);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .ctitle{
   color: var(--twhite);
   font-size: 150%;
@@ -739,6 +746,17 @@ input[type="checkbox"]:checked {
 .titlerest{
   color: var(--twhite);
   font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.subtitlef{
+  color: var(--torange);
+  font-size: 100%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.subtitlerest{
+  color: var(--twhite);
+  font-size: 100%;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
