@@ -89,7 +89,7 @@ class Certificate extends Component{
 }
 
 const certificates = [
-  new certificate("IT", "C++", "Online Course", "/Certificate/C++.jpg"),
+  new certificate("IT", "C++", "Online Course", "/Certificate/Cpp.jpg"),
   new certificate("IT", "Javascript", "Online Course", "/Certificate/JavaScript.jpg"),
   new certificate("IT", "Machine Learning", "Online Course", "/Certificate/MachineLearning.jpg"),
   new certificate("IT", "PHP", "Online Course", "/Certificate/PHP.jpg"),
