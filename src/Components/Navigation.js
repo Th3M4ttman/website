@@ -29,7 +29,7 @@ export default class Navigation extends Component{
                         <Nav.Link href="/Music">Music</Nav.Link>
                         <Nav.Link href="/Art">Art</Nav.Link>
                         <Nav.Link eventKey={2} href="/Contact">Contact</Nav.Link>
-                    
+                     <Nav.Link href="/Certificates">Certificates</Nav.Link>
                     </Nav>
 </Container>
                 </Navbar.Collapse>

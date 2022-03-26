@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navigation from "./Components/Navigation";
 import Cheatsheets from "./Components/Cheatsheets"
+import Certificates from "./Components/Certificates"
 import Privacy from "./Components/privacy"
 import Particletest from "./Components/particletest"
 import { Route, Routes } from 'react-router-dom';
@@ -78,6 +79,7 @@ if (window.location.host.split('.')[0] === 'demo'){
           </Route>
         <Route path="Privacy" element={<Privacy/>} />
         <Route path="Thanks" element={<Thanks/>} />
+        <Route path="Certificates" element={<Certificates/>} />
         <Route path="Cheat" element={<Cheatsheets/>} />
         <Route path="particles" element={<Particletest />} />
         <Route path="Home" element={<App />} />

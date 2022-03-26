@@ -1,0 +1,24 @@
+:root {
+  --tblack: #282726;
+  --torange: #F67128;
+  --twhite: #FFF7F0;
+  --tgray: #949494;
+  --tbrown: #B6866F;
+}
+
+.certbox{
+  border: 3px solid var(--twhite);
+  border-radius: 5%;
+}
+.certimg{
+  width: 200px;
+}
+.certsbox{
+  
+}
+.enlarge{
+  font-size: 50%;
+  color: var(--torange);
+}
+.innercerts{
+}

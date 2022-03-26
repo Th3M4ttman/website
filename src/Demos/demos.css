@@ -716,6 +716,14 @@ input[type="checkbox"]:checked {
   border-bottom: 3px solid var(--torange);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.subtitle{
+  color: var(--twhite);
+  font-size: 200%;
+  width: 100%;
+  background-color: var(--tblack);
+  border-bottom: 3px solid var(--torange);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .titlenu{
   color: var(--twhite);
   font-size: 250%;
