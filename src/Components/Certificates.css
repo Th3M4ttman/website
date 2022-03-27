@@ -9,16 +9,45 @@
 .certbox{
   border: 3px solid var(--twhite);
   border-radius: 5%;
+  padding: 5%;
 }
 .certimg{
-  width: 200px;
+  height: 200px;
 }
 .certsbox{
-  
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 90%;
 }
 .enlarge{
   font-size: 50%;
   color: var(--torange);
 }
 .innercerts{
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.certbuttont{
+  position: relative;
+  width: 85%;
+  background-color: var(--torange);
+  border: 3px solid var(--twhite);
+
+  border-radius: 15px;
+  margin: 0;
+  color: var(--twhite);
+}
+
+.certbuttonf{
+  position: relative;
+  width: 85%;
+  background-color: var(--tblack);
+  border: 3px solid var(--torange);
+  border-radius: 15px;
+  margin: 0;
+  color: var(--twhite);
 }
