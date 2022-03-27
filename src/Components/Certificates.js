@@ -62,22 +62,55 @@ class Certificate extends Component{
     super(props);
     this.state = {
       cert: props.cert,
-      isOpen: false
+      isOpen: false,
+      collapsed: true
     }
   }
+  show(){
+    if (!this.state.collapsed){
+      const cert = this.state.cert;
+      return(
+        <>
+        <br/>
+        <img className="certimg" src={cert.imgurl} alt={cert.title} onClick={() => this.setState({ isOpen: true })} />
+        <br/><br/><p className="enlarge"onClick={() => this.setState({ isOpen: true })}>click to enlarge</p>
+        </>
+      );
+    }
+  }
+  buttonclass(){
+    if (this.state.collapsed){
+      return "certbuttonf"
+    }
+    return "certbuttont"
+  }
+  first(){
+    if (this.state.collapsed){
+      return "certtitlef"
+    }
+    return "certtitlefb"
+  }
+  title(){
+    const cert = this.state.cert;
+    return(
+      <div>
+      <span className={this.first()}>{cert.title.substring(0, 1)}</span>
+      <span className="certtitlerest">{cert.title.substring(1, cert.title.length)}</span>
+      </div>
+    );
+  }
   render(){
-    const { cert, isOpen } = this.state
+    const { cert, isOpen } = this.state;
     return (
       <>
       <div className="certbox">
       <div className="certtitle">
-        {title(cert.title, true, true)}
+        <button className={this.buttonclass()} onClick={()=>{this.setState({collapsed: !this.state.collapsed})}}>
+          {this.title()}
+        </button>
         </div>
-        <br/>
-        <img className="certimg" src={cert.imgurl} alt={cert.title} onClick={() => this.setState({ isOpen: true })} />
-        <br/><br/><p className="enlarge"onClick={() => this.setState({ isOpen: true })}>click to enlarge</p>
+        {this.show()}
       </div>
-      <br/>
       {isOpen && (
       <Lightbox
         mainSrc={cert.imgurl}
