@@ -99,8 +99,6 @@ export class TAG extends Component{
   }
 }
 
-
-
 export class DemoCard extends Component {
   constructor(props){
     super(props);
@@ -182,12 +180,23 @@ export class Micro_Demo extends Demo{
     this.start_text = start_text;
   }
   page(){
-    return(<InputButtonOutput function={this.function} title={this.title} label={this.description} button_text="Go" start_text={this.start_text}/>);
+    return(<InputButtonOutput function={this.function} title={this.title} label={this.description} button_text="Go" start_text={this.start_text} img={this.imgurl}/>);
   }
 }
 
 const micro_demos = [
   new Micro_Demo((e) => {
+    let out = "";
+    for (let word of e.split(" ")){
+      if ("aeiouAEIOU".includes(word[0])){
+        out += word + "yay "
+      } else {
+        out += word.substring(1, word.length);
+        out += word.substring(0,1) + "ay "
+      }
+    };
+    return out}, "PigLatin", "Translates text to pig latn. ","https://demo.matthewharris.tech/PigLatin", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/pig.png"),
+    new Micro_Demo((e) => {
     let out = "";
     let up = true;
     for (let ch of e){

@@ -11,6 +11,7 @@ export class InputButtonOutput extends Component{
     this.label = props.label;
     this.start_text = props.start_text;
     this.button_text = props.button;
+    this.img = props.img;
     
     if (this.function === undefined){
       this.function = (i)=>{
@@ -36,9 +37,15 @@ export class InputButtonOutput extends Component{
         </span>
         </div>);
     }
+  imgshow(){
+    if (this.img !== undefined){
+      return (<img className="mdemoimg" src={this.img} alt="" />);
+    }
+  }
   render(){
     return(
       <div className="App-header">
+      {this.imgshow()}
         <div className="inoutbox">
         <br/>
         {this.split_title()}
