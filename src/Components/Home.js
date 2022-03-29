@@ -256,7 +256,11 @@ export default class Home extends Component {
       </BrowserView>
 
       <MobileView>
+        <div className="demosearch">
+          <br />
+          {c}
           <DemoSearch section={section} key={section} />
+        </div>
       </MobileView>
       </>
      );
