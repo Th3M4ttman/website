@@ -18,7 +18,8 @@ import { Route, Routes } from 'react-router-dom';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 
-import { DemoRouter, MicroDemoPage, DemoSearch } from "./Demos";
+import { DemoRouter } from "./Demos";
+
 
 const rootElement = document.getElementById("root");
 
@@ -73,10 +74,8 @@ if (window.location.host.split('.')[0] === 'demo'){
         <Route exact path="/" element={<App />} />
         <Route path="Contact-Us" element={<Contact/>} />
         <Route path="Contact" element={<Contact/>} />
-        <Route path="Demo">
-          <Route path="" element={<DemoSearch />} />
-          <Route path="*" element={<MicroDemoPage />} />
-          </Route>
+        <Route path="Demo/*" element={<DemoRouter nav="false"/>} />
+        
         <Route path="Privacy" element={<Privacy/>} />
         <Route path="Thanks" element={<Thanks/>} />
         <Route path="Certificates" element={<Certificates/>} />

@@ -1,16 +1,18 @@
 import '../App.css';
 import "./demos.css";
-import Navigation from "../Components/Navigation";
+//import Navigation from "../Components/Navigation";
 import { WithContext as ReactTags } from 'react-tag-input';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 //import {BrowserView, MobileView} from 'react-device-detect';
 import { Route, Routes } from 'react-router-dom';
-import { BrowserRouter as Router} from 'react-router-dom';
+//import { BrowserRouter as Router} from 'react-router-dom';
 import { InputButtonOutput } from "./Projects"
+import Wordle from "./Projects/Wordle";
 
 export class Demo{
-  constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", source_url=null, project_type="Full", priority=0){
+  constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", comp=null, source_url=null, project_type="Full", priority=0){
+    this.comp = comp;
     this.title = title;
     this.description = "  " + description;
     this._languages = languages;
@@ -169,9 +171,27 @@ export class DemoCard extends Component {
 
 const demos = [
   new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer"),
-  new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors")
+  new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors"),
+  new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "http://demo.matthewharris.tech/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />))
 ]
 
+export class DemoPage extends Component{
+  render(){
+    var url = window.location.href.split('/')
+    url = url[url.length - 1]
+    var demo = undefined;
+    for (let d of demos){
+      alert(d.title)
+      if (d.title === url){
+        demo = d;
+      }
+    }
+    if (demo === undefined){
+      return(<p>{url} Not Found</p>);
+    }
+    return(demo.comp);
+  }
+}
 
 export class Micro_Demo extends Demo{
   constructor(func, title, description, url, start_text="", languages=[], tags=[], frameworks=[], imgurl="/Javascript.svg", source_url=null, project_type="Micro", priority=1){
@@ -407,29 +427,30 @@ export class DemoSearch extends Component{
 }
 
 export class DemoRouter extends Component{
+  constructor(props){
+    super(props);
+    let nav = props.nav;
+    if (nav === "true"){
+      nav = true;
+    } else {
+      nav = false;
+    }
+    this.state = {
+      nav: nav
+    }
+    
+  }
   render(){
     return(
     <>
-    <Router>
-    <Routes>
-      <Route path="/" element={<Navigation/>}>
+        <Routes>
         <Route exact path="/" element={<DemoSearch />} />
-        <Route path="Demos" element={<DemoSearch />} />
-        <Route path="*" element={<MicroDemoPage />} />
-        </Route>
-    </Routes>
-    </Router>
-    <div className="foot">
-    <br/><br/><br/>
-    Copyright © 2022 Matthew Harris - All Rights Reserved.
-    <br/>
-    <a className="priv" href="/privacy">
-      Privacy Policy
-    </a>
-    <br/>
-    </div>
-    </>
-    );
-  }
+        <Route path="Micro/*" element={<MicroDemoPage />} />
+        <Route path="*" element={<DemoPage />} />
+        </Routes>
+        
+        </>
+        );
+    }
 }
 export { Tagsearch };

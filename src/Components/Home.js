@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
 import { DemoSearch } from "../Demos";
+import Test from "../Demos/Projects/WYSIWYG"
+
 
 const title = (title, sub, un) => {
   if (sub === true){
@@ -269,6 +271,7 @@ export default class Home extends Component {
         <div className="mbgimg">
           {this.ima()}
         </div>
+        <Test />
         <div className="App-header">
           {this.content()}
         </div>
