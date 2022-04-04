@@ -41,6 +41,22 @@ const title = (title, sub, un) => {
 class Web extends Component{
   render(){
     return(
+      <>
+      <BrowserView>
+      <div className="dcontent">
+      {title("Web")}
+      <p>I am a competent web developer with years of experience working with both front end and back end systems.</p>
+      <br/>
+      <p>I am comfortable with both Javascript, Python and some of the many frameworks therein.</p>
+      <br/>
+      {title("Technologies", true)}
+      <p>Frameworks, languages and technologies i'm comfortable with go here</p>
+      <br/><br/><br/>
+      {title("", false, true)}
+      <br/>
+      </div>
+      </BrowserView>
+      <MobileView>
       <div>
       {title("Web")}
       <p>I am a competent web developer with years of experience working with both front end and back end systems.</p>
@@ -53,6 +69,8 @@ class Web extends Component{
       {title("", false, true)}
       <br/>
       </div>
+      </MobileView>
+      </>
     );
   }
 }
@@ -228,11 +246,26 @@ export default class Home extends Component {
     let c = sectioncontent[this.state.chosen]
     if (this.state.chosen === 0){return <p></p>}
     return(
-      <div className="demosearch">
-      <br />
-      {c}
-      <DemoSearch section={section} key={section} />
-      </div>);
+      <>
+      <BrowserView>
+        <div className="demosearch">
+          <br />
+          {c}
+          <div className="dcontent">
+            <DemoSearch section={section} key={section} />
+          </div>
+        </div>
+      </BrowserView>
+
+      <MobileView>
+        <div className="demosearch">
+          <br />
+          {c}
+          <DemoSearch section={section} key={section} />
+        </div>
+      </MobileView>
+      </>
+     );
   }
   down(){
     if (this.state.chosen !== 0){
@@ -249,18 +282,19 @@ export default class Home extends Component {
     <>
       <BrowserView>
       <div className="App-header">
-        
-        <div className="bgimg">
-        <div className="holder">
-          {this.ima()}
-          {this.down()}
-        </div>
-        </div>
-        <div className="App-header">
-          <br/>
-          Desktop
-          {this.content()}
-          <br/><br/><br/><br/><br/><br/>
+        <div className="App-Holder">
+          <div className="bgimg">
+            <div className="holder">
+              {this.ima()}
+              {this.down()}
+            </div>
+          </div>
+          <div className="App-header">
+            <br/>
+            Desktop
+            {this.content()}
+            <br/><br/><br/><br/><br/><br/>
+          </div>
         </div>
       </div>
       </BrowserView>

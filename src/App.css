@@ -155,12 +155,12 @@ html,body
 }
 .bgimg {
     background-image: url("../public/background.jpg");
-    height: 80vh;
-    
-    min-width: 100%;
-    background-size: 100% 120%;
-    margin: 0;
-    
+    height: 60vh;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    position: relative;
+    background-size: 100%, 100%;
     
 }
 
@@ -230,6 +230,13 @@ html,body
   }
 }
 
+.App-Holder{
+  position: block;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 .App-header {
   background-color: var(--tblack);
@@ -360,4 +367,10 @@ textarea:focus {
   position: relative;
   bottom: 6px;
   vertical-align: center;
+}
+.dcontent{
+  font-size: 80%;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
