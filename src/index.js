@@ -26,7 +26,24 @@ const rootElement = document.getElementById("root");
 if (window.location.host.split('.')[0] === 'demo'){
     ReactDOM.render(
     <>
-    <DemoRouter />
+    <Router>
+    <Routes>
+     
+      <Route path="/" element={<Navigation/>}>
+        <Route path="*" element={<DemoRouter />} />
+      </Route>
+    </Routes>
+    </Router>
+    
+    <div className="foot">
+    <br/><br/><br/>
+    Copyright © 2022 Matthew Harris - All Rights Reserved.
+    <br/>
+    <a className="priv" href="/privacy">
+      Privacy Policy
+    </a>
+    <br/>
+    </div>
     </>,
       rootElement
   );
