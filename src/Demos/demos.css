@@ -632,6 +632,18 @@ input[type="checkbox"]:checked {
   border: 3px solid var(--web);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+.democardwg{
+  width: 100%;
+  padding: 25px 5%;
+  color: var(--web);
+  background-color: var(--tblack);
+  border-radius: 10px;
+  border-top: 3px solid var(--web);
+  border-right: 3px solid var(--web);
+  border-bottom: 3px solid var(--games);
+  border-left: 3px solid var(--games);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .demosearch{
   width: 80vw;
@@ -845,6 +857,37 @@ input[type="checkbox"]:checked {
   border-radius: 15px;
   font-size: 10px;
 }
+.gamestag{
+  background-color: var(--tblack);
+  color: var(--twhite);
+  border: 2px solid var(--games);
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.softwaretag{
+  background-color: var(--tblack);
+  color: var(--twhite);
+  border: 2px solid var(--software);
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.webtag{
+  background-color: var(--tblack);
+  color: var(--twhite);
+  border: 2px solid var(--web);
+  border-radius: 15px;
+  font-size: 10px;
+}
+
+.microtag{
+  background-color: var(--tblack);
+  color: var(--twhite);
+  border: 2px dashed var(--torange);
+  border-radius: 15px;
+  font-size: 10px;
+}
 
 .langlogo{
   background-color: var(--tblack);
@@ -915,3 +958,4 @@ input[type="checkbox"]:checked {
 .expandmsg{
   font-size: 10px;
 }
+

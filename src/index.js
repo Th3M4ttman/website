@@ -18,7 +18,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { BrowserRouter as Router} from 'react-router-dom';
 
-import { DemoRouter } from "./Demos";
+import { DemoRouter, DemoSearch } from "./Demos";
 
 
 const rootElement = document.getElementById("root");
@@ -30,6 +30,7 @@ if (window.location.host.split('.')[0] === 'demo'){
     <Routes>
      
       <Route path="/" element={<Navigation/>}>
+        <Route exact path="/" element={<DemoSearch />} />
         <Route path="*" element={<DemoRouter />} />
       </Route>
     </Routes>
@@ -92,7 +93,7 @@ if (window.location.host.split('.')[0] === 'demo'){
         <Route path="Contact-Us" element={<Contact/>} />
         <Route path="Contact" element={<Contact/>} />
         <Route path="Demo/*" element={<DemoRouter nav="false"/>} />
-        
+        <Route path="Demo" element={<DemoSearch />} />
         <Route path="Privacy" element={<Privacy/>} />
         <Route path="Thanks" element={<Thanks/>} />
         <Route path="Certificates" element={<Certificates/>} />

@@ -25,6 +25,7 @@ export class Demo{
     this.project_type = project_type;
     this.add = null;
     this.t = null;
+    this._tags.push("Demo")
   }
   buttons(){
     if (this.source_url === null){
@@ -85,18 +86,30 @@ export class LANGUAGE_TAG extends Component{
 }
 
 export class TAG extends Component{
+  cl(t){
+    if (t === "Games"){
+      return "gamestag"
+    } else if (t === "Web"){
+      return "webtag"
+    } else if (t === "Software"){
+      return "softwaretag"
+    } else if (t === "Micro Demo"){
+      return "microtag"
+    }
+    return "tag"
+  }
   render(){
     var tag = this.props.tag;
     //console.log(this.props)
     if (this.props.icon != null){
       var tagicon = this.props.icon;
       return(
-      <button className="tag" onClick={()=>{this.props.add({id: tag, text: tag})}}>
+      <button className={this.cl(tag)} onClick={()=>{this.props.add({id: tag, text: tag})}}>
        {tag}<img className="tagicon" src={tagicon} alt=""/>
       </button>);
     } else {
       return(
-      <button className="tag" onClick={()=>{this.props.add({id: tag, text: tag})}}>{tag}</button>);
+      <button className={this.cl(tag)}onClick={()=>{this.props.add({id: tag, text: tag})}}>{tag}</button>);
     }
   }
 }
@@ -112,11 +125,15 @@ export class DemoCard extends Component {
     }
     if (this.demo._tags.includes("Web")){
       this.boxclass += "w";
+      if (this.demo._tags.includes("Games")){
+      this.boxclass += "g";
+      }
     } else if (this.demo._tags.includes("Games")){
       this.boxclass += "g";
     } else if (this.demo._tags.includes("Software")){
       this.boxclass += "s";
     }
+    
     this.demo.add = props.add;
     this.demo.t = props.t;
   }
@@ -181,7 +198,7 @@ export class DemoPage extends Component{
     url = url[url.length - 1]
     var demo = undefined;
     for (let d of demos){
-      alert(d.title)
+      
       if (d.title === url){
         demo = d;
       }
@@ -304,8 +321,9 @@ const KeyCodes = {
 };
 
 const delimiters = [KeyCodes.comma, KeyCodes.enter];
-
-  const [tags, setTags] = React.useState(props.props.map((t)=>{return {id: t, text: t}}))
+  const [tags, setTags] = React.useState(props.props.map((t)=>{if (t !== undefined){return {id: t, text: t}}
+    return []
+  }))
   
   const handleDelete = i => {
     setTags(tags.filter((tag, index) => index !== i));
@@ -324,13 +342,13 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     // re-render
     setTags(newTags);
   };
-
   const handleTagClick = index => {
     console.log('The tag at index ' + index + ' was clicked');
   };
   const results = (_tags) => {
     let t = []
-    if (_tags.length === 0){
+    console.log(_tags)
+    if (_tags === [undefined]){
       let out = []
       for (let demo of demos){
         out.push(<DemoCard demo={demo} key={demo.title} add={handleAddition} t={tags}/>)
@@ -342,12 +360,16 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of demos){
       let inc = []
+      if (tags === [undefined]){
+        inc.push(true)
+      } else {
       for (let tag of tags){
         if (demo._tags.includes(tag.text) || demo._frameworks.includes(tag.text) || demo._languages.includes(tag.text)){
           inc.push(true);
         } else {
           inc.push(false);
         }
+      }
       }
       if (!inc.includes(false)){
         t.push(demo);
@@ -355,12 +377,16 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of micro_demos){
       let inc = []
+      if (tags === [undefined]){
+        inc.push(true)
+      } else {
       for (let tag of tags){
         if (demo._tags.includes(tag.text) || demo._frameworks.includes(tag.text) || demo._languages.includes(tag.text)){
           inc.push(true);
         } else {
           inc.push(false);
         }
+      }
       }
       if (!inc.includes(false)){
         t.push(demo);
@@ -372,6 +398,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     return out
   }
   //handleAddition(props.props.map((tag) => {return {id: tag, text: tag}}))
+  
   return (
     <div className="demosearch">
       <div>
@@ -401,11 +428,15 @@ export class DemoSearch extends Component{
     this.state = {
       section: props.section
     }
-    if (this.state.section === [undefined]){
-      this.setState({section: []})
+    if (this.state.section === undefined){
+      this.setState({section: ["Demo"]})
     }
   }
   search(start){
+    
+    if (start === undefined){
+      return (<Tagsearch props={["Demo"]}/>)
+    }
     return (<Tagsearch props={[start]}/>)
   }
   render(){

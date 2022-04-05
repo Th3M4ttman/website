@@ -3,99 +3,66 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import "./wordle.css";
 
-class Letter extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      letter: props.letter,
-      color: props.color
-    }
-  }
-  render(){
-    let color = this.state.color;
+function Letter(props={letter: " ", color: -2}){
+    let color = props.color;
+    let divclass = "letter";
+    let letter = props.letter;
     if (color === -1){
-      this.divclass = "letterno";
+      divclass = "letterno";
     } else if (color === 0){
-      this.divclass = "lettermaybe";
+      divclass = "lettermaybe";
     } else if (color === 1){
-      this.divclass = "letteryes";
-    } else {
-      this.divclass = "letter";
+      divclass = "letteryes";
     }
     return(
-      <div className={this.divclass}>
-        {this.state.letter}
+      <div className={divclass}>
+        {letter}
       </div>
     );
   }
-}
 
-class Attempt extends Component{
-  constructor(props){
-    super(props);
-    let letters = [];
-    let letter;
-    for (let i = 0; i < 6; i+=1){
-      if (props.guess === undefined){
-        letter = " ";
-      } else {
-        letter = props.guess[i];
-      }
-      letters.push(<Letter letter={letter} key={this.id+i}/>);
-    }
-    
-    this.state = {
-      letters: letters
-    }
-  }
-  guess(g){
-    alert(g);
-    let letters = [];
-    for (let i = 0; i < 6; i+=1){
-      letters.push(<Letter letter={g[i]} key={this.id+i}/>);
-    }
-    this.setState({letters: letters})
-  }
-  render(){
+
+function Attempt(props){
+  let guess = props.guess;
     return(
       <span className="attempt">
-        {this.state.letters}
+        <Letter letter={guess[0]}/>
+        <Letter letter={guess[1]}/>
+        <Letter letter={guess[2]}/>
+        <Letter letter={guess[3]}/>
+        <Letter letter={guess[4]}/>
+        <Letter letter={guess[5]}/>
       </span>
     );
   }
-}
+
 
 export default class Wordle extends Component{
   constructor(props){
     super(props);
     this.state = {
       word: "testum",
-      attempts: [],
+      attempts: ["——————", "——————", "——————", "——————", "——————", "——————"],
       a: 0
     }
   }
   next(guess){
-    var attempts = this.state.attempts;
-    attempts[this.state.a] = (<Attempt guess={guess} word={this.state.word} />);
-    alert(guess);
-    
-    this.setState({a: this.state.a + 1, attempts: attempts});
-    console.log(this.state.attempts);
-    console.log(attempts)
+    let a = this.state.attempts
+    a[this.state.a] = guess;
+    this.setState({a: this.state.a + 1, attempts: a});
   }
   
-  create_attempts(){
-    let attempts = this.state.attempts;
-    while (attempts.length < 6){
-      attempts.push(<Attempt />)
-    }
-    
-  }
   render(){
+    let attempts = this.state.attempts;
     return(
-      
       <div className="App-header">
         wordle
+        <Attempt guess={attempts[0]} />
+      <Attempt guess={attempts[1]} />
+      <Attempt guess={attempts[2]} />
+      <Attempt guess={attempts[3]} />
+      <Attempt guess={attempts[4]} />
+      <Attempt guess={attempts[5]} />
         <br/>
         <form onSubmit={(e)=>{e.preventDefault();
           this.next(e.target[0].value);
