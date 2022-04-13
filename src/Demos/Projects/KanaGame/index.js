@@ -199,6 +199,7 @@ export default class KanaGame extends Component{
           }
         }}>
         <input name="Guess" id="Guess" type="text" />
+        <br/>
         <input type="submit" value="Guess" />
         </form>
         <br/>
