@@ -5,6 +5,25 @@
   --tgray: #949494;
   --tbrown: #B6866F;
 }
+.kanabuttont{
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--torange);
+  border: 2px solid var(--twhite);
+  font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.kanabuttonf{
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline;
+  background-color: #000;
+  border: 2px solid var(--twhite);
+  font-size: 150%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 
 .kana::first-letter{
   color: var(--torange);
@@ -12,15 +31,18 @@
 
 .scores{
   width: 100%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .score{
   display: inline-block;
   width: 50%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .highscore{
   display: inline-block;
   width: 50%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .question{
@@ -34,6 +56,7 @@
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .correct{
@@ -47,6 +70,7 @@
   -webkit-animation: slideout 1s forwards;
   -webkit-animation-delay: 2s;
   animation: slideout 1s forwards;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .incorrect{
@@ -60,6 +84,7 @@
   -webkit-animation: slideout 1s forwards;
   -webkit-animation-delay: 2s;
   animation: slideout 1s forwards;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @-webkit-keyframes slide {

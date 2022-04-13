@@ -3,7 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import "./kana.css";
 
-const Hiragana = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': ' ', 'n': 'ん', 'ga': 'が', 'gi': 'ぎ', 'gu': 'ぐ', 'ge': 'げ', 'go': 'ご', 'za': 'ざ', 'ji': 'ぢ', 'zu': 'づ', 'ze': 'ぜ', 'zo': 'ぞ', 'da': 'だ', 'de': 'で', 'do': 'ど', 'ba': 'ば', 'bi': 'び', 'bu': ' ぶ', 'be': 'べ', 'bo': 'ぼ', 'pa': 'ぱ', 'pi': 'ぴ', 'pu': 'ぷ', 'pe': 'ぺ', 'po': 'ぽ'}
+const Hiragana = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': 'を', 'n': 'ん'}
+
+const HiraganaD = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': 'を', 'n': 'ん','ga': 'が', 'gi': 'ぎ', 'gu': 'ぐ', 'ge': 'げ', 'go': 'ご', 'za': 'ざ', 'ji': 'ぢ', 'zu': 'づ', 'ze': 'ぜ', 'zo': 'ぞ', 'da': 'だ', 'de': 'で', 'do': 'ど', 'ba': 'ば', 'bi': 'び', 'bu': ' ぶ', 'be': 'べ', 'bo': 'ぼ', 'pa': 'ぱ', 'pi': 'ぴ', 'pu': 'ぷ', 'pe': 'ぺ', 'po': 'ぽ'}
 
 var HS = parseInt(localStorage.getItem("KanaHighScore"))
 if (isNaN(HS)){
@@ -14,9 +16,8 @@ if (isNaN(HS)){
 export default class KanaGame extends Component{
   constructor(props){
     super(props);
-    let poss = [];
-    poss.push(...Object.keys(Hiragana))
-    let r = poss[Math.floor(Math.random() * poss.length-2)]
+    let poss = Object.keys(Hiragana)
+    let r = poss[Math.floor(Math.random() * poss.length-1)]
     let kana = Hiragana[r];
     
     this.state = {
@@ -24,6 +25,7 @@ export default class KanaGame extends Component{
       hiragana: true,
       katakana: false,
       kanji: false,
+      dakuten: false,
       q: kana,
       a: r,
       correct: 0,
@@ -36,15 +38,28 @@ export default class KanaGame extends Component{
     let h = this.state.hiragana;
     //let kk = this.state.katakana;
     //let k = this.state.kanji;
+    let d = this.state.dakuten;
     
     let poss = [];
+    let r;
+    let kana;
+    
     if (h === true){
-      poss.push(...Object.keys(Hiragana))
+      if (d === true){
+        poss = Object.keys(HiraganaD)
+        r = poss[Math.floor(Math.random() * poss.length-1)]
+        kana = HiraganaD[r]
+      } else {
+        poss = Object.keys(Hiragana)
+        r = poss[Math.floor(Math.random() * poss.length-1)]
+        kana = Hiragana[r]
+      }
     }
-    let r = poss[Math.floor(Math.random() * poss.length-1)]
-    
-    let kana = Hiragana[r];
-    
+    if (kana === undefined){
+      alert("Fixed")
+      this.next()
+      return
+    }
     this.setState({q: kana, a: r})
     this.q()
   }
@@ -100,6 +115,72 @@ export default class KanaGame extends Component{
       </>
       )})
   }
+  hbutton(){
+    if (this.state.hiragana === true){
+      return (
+        <div className="kanabuttont" onClick={()=>{this.setState({hiragana: false})}}>
+          あ
+        </div>
+      );
+    }
+    return (
+        <div className="kanabuttonf" onClick={()=>{this.setState({hiragana: true})}}>
+          あ
+        </div>
+      );
+  }
+  kkbutton(){
+    if (this.state.katakana === true){
+      return (
+        <div className="kanabuttont" onClick={()=>{this.setState({katakana: false})}}>
+          ア
+        </div>
+      );
+    }
+    return (
+        <div className="kanabuttonf" onClick={()=>{this.setState({katakana: true})}}>
+          ア
+        </div>
+      );
+  }
+  kbutton(){
+    if (this.state.kanji === true){
+      return (
+        <div className="kanabuttont" onClick={()=>{this.setState({kanji: false})}}>
+          本
+        </div>
+      );
+    }
+    return (
+        <div className="kanabuttonf" onClick={()=>{this.setState({kanji: true})}}>
+          本
+        </div>
+      );
+  }
+  dbutton(){
+    if (this.state.dakuten === true){
+      return (
+        <div className="kanabuttont" onClick={()=>{this.setState({dakuten: false})}}>
+          "/°
+        </div>
+      );
+    }
+    return (
+        <div className="kanabuttonf" onClick={()=>{this.setState({dakuten: true})}}>
+          "/°
+        </div>
+      );
+  }
+  buttons(){
+    return (
+     <span>
+      {this.hbutton()}
+      {this.kkbutton()}
+      {this.kbutton()}
+      {this.dbutton()}
+     </span>
+    );
+  }
   render(){
     if (this.state.current === ""){
       this.q()
@@ -113,11 +194,15 @@ export default class KanaGame extends Component{
         {this.state.current}
         <br/>
         <form onSubmit={(e)=>{e.preventDefault();
-          this.answer(e.target[0]);
+          if (this.state.hiragana === true || this.state.dakuten === true){
+            this.answer(e.target[0]);
+          }
         }}>
         <input name="Guess" id="Guess" type="text" />
         <input type="submit" value="Guess" />
         </form>
+        <br/>
+        {this.buttons()}
       </div>
     );
   }
