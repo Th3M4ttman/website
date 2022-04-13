@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 //import { BrowserRouter as Router} from 'react-router-dom';
 import { InputButtonOutput } from "./Projects"
 import Wordle from "./Projects/Wordle";
+import KanaGame from "./Projects/KanaGame";
 
 export class Demo{
   constructor(title, description, url, languages=[], tags=[], frameworks=[], imgurl="", comp=null, source_url=null, project_type="Full", priority=0){
@@ -189,7 +190,8 @@ export class DemoCard extends Component {
 const demos = [
   new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer"),
   new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors"),
-  new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "http://demo.matthewharris.tech/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />))
+  new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "http://demo.matthewharris.tech/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />)),
+  new Demo("KanaGame", "A japanese kana reading game.", "http://demo.matthewharris.tech/KanaGame", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<KanaGame />))
 ]
 
 export class DemoPage extends Component{

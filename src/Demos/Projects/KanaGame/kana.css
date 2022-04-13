@@ -1,0 +1,80 @@
+:root{
+  --tblack: #282726;
+  --torange: #F67128;
+  --twhite: #FFF7F0;
+  --tgray: #949494;
+  --tbrown: #B6866F;
+}
+
+.kana::first-letter{
+  color: var(--torange);
+}
+
+.scores{
+  width: 100%;
+}
+
+.score{
+  display: inline-block;
+  width: 50%;
+}
+.highscore{
+  display: inline-block;
+  width: 50%;
+}
+
+.question{
+  border: 2px solid var(--torange);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: -150%;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+}
+
+.correct{
+  border: 2px solid #00ff00;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-animation: slideout 1s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideout 1s forwards;
+}
+
+.incorrect{
+  border: 2px solid #ff0000;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  padding-top: 10px;
+  text-align: center;
+  -webkit-animation: slideout 1s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideout 1s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+@-webkit-keyframes slideout {
+    100% { left: 150%; }
+}
+
+@keyframes slideout {
+    100% { left: 150%; }
+}
