@@ -5,6 +5,9 @@
   --tgray: #949494;
   --tbrown: #B6866F;
 }
+.kanainput{
+  margin-bottom: 10px;
+}
 .kanabuttont{
   display: inline;
   margin-left: 10px;

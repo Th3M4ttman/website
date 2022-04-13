@@ -198,7 +198,7 @@ export default class KanaGame extends Component{
             this.answer(e.target[0]);
           }
         }}>
-        <input name="Guess" id="Guess" type="text" />
+        <input className="kanainput" name="Guess" id="Guess" type="text" />
         <br/>
         <input type="submit" value="Guess" />
         </form>
