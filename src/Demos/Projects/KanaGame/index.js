@@ -133,6 +133,13 @@ export default class KanaGame extends Component{
     pauseOnHover: true,
     pauseOnFocusLoss: false
 };
+const qoptions = {
+    autoClose: 2000,
+    hideProgressBar: false,
+    position: toast.center,
+    pauseOnHover: true,
+    pauseOnFocusLoss: false
+};
     if (this.state.t === "Kanji"){
       var s = false
       for (let an of this.state.a){
@@ -145,6 +152,7 @@ export default class KanaGame extends Component{
     if (s === true){
       this.q(1)
       this.set_hs(this.state.score, true)
+      toast.success("Correct")
     } else {
       this.set_hs(this.state.score, false)
       this.q(-1)
@@ -152,7 +160,7 @@ export default class KanaGame extends Component{
       for (let answ of this.state.a){
         ans += answ+", "
       }
-      toast("Incorrect: "+ans, options)
+      toast.error("Incorrect: "+ans, options)
     }
     a.value = "";
     
@@ -162,10 +170,11 @@ export default class KanaGame extends Component{
     if (a.value.toLowerCase() === this.state.a){
       this.q(1)
       this.set_hs(this.state.score, true)
+      toast.success("Correct")
     } else {
       this.set_hs(this.state.score, false)
       this.q(-1)
-      toast("Incorrect: "+this.state.a)
+      toast.error("Incorrect: "+this.state.a, qoptions)
     }
     a.value = "";
     
@@ -280,7 +289,7 @@ export default class KanaGame extends Component{
         </form>
         <br/>
         {this.buttons()}
-        <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={true} theme="dark" closeOnClick={false} rtl={false} pauseOnFocusLoss={false} pauseOnHover={true} draggablePercent={10} limit={1} />
+        <ToastContainer position="top-right" autoClose={200} hideProgressBar={true} newestOnTop={true} theme="dark" closeOnClick={false} rtl={false} pauseOnFocusLoss={false} pauseOnHover={true} draggablePercent={10} limit={1} />
       </div>
     );
   }
