@@ -3,9 +3,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Component } from 'react';
 import "./kana.css";
 
+import Kanji from "./Kanji.json"
+import KanjiMeanings from "./KanjiMeanings.json"
+//import KanjiLevels from "./KanjiLevels.json"
+
 const Hiragana = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': 'を', 'n': 'ん'}
 
 const HiraganaD = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': 'を', 'n': 'ん','ga': 'が', 'gi': 'ぎ', 'gu': 'ぐ', 'ge': 'げ', 'go': 'ご', 'za': 'ざ', 'ji': 'ぢ', 'zu': 'づ', 'ze': 'ぜ', 'zo': 'ぞ', 'da': 'だ', 'de': 'で', 'do': 'ど', 'ba': 'ば', 'bi': 'び', 'bu': ' ぶ', 'be': 'べ', 'bo': 'ぼ', 'pa': 'ぱ', 'pi': 'ぴ', 'pu': 'ぷ', 'pe': 'ぺ', 'po': 'ぽ'}
+
+const Katakana = {'a': 'ア', 'i': 'イ', 'u': 'ウ', 'e': 'エ', 'o': 'オ', 'ka': 'カ', 'ki': 'キ', 'ku': 'ク', 'ke': 'ケ', 'ko': 'コ', 'sa': 'サ', 'shi': 'シ', 'su': 'ス', 'se': 'セ', 'so': 'ソ', 'ta': 'タ', 'chi': 'チ', 'tsu': 'ツ', 'te': 'テ', 'to': 'ト', 'na': 'ナ', 'ni': 'ニ', 'nu': 'ヌ', 'ne': 'ネ', 'no': 'ノ', 'ha': 'ハ', 'hi': 'ヒ', 'hu': 'フ', 'he': 'ヘ', 'ho': 'ホ', 'ma': 'マ', 'mi': 'ミ', 'mu': 'ム', 'me': 'メ', 'mo': 'モ', 'ya': 'ヤ', 'yu': 'ユ', 'yo': ' ', 'ra': 'ラ', 'ri': 'リ', 'ru': 'ル', 're': 'レ', 'ro': 'ロ', 'wa': 'ワ', 'wo': 'ヲ', 'n': 'ン'}
+
+const KatakanaD = {'a': 'ア', 'i': 'イ', 'u': 'ウ', 'e': 'エ', 'o': 'オ', 'ka': 'カ', 'ki': 'キ', 'ku': 'ク', 'ke': 'ケ', 'ko': 'コ', 'sa': 'サ', 'shi': 'シ', 'su': 'ス', 'se': 'セ', 'so': 'ソ', 'ta': 'タ', 'chi': 'チ', 'tsu': 'ツ', 'te': 'テ', 'to': 'ト', 'na': 'ナ', 'ni': 'ニ', 'nu': 'ヌ', 'ne': 'ネ', 'no': 'ノ', 'ha': 'ハ', 'hi': 'ヒ', 'hu': 'フ', 'he': 'ヘ', 'ho': 'ホ', 'ma': 'マ', 'mi': 'ミ', 'mu': 'ム', 'me': 'メ', 'mo': 'モ', 'ya': 'ヤ', 'yu': 'ユ', 'yo': ' ヨ', 'ra': 'ラ', 'ri': 'リ', 'ru': 'ル', 're': 'レ', 'ro': 'ロ', 'wa': 'ワ', 'wo': 'ヲ', 'n': 'ン', 'ga': 'ガ', 'gi': 'ギ', 'gu': 'グ', 'ge': 'ゲ', 'go': 'ゴ', 'za': 'ザ', 'ji': 'ヂ', 'zu': 'ヅ', 'ze': 'ゼ', 'zo': 'ゾ', 'da': 'ダ', 'de': 'デ', 'do': 'ド', 'ba': 'バ', 'bi': 'ビ', 'bu': 'ブ', 'be': 'ベ', 'bo': 'ボ', 'pa': 'パ', 'pi': 'ピ', 'pu': 'プ', 'pe': 'ペ', 'po': 'ポ'}
+
 
 var HS = parseInt(localStorage.getItem("KanaHighScore"))
 if (isNaN(HS)){
@@ -30,37 +39,68 @@ export default class KanaGame extends Component{
       a: r,
       correct: 0,
       current: "",
-      hs: 0
+      hs: 0,
+      t: "Hiragana"
     }
     this.q()
   }
   next(){
     let h = this.state.hiragana;
-    //let kk = this.state.katakana;
-    //let k = this.state.kanji;
+    let kk = this.state.katakana;
+    let k = this.state.kanji;
     let d = this.state.dakuten;
     
     let poss = [];
-    let r;
-    let kana;
-    
     if (h === true){
       if (d === true){
-        poss = Object.keys(HiraganaD)
-        r = poss[Math.floor(Math.random() * poss.length-1)]
-        kana = HiraganaD[r]
+        poss.push(HiraganaD)
       } else {
-        poss = Object.keys(Hiragana)
-        r = poss[Math.floor(Math.random() * poss.length-1)]
-        kana = Hiragana[r]
+        poss.push(Hiragana)
       }
     }
+    if (kk === true){
+      if (d === true){
+        poss.push(KatakanaD)
+      } else {
+        poss.push(Katakana)
+      }
+    }
+    if (k === true){
+      poss.push(Kanji)
+    }
+    let x = Math.floor(Math.random() * (poss.length))
+    poss = poss[x]
+    let r;
+    let kana;
+    let ke = Object.keys(poss)
+    let t;
+    
+    if (ke[0] === "一"){
+      t = "Kanji"
+    } else if (poss[ke[0]] === "ア"){
+      t = "Katakana"
+    } else {
+      t = "Hiragana"
+    }
+    console.log(t)
+    if (t === "Kanji"){
+      x = Math.floor(Math.random() * ke.length)
+      r = ke[x]
+      kana = r
+      r = [...Kanji[r], ...KanjiMeanings[r]]
+      console.log("Answers=" + r)
+      
+    } else {
+      r = ke[Math.floor(Math.random() * ke.length)]
+      kana = poss[r]
+    }
+    
     if (kana === undefined){
       alert("Fixed")
       this.next()
       return
     }
-    this.setState({q: kana, a: r})
+    this.setState({q: kana, a: r, t: t})
     this.q()
   }
   set_hs(score, correct){
@@ -82,6 +122,29 @@ export default class KanaGame extends Component{
     HS = newhs
   }
   answer(a){
+    if (this.state.t === "Kanji"){
+      var s = false
+      for (let an of this.state.a){
+        console.log(an.toLowerCase())
+        if (an.toLowerCase() === a.value.toLowerCase()){
+          
+          s = true
+        }
+      }
+    if (s === true){
+      this.q(1)
+      this.set_hs(this.state.score, true)
+      //alert("Correct")
+    } else {
+      this.set_hs(this.state.score, false)
+      this.q(-1)
+      //alert("Incorrect, Answer: "+this.state.a)
+    }
+    a.value = "";
+    
+    setTimeout(()=>{this.next()}, 1000);
+    return
+  }
     if (a.value.toLowerCase() === this.state.a){
       this.q(1)
       this.set_hs(this.state.score, true)
@@ -110,7 +173,7 @@ export default class KanaGame extends Component{
         <h2>{this.state.q}</h2>
       </div>
       <span className="kana">
-        Hiragana
+        {this.state.t}
       </span>
       </>
       )})
@@ -194,7 +257,7 @@ export default class KanaGame extends Component{
         {this.state.current}
         <br/>
         <form onSubmit={(e)=>{e.preventDefault();
-          if (this.state.hiragana === true || this.state.dakuten === true){
+          if (this.state.hiragana === true || this.state.katakana === true || this.state.kanji === true){
             this.answer(e.target[0]);
           }
         }}>

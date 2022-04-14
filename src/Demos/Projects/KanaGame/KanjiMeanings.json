@@ -1,0 +1,5935 @@
+{
+  "\u4e00": [
+    "One",
+    "One Radical (no.1)"
+  ],
+  "\u4e8c": [
+    "Two",
+    "Two Radical (no. 7)"
+  ],
+  "\u4e5d": [
+    "Nine"
+  ],
+  "\u4e03": [
+    "Seven"
+  ],
+  "\u4eba": [
+    "Person"
+  ],
+  "\u5165": [
+    "Enter",
+    "Insert"
+  ],
+  "\u516b": [
+    "Eight",
+    "Eight Radical (no. 12)"
+  ],
+  "\u529b": [
+    "Power",
+    "Strength",
+    "Strong",
+    "Strain",
+    "Bear Up",
+    "Exert"
+  ],
+  "\u5341": [
+    "Ten"
+  ],
+  "\u4e09": [
+    "Three"
+  ],
+  "\u4e0a": [
+    "Above",
+    "Up"
+  ],
+  "\u4e0b": [
+    "Below",
+    "Down",
+    "Descend",
+    "Give",
+    "Low",
+    "Inferior"
+  ],
+  "\u53e3": [
+    "Mouth"
+  ],
+  "\u5927": [
+    "Large",
+    "Big"
+  ],
+  "\u5973": [
+    "Woman",
+    "Female"
+  ],
+  "\u5c71": [
+    "Mountain"
+  ],
+  "\u5ddd": [
+    "Stream",
+    "River",
+    "River Or Three-stroke River Radical (no. 47)"
+  ],
+  "\u5de5": [
+    "Craft",
+    "Construction",
+    "Katakana E Radical (no. 48)"
+  ],
+  "\u5200": [
+    "Sword",
+    "Saber",
+    "Knife"
+  ],
+  "\u571f": [
+    "Soil",
+    "Earth",
+    "Ground",
+    "Turkey"
+  ],
+  "\u5343": [
+    "Thousand"
+  ],
+  "\u5915": [
+    "Evening"
+  ],
+  "\u5b50": [
+    "Child",
+    "Sign Of The Rat",
+    "11pm-1am",
+    "First Sign Of Chinese Zodiac"
+  ],
+  "\u5c0f": [
+    "Little",
+    "Small"
+  ],
+  "\u4e01": [
+    "Street",
+    "Ward",
+    "Town",
+    "Counter For Guns, Tools, Leaves Or Cakes Of Something",
+    "Even Number",
+    "4th Calendar Sign"
+  ],
+  "\u4e38": [
+    "Round",
+    "Full (month)",
+    "Perfection",
+    "-ship",
+    "Pills",
+    "Make Round",
+    "Roll Up",
+    "Curl Up",
+    "Seduce",
+    "Explain Away"
+  ],
+  "\u624d": [
+    "Genius",
+    "Years Old",
+    "Cubic Shaku"
+  ],
+  "\u4e2d": [
+    "In",
+    "Inside",
+    "Middle",
+    "Mean",
+    "Center"
+  ],
+  "\u4e94": [
+    "Five"
+  ],
+  "\u516d": [
+    "Six"
+  ],
+  "\u5186": [
+    "Circle",
+    "Yen",
+    "Round"
+  ],
+  "\u5929": [
+    "Heavens",
+    "Sky",
+    "Imperial"
+  ],
+  "\u624b": [
+    "Hand"
+  ],
+  "\u6587": [
+    "Sentence",
+    "Literature",
+    "Style",
+    "Art",
+    "Decoration",
+    "Figures",
+    "Plan",
+    "Literary Radical (no. 67)"
+  ],
+  "\u65e5": [
+    "Day",
+    "Sun",
+    "Japan",
+    "Counter For Days"
+  ],
+  "\u6708": [
+    "Month",
+    "Moon"
+  ],
+  "\u6728": [
+    "Tree",
+    "Wood"
+  ],
+  "\u6c34": [
+    "Water"
+  ],
+  "\u706b": [
+    "Fire"
+  ],
+  "\u72ac": [
+    "Dog"
+  ],
+  "\u738b": [
+    "King",
+    "Rule",
+    "Magnate"
+  ],
+  "\u51fa": [
+    "Exit",
+    "Leave",
+    "Go Out",
+    "Come Out",
+    "Put Out",
+    "Protrude"
+  ],
+  "\u53f3": [
+    "Right"
+  ],
+  "\u56db": [
+    "Four"
+  ],
+  "\u5de6": [
+    "Left"
+  ],
+  "\u672c": [
+    "Book",
+    "Present",
+    "Main",
+    "Origin",
+    "True",
+    "Real",
+    "Counter For Long Cylindrical Things"
+  ],
+  "\u6b63": [
+    "Correct",
+    "Justice",
+    "Righteous",
+    "10**40"
+  ],
+  "\u7389": [
+    "Jewel",
+    "Ball"
+  ],
+  "\u7530": [
+    "Rice Field",
+    "Rice Paddy"
+  ],
+  "\u767d": [
+    "White"
+  ],
+  "\u76ee": [
+    "Eye",
+    "Class",
+    "Look",
+    "Insight",
+    "Experience",
+    "Care",
+    "Favor"
+  ],
+  "\u77f3": [
+    "Stone"
+  ],
+  "\u7acb": [
+    "Stand Up",
+    "Rise",
+    "Set Up",
+    "Erect"
+  ],
+  "\u4e07": [
+    "Ten Thousand",
+    "10,000"
+  ],
+  "\u4e45": [
+    "Long Time",
+    "Old Story"
+  ],
+  "\u4eca": [
+    "Now"
+  ],
+  "\u5143": [
+    "Beginning",
+    "Former Time",
+    "Origin"
+  ],
+  "\u516c": [
+    "Public",
+    "Prince",
+    "Official",
+    "Governmental"
+  ],
+  "\u5185": [
+    "Inside",
+    "Within",
+    "Between",
+    "Among",
+    "House",
+    "Home"
+  ],
+  "\u5206": [
+    "Part",
+    "Minute Of Time",
+    "Segment",
+    "Share",
+    "Degree",
+    "One's Lot",
+    "Duty",
+    "Understand",
+    "Know",
+    "Rate",
+    "1%",
+    "Chances",
+    "Shaku/100"
+  ],
+  "\u5207": [
+    "Cut",
+    "Cutoff",
+    "Be Sharp"
+  ],
+  "\u5348": [
+    "Noon",
+    "Sign Of The Horse",
+    "11am-1pm",
+    "Seventh Sign Of Chinese Zodiac"
+  ],
+  "\u53cb": [
+    "Friend"
+  ],
+  "\u592a": [
+    "Plump",
+    "Thick",
+    "Big Around"
+  ],
+  "\u5c11": [
+    "Few",
+    "Little"
+  ],
+  "\u5f15": [
+    "Pull",
+    "Tug",
+    "Jerk",
+    "Admit",
+    "Install",
+    "Quote",
+    "Refer To"
+  ],
+  "\u5fc3": [
+    "Heart",
+    "Mind",
+    "Spirit",
+    "Heart Radical (no. 61)"
+  ],
+  "\u6238": [
+    "Door",
+    "Counter For Houses",
+    "Door Radical (no. 63)"
+  ],
+  "\u65b9": [
+    "Direction",
+    "Person",
+    "Alternative"
+  ],
+  "\u725b": [
+    "Cow"
+  ],
+  "\u7236": [
+    "Father"
+  ],
+  "\u6bdb": [
+    "Fur",
+    "Hair",
+    "Feather",
+    "Down"
+  ],
+  "\u6b62": [
+    "Stop",
+    "Halt"
+  ],
+  "\u5144": [
+    "Elder Brother",
+    "Big Brother"
+  ],
+  "\u51ac": [
+    "Winter"
+  ],
+  "\u5317": [
+    "North"
+  ],
+  "\u534a": [
+    "Half",
+    "Middle",
+    "Odd Number",
+    "Semi-",
+    "Part-"
+  ],
+  "\u53e4": [
+    "Old"
+  ],
+  "\u53f0": [
+    "Pedestal",
+    "A Stand",
+    "Counter For Machines And Vehicles"
+  ],
+  "\u5916": [
+    "Outside"
+  ],
+  "\u5e02": [
+    "Market",
+    "City",
+    "Town"
+  ],
+  "\u5e83": [
+    "Wide",
+    "Broad",
+    "Spacious"
+  ],
+  "\u6bcd": [
+    "Mother"
+  ],
+  "\u7528": [
+    "Utilize",
+    "Business",
+    "Service",
+    "Use",
+    "Employ"
+  ],
+  "\u77e2": [
+    "Dart",
+    "Arrow"
+  ],
+  "\u4e16": [
+    "Generation",
+    "World",
+    "Society",
+    "Public"
+  ],
+  "\u4e3b": [
+    "Lord",
+    "Chief",
+    "Master",
+    "Main Thing",
+    "Principal"
+  ],
+  "\u4ed6": [
+    "Other",
+    "Another",
+    "The Others"
+  ],
+  "\u4ee3": [
+    "Substitute",
+    "Change",
+    "Convert",
+    "Replace",
+    "Period",
+    "Age",
+    "Counter For Decades Of Ages, Eras, Etc.",
+    "Generation",
+    "Charge",
+    "Rate",
+    "Fee"
+  ],
+  "\u5199": [
+    "Copy",
+    "Be Photographed",
+    "Describe"
+  ],
+  "\u53bb": [
+    "Gone",
+    "Past",
+    "Quit",
+    "Leave",
+    "Elapse",
+    "Eliminate",
+    "Divorce"
+  ],
+  "\u53f7": [
+    "Nickname",
+    "Number",
+    "Item",
+    "Title",
+    "Pseudonym",
+    "Name",
+    "Call"
+  ],
+  "\u592e": [
+    "Center",
+    "Middle"
+  ],
+  "\u5e73": [
+    "Even",
+    "Flat",
+    "Peace"
+  ],
+  "\u6253": [
+    "Strike",
+    "Hit",
+    "Knock",
+    "Pound",
+    "Dozen"
+  ],
+  "\u6c37": [
+    "Icicle",
+    "Ice",
+    "Hail",
+    "Freeze",
+    "Congeal"
+  ],
+  "\u7533": [
+    "Have The Honor To",
+    "Sign Of The Monkey",
+    "3-5pm",
+    "Ninth Sign Of Chinese Zodiac"
+  ],
+  "\u76ae": [
+    "Pelt",
+    "Skin",
+    "Hide",
+    "Leather",
+    "Skin Radical (no. 107)"
+  ],
+  "\u76bf": [
+    "Dish",
+    "A Helping",
+    "Plate"
+  ],
+  "\u793c": [
+    "Salute",
+    "Bow",
+    "Ceremony",
+    "Thanks",
+    "Remuneration"
+  ],
+  "\u4f11": [
+    "Rest",
+    "Day Off",
+    "Retire",
+    "Sleep"
+  ],
+  "\u5148": [
+    "Before",
+    "Ahead",
+    "Previous",
+    "Future",
+    "Precedence"
+  ],
+  "\u540d": [
+    "Name",
+    "Noted",
+    "Distinguished",
+    "Reputation"
+  ],
+  "\u5b57": [
+    "Character",
+    "Letter",
+    "Word",
+    "Section Of Village"
+  ],
+  "\u5e74": [
+    "Year",
+    "Counter For Years"
+  ],
+  "\u65e9": [
+    "Early",
+    "Fast"
+  ],
+  "\u6c17": [
+    "Spirit",
+    "Mind",
+    "Air",
+    "Atmosphere",
+    "Mood"
+  ],
+  "\u767e": [
+    "Hundred"
+  ],
+  "\u7af9": [
+    "Bamboo"
+  ],
+  "\u7cf8": [
+    "Thread"
+  ],
+  "\u8033": [
+    "Ear"
+  ],
+  "\u866b": [
+    "Insect",
+    "Bug",
+    "Temper"
+  ],
+  "\u6751": [
+    "Village",
+    "Town"
+  ],
+  "\u7537": [
+    "Male"
+  ],
+  "\u753a": [
+    "Town",
+    "Village",
+    "Block",
+    "Street"
+  ],
+  "\u82b1": [
+    "Flower"
+  ],
+  "\u898b": [
+    "See",
+    "Hopes",
+    "Chances",
+    "Idea",
+    "Opinion",
+    "Look At",
+    "Visible"
+  ],
+  "\u8c9d": [
+    "Shellfish"
+  ],
+  "\u8d64": [
+    "Red"
+  ],
+  "\u8db3": [
+    "Leg",
+    "Foot",
+    "Be Sufficient",
+    "Counter For Pairs Of Footwear"
+  ],
+  "\u8eca": [
+    "Car"
+  ],
+  "\u4e0d": [
+    "Negative",
+    "Non-",
+    "Bad",
+    "Ugly",
+    "Clumsy"
+  ],
+  "\u4ed5": [
+    "Attend",
+    "Doing",
+    "Official",
+    "Serve"
+  ],
+  "\u4ea4": [
+    "Mingle",
+    "Mixing",
+    "Association",
+    "Coming & Going"
+  ],
+  "\u4f1a": [
+    "Meeting",
+    "Meet",
+    "Party",
+    "Association",
+    "Interview",
+    "Join"
+  ],
+  "\u5149": [
+    "Ray",
+    "Light"
+  ],
+  "\u540c": [
+    "Same",
+    "Agree",
+    "Equal"
+  ],
+  "\u56de": [
+    "-times",
+    "Round",
+    "Game",
+    "Revolve",
+    "Counter For Occurrences"
+  ],
+  "\u591a": [
+    "Many",
+    "Frequent",
+    "Much"
+  ],
+  "\u5f53": [
+    "Hit",
+    "Right",
+    "Appropriate",
+    "Himself"
+  ],
+  "\u6bce": [
+    "Every"
+  ],
+  "\u6c60": [
+    "Pond",
+    "Cistern",
+    "Pool",
+    "Reservoir"
+  ],
+  "\u7c73": [
+    "Rice",
+    "Usa",
+    "Metre"
+  ],
+  "\u7fbd": [
+    "Feathers",
+    "Counter For Birds, Rabbits"
+  ],
+  "\u8003": [
+    "Consider",
+    "Think Over"
+  ],
+  "\u8089": [
+    "Meat"
+  ],
+  "\u81ea": [
+    "Oneself"
+  ],
+  "\u8272": [
+    "Color"
+  ],
+  "\u884c": [
+    "Going",
+    "Journey",
+    "Carry Out",
+    "Conduct",
+    "Act",
+    "Line",
+    "Row",
+    "Bank"
+  ],
+  "\u897f": [
+    "West",
+    "Spain"
+  ],
+  "\u4f55": [
+    "What"
+  ],
+  "\u4f53": [
+    "Body",
+    "Substance",
+    "Object",
+    "Reality",
+    "Counter For Images"
+  ],
+  "\u4f5c": [
+    "Make",
+    "Production",
+    "Prepare",
+    "Build"
+  ],
+  "\u56f3": [
+    "Map",
+    "Drawing",
+    "Plan",
+    "Extraordinary",
+    "Audacious"
+  ],
+  "\u58f0": [
+    "Voice"
+  ],
+  "\u58f2": [
+    "Sell"
+  ],
+  "\u5f1f": [
+    "Younger Brother",
+    "Faithful Service To Elders"
+  ],
+  "\u5f62": [
+    "Shape",
+    "Form",
+    "Style"
+  ],
+  "\u6765": [
+    "Come",
+    "Due",
+    "Next",
+    "Cause",
+    "Become"
+  ],
+  "\u793e": [
+    "Company",
+    "Firm",
+    "Office",
+    "Association",
+    "Shrine"
+  ],
+  "\u89d2": [
+    "Angle",
+    "Corner",
+    "Square",
+    "Horn",
+    "Antlers"
+  ],
+  "\u8a00": [
+    "Say",
+    "Word"
+  ],
+  "\u8c37": [
+    "Valley"
+  ],
+  "\u8d70": [
+    "Run"
+  ],
+  "\u8fd1": [
+    "Near",
+    "Early",
+    "Akin",
+    "Tantamount"
+  ],
+  "\u91cc": [
+    "Ri",
+    "Village",
+    "Parent's Home",
+    "League"
+  ],
+  "\u9ea6": [
+    "Barley",
+    "Wheat"
+  ],
+  "\u5b66": [
+    "Study",
+    "Learning",
+    "Science"
+  ],
+  "\u6797": [
+    "Grove",
+    "Forest"
+  ],
+  "\u7a7a": [
+    "Empty",
+    "Sky",
+    "Void",
+    "Vacant",
+    "Vacuum"
+  ],
+  "\u91d1": [
+    "Gold"
+  ],
+  "\u96e8": [
+    "Rain"
+  ],
+  "\u9752": [
+    "Blue",
+    "Green"
+  ],
+  "\u8349": [
+    "Grass",
+    "Weeds",
+    "Herbs",
+    "Pasture",
+    "Write",
+    "Draft"
+  ],
+  "\u97f3": [
+    "Sound",
+    "Noise"
+  ],
+  "\u5316": [
+    "Change",
+    "Take The Form Of",
+    "Influence",
+    "Enchant",
+    "Delude",
+    "-ization"
+  ],
+  "\u5730": [
+    "Ground",
+    "Earth"
+  ],
+  "\u4e21": [
+    "Both",
+    "Old Japanese Coin",
+    "Counter For Carriages (e.g., In A Train)",
+    "Two"
+  ],
+  "\u5168": [
+    "Whole",
+    "Entire",
+    "All",
+    "Complete",
+    "Fulfill"
+  ],
+  "\u5411": [
+    "Yonder",
+    "Facing",
+    "Beyond",
+    "Confront",
+    "Defy",
+    "Tend Toward",
+    "Approach"
+  ],
+  "\u5b89": [
+    "Relax",
+    "Cheap",
+    "Low",
+    "Quiet",
+    "Rested",
+    "Contented",
+    "Peaceful"
+  ],
+  "\u5dde": [
+    "State",
+    "Province"
+  ],
+  "\u66f2": [
+    "Bend",
+    "Music",
+    "Melody",
+    "Composition",
+    "Pleasure",
+    "Injustice",
+    "Fault",
+    "Curve",
+    "Crooked",
+    "Perverse",
+    "Lean"
+  ],
+  "\u6709": [
+    "Possess",
+    "Have",
+    "Exist",
+    "Happen",
+    "Occur",
+    "Approx"
+  ],
+  "\u6b21": [
+    "Next",
+    "Order",
+    "Sequence"
+  ],
+  "\u6b7b": [
+    "Death",
+    "Die"
+  ],
+  "\u7f8a": [
+    "Sheep"
+  ],
+  "\u8840": [
+    "Blood"
+  ],
+  "\u4eac": [
+    "Capital",
+    "10**16"
+  ],
+  "\u56fd": [
+    "Country"
+  ],
+  "\u591c": [
+    "Night",
+    "Evening"
+  ],
+  "\u59b9": [
+    "Younger Sister"
+  ],
+  "\u59c9": [
+    "Elder Sister"
+  ],
+  "\u5e97": [
+    "Store",
+    "Shop"
+  ],
+  "\u660e": [
+    "Bright",
+    "Light"
+  ],
+  "\u6771": [
+    "East"
+  ],
+  "\u6b69": [
+    "Walk",
+    "Counter For Steps"
+  ],
+  "\u753b": [
+    "Brush-stroke",
+    "Picture"
+  ],
+  "\u76f4": [
+    "Straightaway",
+    "Honesty",
+    "Frankness",
+    "Fix",
+    "Repair"
+  ],
+  "\u77e5": [
+    "Know",
+    "Wisdom"
+  ],
+  "\u9577": [
+    "Long",
+    "Leader",
+    "Superior",
+    "Senior"
+  ],
+  "\u524d": [
+    "In Front",
+    "Before"
+  ],
+  "\u5357": [
+    "South"
+  ],
+  "\u5ba4": [
+    "Room",
+    "Apartment",
+    "Chamber",
+    "Greenhouse",
+    "Cellar"
+  ],
+  "\u5f8c": [
+    "Behind",
+    "Back",
+    "Later"
+  ],
+  "\u601d": [
+    "Think"
+  ],
+  "\u661f": [
+    "Star",
+    "Spot",
+    "Dot",
+    "Mark"
+  ],
+  "\u6d3b": [
+    "Lively",
+    "Resuscitation",
+    "Being Helped",
+    "Living"
+  ],
+  "\u6d77": [
+    "Sea",
+    "Ocean"
+  ],
+  "\u70b9": [
+    "Spot",
+    "Point",
+    "Mark",
+    "Speck",
+    "Decimal Point"
+  ],
+  "\u79d1": [
+    "Department",
+    "Course",
+    "Section"
+  ],
+  "\u8336": [
+    "Tea"
+  ],
+  "\u98df": [
+    "Eat",
+    "Food"
+  ],
+  "\u9996": [
+    "Neck",
+    "Counter For Songs And Poems"
+  ],
+  "\u6b20": [
+    "Lack",
+    "Gap",
+    "Fail",
+    "Yawning Radical (no. 76)"
+  ],
+  "\u6c0f": [
+    "Family Name",
+    "Surname",
+    "Clan"
+  ],
+  "\u7531": [
+    "Wherefore",
+    "A Reason"
+  ],
+  "\u672d": [
+    "Tag",
+    "Paper Money",
+    "Counter For Bonds",
+    "Placard",
+    "Bid"
+  ],
+  "\u6c11": [
+    "People",
+    "Nation",
+    "Subjects"
+  ],
+  "\u8fba": [
+    "Environs",
+    "Boundary",
+    "Border",
+    "Vicinity"
+  ],
+  "\u4ed8": [
+    "Adhere",
+    "Attach",
+    "Refer To",
+    "Append"
+  ],
+  "\u4ee5": [
+    "By Means Of",
+    "Because",
+    "In View Of",
+    "Compared With"
+  ],
+  "\u5931": [
+    "Lose",
+    "Error",
+    "Fault",
+    "Disadvantage",
+    "Loss"
+  ],
+  "\u5fc5": [
+    "Invariably",
+    "Certain",
+    "Inevitable"
+  ],
+  "\u672a": [
+    "Un-",
+    "Not Yet",
+    "Hitherto",
+    "Still",
+    "Even Now",
+    "Sign Of The Ram",
+    "1-3pm",
+    "Eighth Sign Of Chinese Zodiac"
+  ],
+  "\u672b": [
+    "End",
+    "Close",
+    "Tip",
+    "Powder",
+    "Posterity"
+  ],
+  "\u6821": [
+    "Exam",
+    "School",
+    "Printing",
+    "Proof",
+    "Correction"
+  ],
+  "\u590f": [
+    "Summer"
+  ],
+  "\u5bb6": [
+    "House",
+    "Home",
+    "Family",
+    "Professional",
+    "Expert",
+    "Performer"
+  ],
+  "\u5f31": [
+    "Weak",
+    "Frail"
+  ],
+  "\u6642": [
+    "Time",
+    "Hour"
+  ],
+  "\u7d19": [
+    "Paper"
+  ],
+  "\u8a18": [
+    "Scribe",
+    "Account",
+    "Narrative"
+  ],
+  "\u901a": [
+    "Traffic",
+    "Pass Through",
+    "Avenue",
+    "Commute",
+    "Counter For Letters, Notes, Documents, Etc."
+  ],
+  "\u9ad8": [
+    "Tall",
+    "High",
+    "Expensive"
+  ],
+  "\u5f37": [
+    "Strong"
+  ],
+  "\u6559": [
+    "Teach",
+    "Faith",
+    "Doctrine"
+  ],
+  "\u7406": [
+    "Logic",
+    "Arrangement",
+    "Reason",
+    "Justice",
+    "Truth"
+  ],
+  "\u7d44": [
+    "Association",
+    "Braid",
+    "Plait",
+    "Construct",
+    "Assemble",
+    "Unite",
+    "Cooperate",
+    "Grapple"
+  ],
+  "\u8239": [
+    "Ship",
+    "Boat"
+  ],
+  "\u9031": [
+    "Week"
+  ],
+  "\u96ea": [
+    "Snow"
+  ],
+  "\u9b5a": [
+    "Fish"
+  ],
+  "\u9ce5": [
+    "Bird",
+    "Chicken"
+  ],
+  "\u9ec4": [
+    "Yellow"
+  ],
+  "\u9ed2": [
+    "Black"
+  ],
+  "\u652f": [
+    "Branch",
+    "Support",
+    "Sustain",
+    "Branch Radical (no. 65)"
+  ],
+  "\u4f4f": [
+    "Dwell",
+    "Reside",
+    "Live",
+    "Inhabit"
+  ],
+  "\u52a9": [
+    "Help",
+    "Rescue",
+    "Assist"
+  ],
+  "\u533b": [
+    "Doctor",
+    "Medicine"
+  ],
+  "\u541b": [
+    "Mister",
+    "You",
+    "Ruler",
+    "Male Name Suffix"
+  ],
+  "\u5bfe": [
+    "Vis-a-vis",
+    "Opposite",
+    "Even",
+    "Equal",
+    "Versus",
+    "Anti-",
+    "Compare"
+  ],
+  "\u5c40": [
+    "Bureau",
+    "Board",
+    "Office",
+    "Affair",
+    "Conclusion",
+    "Court Lady",
+    "Lady-in-waiting",
+    "Her Apartment"
+  ],
+  "\u5f79": [
+    "Duty",
+    "War",
+    "Campaign",
+    "Drafted Labor",
+    "Office",
+    "Service",
+    "Role"
+  ],
+  "\u6295": [
+    "Throw",
+    "Discard",
+    "Abandon",
+    "Launch Into",
+    "Join",
+    "Invest In",
+    "Hurl",
+    "Give Up",
+    "Sell At A Loss"
+  ],
+  "\u6c7a": [
+    "Decide",
+    "Fix",
+    "Agree Upon",
+    "Appoint"
+  ],
+  "\u7a76": [
+    "Research",
+    "Study"
+  ],
+  "\u8eab": [
+    "Somebody",
+    "Person",
+    "One's Station In Life"
+  ],
+  "\u8005": [
+    "Someone",
+    "Person"
+  ],
+  "\u7814": [
+    "Polish",
+    "Study Of",
+    "Sharpen"
+  ],
+  "\u99ac": [
+    "Horse"
+  ],
+  "\u68ee": [
+    "Forest",
+    "Woods"
+  ],
+  "\u5834": [
+    "Location",
+    "Place"
+  ],
+  "\u671d": [
+    "Morning",
+    "Dynasty",
+    "Regime",
+    "Epoch",
+    "Period",
+    "(north) Korea"
+  ],
+  "\u756a": [
+    "Turn",
+    "Number In A Series"
+  ],
+  "\u7b54": [
+    "Solution",
+    "Answer"
+  ],
+  "\u7d75": [
+    "Picture",
+    "Drawing",
+    "Painting",
+    "Sketch"
+  ],
+  "\u8cb7": [
+    "Buy"
+  ],
+  "\u9053": [
+    "Road-way",
+    "Street",
+    "District",
+    "Journey",
+    "Course",
+    "Moral",
+    "Teachings"
+  ],
+  "\u9593": [
+    "Interval",
+    "Space"
+  ],
+  "\u96f2": [
+    "Cloud"
+  ],
+  "\u6570": [
+    "Number",
+    "Strength",
+    "Fate",
+    "Law",
+    "Figures"
+  ],
+  "\u697d": [
+    "Music",
+    "Comfort",
+    "Ease"
+  ],
+  "\u8a71": [
+    "Tale",
+    "Talk"
+  ],
+  "\u96fb": [
+    "Electricity"
+  ],
+  "\u6240": [
+    "Place",
+    "Extent"
+  ],
+  "\u4e8b": [
+    "Matter",
+    "Thing",
+    "Fact",
+    "Business",
+    "Reason",
+    "Possibly"
+  ],
+  "\u4f7f": [
+    "Use",
+    "Send On A Mission",
+    "Order",
+    "Messenger",
+    "Envoy",
+    "Ambassador",
+    "Cause"
+  ],
+  "\u5177": [
+    "Tool",
+    "Utensil",
+    "Means",
+    "Possess",
+    "Ingredients",
+    "Counter For Armor, Suits, Sets Of Furniture"
+  ],
+  "\u53d7": [
+    "Accept",
+    "Undergo",
+    "Answer (phone)",
+    "Take",
+    "Get",
+    "Catch",
+    "Receive"
+  ],
+  "\u548c": [
+    "Harmony",
+    "Japanese Style",
+    "Peace",
+    "Soften",
+    "Japan"
+  ],
+  "\u59cb": [
+    "Commence",
+    "Begin"
+  ],
+  "\u5b9a": [
+    "Determine",
+    "Fix",
+    "Establish",
+    "Decide"
+  ],
+  "\u5b9f": [
+    "Reality",
+    "Truth"
+  ],
+  "\u670d": [
+    "Clothing",
+    "Admit",
+    "Obey",
+    "Discharge"
+  ],
+  "\u6cf3": [
+    "Swim"
+  ],
+  "\u7269": [
+    "Thing",
+    "Object",
+    "Matter"
+  ],
+  "\u82e6": [
+    "Suffering",
+    "Trial",
+    "Worry",
+    "Hardship",
+    "Feel Bitter",
+    "Scowl"
+  ],
+  "\u8868": [
+    "Surface",
+    "Table",
+    "Chart",
+    "Diagram"
+  ],
+  "\u90e8": [
+    "Section",
+    "Bureau",
+    "Dept",
+    "Class",
+    "Copy",
+    "Part",
+    "Portion",
+    "Counter For Copies Of A Newspaper Or Magazine"
+  ],
+  "\u4e57": [
+    "Ride",
+    "Power",
+    "Multiplication",
+    "Record",
+    "Counter For Vehicles",
+    "Board",
+    "Mount",
+    "Join"
+  ],
+  "\u5ba2": [
+    "Guest",
+    "Visitor",
+    "Customer",
+    "Client"
+  ],
+  "\u5c4b": [
+    "Roof",
+    "House",
+    "Shop",
+    "Dealer",
+    "Seller"
+  ],
+  "\u5ea6": [
+    "Degrees",
+    "Occurrence",
+    "Time",
+    "Counter For Occurrences",
+    "Consider",
+    "Attitude"
+  ],
+  "\u5f85": [
+    "Wait",
+    "Depend On"
+  ],
+  "\u6301": [
+    "Hold",
+    "Have"
+  ],
+  "\u754c": [
+    "World",
+    "Boundary"
+  ],
+  "\u767a": [
+    "Departure",
+    "Discharge",
+    "Publish",
+    "Emit",
+    "Start From",
+    "Disclose",
+    "Counter For Gunshots"
+  ],
+  "\u76f8": [
+    "Inter-",
+    "Mutual",
+    "Together",
+    "Each Other",
+    "Minister Of State",
+    "Councillor",
+    "Aspect",
+    "Phase",
+    "Physiognomy"
+  ],
+  "\u770c": [
+    "Prefecture"
+  ],
+  "\u7f8e": [
+    "Beauty",
+    "Beautiful"
+  ],
+  "\u8ca0": [
+    "Defeat",
+    "Negative",
+    "-",
+    "Minus",
+    "Bear",
+    "Owe",
+    "Assume A Responsibility"
+  ],
+  "\u9001": [
+    "Escort",
+    "Send"
+  ],
+  "\u91cd": [
+    "Heavy",
+    "Important",
+    "Esteem",
+    "Respect",
+    "Heap Up",
+    "Pile Up",
+    "Nest Of Boxes",
+    "-fold"
+  ],
+  "\u8ac7": [
+    "Discuss",
+    "Talk"
+  ],
+  "\u8981": [
+    "Need",
+    "Main Point",
+    "Essence",
+    "Pivot",
+    "Key To"
+  ],
+  "\u52dd": [
+    "Victory",
+    "Win",
+    "Prevail",
+    "Excel"
+  ],
+  "\u4eee": [
+    "Sham",
+    "Temporary",
+    "Interim",
+    "Assumed (name)",
+    "Informal"
+  ],
+  "\u8d77": [
+    "Rouse",
+    "Wake Up",
+    "Get Up"
+  ],
+  "\u901f": [
+    "Quick",
+    "Fast"
+  ],
+  "\u914d": [
+    "Distribute",
+    "Spouse",
+    "Exile",
+    "Rationing"
+  ],
+  "\u9152": [
+    "Sake",
+    "Alcohol"
+  ],
+  "\u9662": [
+    "Inst.",
+    "Institution",
+    "Temple",
+    "Mansion",
+    "School"
+  ],
+  "\u7d42": [
+    "End",
+    "Finish"
+  ],
+  "\u7fd2": [
+    "Learn"
+  ],
+  "\u8ee2": [
+    "Revolve",
+    "Turn Around",
+    "Change"
+  ],
+  "\u9032": [
+    "Advance",
+    "Proceed",
+    "Progress",
+    "Promote"
+  ],
+  "\u843d": [
+    "Fall",
+    "Drop",
+    "Come Down",
+    "Village",
+    "Hamlet"
+  ],
+  "\u8449": [
+    "Leaf",
+    "Plane",
+    "Lobe",
+    "Needle",
+    "Blade",
+    "Spear",
+    "Counter For Flat Things",
+    "Fragment",
+    "Piece"
+  ],
+  "\u8efd": [
+    "Lightly",
+    "Trifling",
+    "Unimportant"
+  ],
+  "\u904b": [
+    "Carry",
+    "Luck",
+    "Destiny",
+    "Fate",
+    "Lot",
+    "Transport",
+    "Progress",
+    "Advance"
+  ],
+  "\u958b": [
+    "Open",
+    "Unfold",
+    "Unseal"
+  ],
+  "\u96c6": [
+    "Gather",
+    "Meet",
+    "Congregate",
+    "Swarm",
+    "Flock"
+  ],
+  "\u98f2": [
+    "Drink",
+    "Smoke",
+    "Take"
+  ],
+  "\u696d": [
+    "Business",
+    "Vocation",
+    "Arts",
+    "Performance"
+  ],
+  "\u6f22": [
+    "Sino-",
+    "China"
+  ],
+  "\u8def": [
+    "Path",
+    "Route",
+    "Road",
+    "Distance"
+  ],
+  "\u8fb2": [
+    "Agriculture",
+    "Farmers"
+  ],
+  "\u9244": [
+    "Iron"
+  ],
+  "\u6b4c": [
+    "Song",
+    "Sing"
+  ],
+  "\u7b97": [
+    "Calculate",
+    "Divining",
+    "Number",
+    "Abacus",
+    "Probability"
+  ],
+  "\u805e": [
+    "Hear",
+    "Ask",
+    "Listen"
+  ],
+  "\u8a9e": [
+    "Word",
+    "Speech",
+    "Language"
+  ],
+  "\u8aad": [
+    "Read"
+  ],
+  "\u9cf4": [
+    "Chirp",
+    "Cry",
+    "Bark",
+    "Sound",
+    "Ring",
+    "Echo",
+    "Honk"
+  ],
+  "\u7dda": [
+    "Line",
+    "Track"
+  ],
+  "\u6a2a": [
+    "Sideways",
+    "Side",
+    "Horizontal",
+    "Width",
+    "Woof",
+    "Unreasonable",
+    "Perverse"
+  ],
+  "\u8abf": [
+    "Tune",
+    "Tone",
+    "Meter",
+    "Key (music)",
+    "Writing Style",
+    "Prepare",
+    "Exorcise",
+    "Investigate",
+    "Harmonize",
+    "Mediate"
+  ],
+  "\u89aa": [
+    "Parent",
+    "Intimacy",
+    "Relative",
+    "Familiarity",
+    "Dealer (cards)"
+  ],
+  "\u982d": [
+    "Head",
+    "Counter For Large Animals"
+  ],
+  "\u9854": [
+    "Face",
+    "Expression"
+  ],
+  "\u75c5": [
+    "Ill",
+    "Sick"
+  ],
+  "\u6700": [
+    "Utmost",
+    "Most",
+    "Extreme"
+  ],
+  "\u4e89": [
+    "Contend",
+    "Dispute",
+    "Argue"
+  ],
+  "\u4ef2": [
+    "Go-between",
+    "Relationship"
+  ],
+  "\u4f1d": [
+    "Transmit",
+    "Go Along",
+    "Walk Along",
+    "Follow",
+    "Report",
+    "Communicate",
+    "Legend",
+    "Tradition"
+  ],
+  "\u5171": [
+    "Together",
+    "Both",
+    "Neither",
+    "All",
+    "And",
+    "Alike",
+    "With"
+  ],
+  "\u597d": [
+    "Fond",
+    "Pleasing",
+    "Like Something"
+  ],
+  "\u6210": [
+    "Turn Into",
+    "Become",
+    "Get",
+    "Grow",
+    "Elapse",
+    "Reach"
+  ],
+  "\u8001": [
+    "Old Man",
+    "Old Age",
+    "Grow Old"
+  ],
+  "\u4f4d": [
+    "Rank",
+    "Grade",
+    "Throne",
+    "Crown",
+    "About",
+    "Some"
+  ],
+  "\u4f4e": [
+    "Lower",
+    "Short",
+    "Humble"
+  ],
+  "\u521d": [
+    "First Time",
+    "Beginning"
+  ],
+  "\u5225": [
+    "Separate",
+    "Branch Off",
+    "Diverge",
+    "Fork",
+    "Another",
+    "Extra",
+    "Specially"
+  ],
+  "\u5229": [
+    "Profit",
+    "Advantage",
+    "Benefit"
+  ],
+  "\u52aa": [
+    "Toil",
+    "Diligent",
+    "As Much As Possible"
+  ],
+  "\u52b4": [
+    "Labor",
+    "Thank For",
+    "Reward For",
+    "Toil",
+    "Trouble"
+  ],
+  "\u547d": [
+    "Fate",
+    "Command",
+    "Decree",
+    "Destiny",
+    "Life",
+    "Appoint"
+  ],
+  "\u5cb8": [
+    "Beach"
+  ],
+  "\u653e": [
+    "Set Free",
+    "Release",
+    "Fire",
+    "Shoot",
+    "Emit",
+    "Banish",
+    "Liberate"
+  ],
+  "\u6614": [
+    "Once Upon A Time",
+    "Antiquity",
+    "Old Times"
+  ],
+  "\u6ce2": [
+    "Waves",
+    "Billows",
+    "Poland"
+  ],
+  "\u6ce8": [
+    "Pour",
+    "Irrigate",
+    "Shed (tears)",
+    "Flow Into",
+    "Concentrate On",
+    "Notes",
+    "Comment",
+    "Annotate"
+  ],
+  "\u80b2": [
+    "Bring Up",
+    "Grow Up",
+    "Raise",
+    "Rear"
+  ],
+  "\u62fe": [
+    "Pick Up",
+    "Gather",
+    "Find",
+    "Go On Foot",
+    "Ten"
+  ],
+  "\u6307": [
+    "Finger",
+    "Point To",
+    "Indicate",
+    "Put Into",
+    "Play (chess)",
+    "Measure (ruler)"
+  ],
+  "\u6d0b": [
+    "Ocean",
+    "Sea",
+    "Foreign",
+    "Western Style"
+  ],
+  "\u795e": [
+    "Gods",
+    "Mind",
+    "Soul"
+  ],
+  "\u79d2": [
+    "Second (1/60 Minute)"
+  ],
+  "\u7d1a": [
+    "Class",
+    "Rank",
+    "Grade"
+  ],
+  "\u8ffd": [
+    "Chase",
+    "Drive Away",
+    "Follow",
+    "Pursue",
+    "Meanwhile"
+  ],
+  "\u6226": [
+    "War",
+    "Battle",
+    "Match"
+  ],
+  "\u7af6": [
+    "Emulate",
+    "Compete With",
+    "Bid",
+    "Sell At Auction",
+    "Bout",
+    "Contest",
+    "Race"
+  ],
+  "\u826f": [
+    "Good",
+    "Pleasing",
+    "Skilled"
+  ],
+  "\u529f": [
+    "Achievement",
+    "Merits",
+    "Success",
+    "Honor",
+    "Credit"
+  ],
+  "\u7279": [
+    "Special"
+  ],
+  "\u4fbf": [
+    "Convenience",
+    "Facility",
+    "Excrement",
+    "Feces",
+    "Letter",
+    "Chance"
+  ],
+  "\u50cd": [
+    "Work",
+    "(kokuji)"
+  ],
+  "\u4ee4": [
+    "Orders",
+    "Ancient Laws",
+    "Command",
+    "Decree"
+  ],
+  "\u610f": [
+    "Idea",
+    "Mind",
+    "Heart",
+    "Taste",
+    "Thought",
+    "Desire",
+    "Care",
+    "Liking"
+  ],
+  "\u5473": [
+    "Flavor",
+    "Taste"
+  ],
+  "\u52c9": [
+    "Exertion",
+    "Endeavour",
+    "Encourage",
+    "Strive",
+    "Make Effort",
+    "Diligent"
+  ],
+  "\u5ead": [
+    "Courtyard",
+    "Garden",
+    "Yard"
+  ],
+  "\u606f": [
+    "Breath",
+    "Respiration",
+    "Son",
+    "Interest (on Money)"
+  ],
+  "\u65c5": [
+    "Trip",
+    "Travel"
+  ],
+  "\u6839": [
+    "Root",
+    "Radical",
+    "Head (pimple)"
+  ],
+  "\u6d41": [
+    "Current",
+    "A Sink",
+    "Flow",
+    "Forfeit"
+  ],
+  "\u6d88": [
+    "Extinguish",
+    "Blow Out",
+    "Turn Off",
+    "Neutralize",
+    "Cancel"
+  ],
+  "\u500d": [
+    "Double",
+    "Twice",
+    "Times",
+    "Fold"
+  ],
+  "\u54e1": [
+    "Employee",
+    "Member",
+    "Number",
+    "The One In Charge"
+  ],
+  "\u5cf6": [
+    "Island"
+  ],
+  "\u796d": [
+    "Ritual",
+    "Offer Prayers",
+    "Celebrate",
+    "Deify",
+    "Enshrine",
+    "Worship"
+  ],
+  "\u7ae0": [
+    "Badge",
+    "Chapter",
+    "Composition",
+    "Poem",
+    "Design"
+  ],
+  "\u7b2c": [
+    "No.",
+    "Residence"
+  ],
+  "\u90fd": [
+    "Metropolis",
+    "Capital",
+    "All",
+    "Everything"
+  ],
+  "\u52d5": [
+    "Move",
+    "Motion",
+    "Change",
+    "Confusion",
+    "Shift",
+    "Shake"
+  ],
+  "\u5546": [
+    "Make A Deal",
+    "Selling",
+    "Dealing In",
+    "Merchant"
+  ],
+  "\u60aa": [
+    "Bad",
+    "Vice",
+    "Rascal",
+    "False",
+    "Evil",
+    "Wrong"
+  ],
+  "\u65cf": [
+    "Tribe",
+    "Family"
+  ],
+  "\u6df1": [
+    "Deep",
+    "Heighten",
+    "Intensify",
+    "Strengthen"
+  ],
+  "\u7403": [
+    "Ball",
+    "Sphere"
+  ],
+  "\u7ae5": [
+    "Juvenile",
+    "Child"
+  ],
+  "\u967d": [
+    "Sunshine",
+    "Yang Principle",
+    "Positive",
+    "Male",
+    "Heaven",
+    "Daytime"
+  ],
+  "\u968e": [
+    "Storey",
+    "Stair",
+    "Counter For Storeys Of A Building"
+  ],
+  "\u5bd2": [
+    "Cold"
+  ],
+  "\u60b2": [
+    "Grieve",
+    "Sad",
+    "Deplore",
+    "Regret"
+  ],
+  "\u6691": [
+    "Sultry",
+    "Hot",
+    "Summer Heat"
+  ],
+  "\u671f": [
+    "Period",
+    "Time",
+    "Date",
+    "Term"
+  ],
+  "\u690d": [
+    "Plant"
+  ],
+  "\u6b6f": [
+    "Tooth",
+    "Cog"
+  ],
+  "\u6e29": [
+    "Warm"
+  ],
+  "\u6e2f": [
+    "Harbor"
+  ],
+  "\u6e6f": [
+    "Hot Water",
+    "Bath",
+    "Hot Spring"
+  ],
+  "\u767b": [
+    "Ascend",
+    "Climb Up"
+  ],
+  "\u7740": [
+    "Don",
+    "Arrive",
+    "Wear",
+    "Counter For Suits Of Clothing"
+  ],
+  "\u77ed": [
+    "Short",
+    "Brevity",
+    "Fault",
+    "Defect",
+    "Weak Point"
+  ],
+  "\u91ce": [
+    "Plains",
+    "Field",
+    "Rustic",
+    "Civilian Life"
+  ],
+  "\u6cc9": [
+    "Spring",
+    "Fountain"
+  ],
+  "\u751f": [
+    "Life",
+    "Genuine",
+    "Birth"
+  ],
+  "\u4ea1": [
+    "Deceased",
+    "The Late",
+    "Dying",
+    "Perish"
+  ],
+  "\u5408": [
+    "Fit",
+    "Suit",
+    "Join",
+    "0.1"
+  ],
+  "\u98a8": [
+    "Wind",
+    "Air",
+    "Style",
+    "Manner"
+  ],
+  "\u4e88": [
+    "Beforehand",
+    "Previous",
+    "Myself",
+    "I"
+  ],
+  "\u53cd": [
+    "Anti-"
+  ],
+  "\u65b0": [
+    "New"
+  ],
+  "\u8fd4": [
+    "Return",
+    "Answer",
+    "Fade",
+    "Repay"
+  ],
+  "\u554f": [
+    "Question",
+    "Ask",
+    "Problem"
+  ],
+  "\u5bbf": [
+    "Inn",
+    "Lodging",
+    "Relay Station",
+    "Dwell",
+    "Lodge",
+    "Be Pregnant",
+    "Home",
+    "Dwelling"
+  ],
+  "\u60f3": [
+    "Concept",
+    "Think",
+    "Idea",
+    "Thought"
+  ],
+  "\u611f": [
+    "Emotion",
+    "Feeling",
+    "Sensation"
+  ],
+  "\u6574": [
+    "Organize",
+    "Arranging",
+    "Tune",
+    "Tone",
+    "Meter",
+    "Key (music)"
+  ],
+  "\u6697": [
+    "Darkness",
+    "Disappear",
+    "Shade",
+    "Informal",
+    "Grow Dark",
+    "Be Blinded"
+  ],
+  "\u69d8": [
+    "Esq.",
+    "Way",
+    "Manner",
+    "Situation",
+    "Polite Suffix"
+  ],
+  "\u6a4b": [
+    "Bridge"
+  ],
+  "\u798f": [
+    "Blessing",
+    "Fortune",
+    "Luck",
+    "Wealth"
+  ],
+  "\u7dd1": [
+    "Green"
+  ],
+  "\u7df4": [
+    "Practice",
+    "Gloss",
+    "Train",
+    "Drill",
+    "Polish",
+    "Refine"
+  ],
+  "\u8a69": [
+    "Poem",
+    "Poetry"
+  ],
+  "\u9280": [
+    "Silver"
+  ],
+  "\u984c": [
+    "Topic",
+    "Subject"
+  ],
+  "\u9928": [
+    "Building",
+    "Mansion",
+    "Large Building",
+    "Palace"
+  ],
+  "\u99c5": [
+    "Station"
+  ],
+  "\u5104": [
+    "Hundred Million",
+    "10**8"
+  ],
+  "\u5668": [
+    "Utensil",
+    "Vessel",
+    "Receptacle",
+    "Implement",
+    "Instrument",
+    "Ability",
+    "Container",
+    "Tool",
+    "Set"
+  ],
+  "\u58eb": [
+    "Gentleman",
+    "Scholar",
+    "Samurai",
+    "Samurai Radical (no. 33)"
+  ],
+  "\u6599": [
+    "Fee",
+    "Materials"
+  ],
+  "\u6a19": [
+    "Signpost",
+    "Seal",
+    "Mark",
+    "Stamp",
+    "Imprint",
+    "Symbol",
+    "Emblem",
+    "Trademark",
+    "Evidence",
+    "Souvenir",
+    "Target"
+  ],
+  "\u6bba": [
+    "Kill",
+    "Murder",
+    "Butcher",
+    "Slice Off",
+    "Split",
+    "Diminish",
+    "Reduce",
+    "Spoil"
+  ],
+  "\u7136": [
+    "Sort Of Thing",
+    "So",
+    "If So",
+    "In That Case",
+    "Well"
+  ],
+  "\u71b1": [
+    "Heat",
+    "Temperature",
+    "Fever",
+    "Mania",
+    "Passion"
+  ],
+  "\u8ab2": [
+    "Chapter",
+    "Lesson",
+    "Section",
+    "Department",
+    "Division",
+    "Counter For Chapters (of A Book)"
+  ],
+  "\u8cde": [
+    "Prize",
+    "Reward",
+    "Praise"
+  ],
+  "\u8f2a": [
+    "Wheel",
+    "Ring",
+    "Circle",
+    "Link",
+    "Loop",
+    "Counter For Wheels And Flowers"
+  ],
+  "\u9078": [
+    "Elect",
+    "Select",
+    "Choose",
+    "Prefer"
+  ],
+  "\u93e1": [
+    "Mirror",
+    "Speculum",
+    "Barrel-head",
+    "Round Rice-cake Offering"
+  ],
+  "\u9858": [
+    "Petition",
+    "Request",
+    "Vow",
+    "Wish",
+    "Hope"
+  ],
+  "\u990a": [
+    "Foster",
+    "Bring Up",
+    "Rear",
+    "Develop",
+    "Nurture"
+  ],
+  "\u50cf": [
+    "Statue",
+    "Picture",
+    "Image",
+    "Figure",
+    "Portrait"
+  ],
+  "\u60c5": [
+    "Feelings",
+    "Emotion",
+    "Passion",
+    "Sympathy",
+    "Circumstances",
+    "Facts"
+  ],
+  "\u8b1d": [
+    "Apologize",
+    "Thank",
+    "Refuse"
+  ],
+  "\u6620": [
+    "Reflect",
+    "Reflection",
+    "Projection"
+  ],
+  "\u7591": [
+    "Doubt",
+    "Distrust",
+    "Be Suspicious",
+    "Question"
+  ],
+  "\u4f8b": [
+    "Example",
+    "Custom",
+    "Usage",
+    "Precedent"
+  ],
+  "\u5352": [
+    "Graduate",
+    "Soldier",
+    "Private",
+    "Die"
+  ],
+  "\u5354": [
+    "Co-",
+    "Cooperation"
+  ],
+  "\u53c2": [
+    "Nonplussed",
+    "Three (in Documents)",
+    "Going",
+    "Coming",
+    "Visiting",
+    "Visit",
+    "Be Defeated",
+    "Die",
+    "Be Madly In Love",
+    "Participate",
+    "Take Part In"
+  ],
+  "\u5468": [
+    "Circumference",
+    "Circuit",
+    "Lap"
+  ],
+  "\u56f2": [
+    "Surround",
+    "Besiege",
+    "Store",
+    "Paling",
+    "Enclosure",
+    "Encircle",
+    "Preserve",
+    "Keep"
+  ],
+  "\u56fa": [
+    "Harden",
+    "Set",
+    "Clot",
+    "Curdle"
+  ],
+  "\u5b63": [
+    "Seasons"
+  ],
+  "\u5b8c": [
+    "Perfect",
+    "Completion",
+    "End"
+  ],
+  "\u5e0c": [
+    "Hope",
+    "Beg",
+    "Request",
+    "Pray",
+    "Beseech",
+    "Greece",
+    "Dilute (acid)",
+    "Rare",
+    "Few",
+    "Phenomenal"
+  ],
+  "\u5ff5": [
+    "Wish",
+    "Sense",
+    "Idea",
+    "Thought",
+    "Feeling",
+    "Desire",
+    "Attention"
+  ],
+  "\u6298": [
+    "Fold",
+    "Break",
+    "Fracture",
+    "Bend",
+    "Yield",
+    "Submit"
+  ],
+  "\u671b": [
+    "Ambition",
+    "Full Moon",
+    "Hope",
+    "Desire",
+    "Aspire To",
+    "Expect"
+  ],
+  "\u6750": [
+    "Lumber",
+    "Log",
+    "Timber",
+    "Wood",
+    "Materials",
+    "Ingredients",
+    "Talent"
+  ],
+  "\u675f": [
+    "Bundle",
+    "Sheaf",
+    "Ream",
+    "Tie In Bundles",
+    "Govern",
+    "Manage",
+    "Control"
+  ],
+  "\u677e": [
+    "Pine Tree"
+  ],
+  "\u6b8b": [
+    "Remainder",
+    "Leftover",
+    "Balance"
+  ],
+  "\u6c42": [
+    "Request",
+    "Want",
+    "Wish For",
+    "Require",
+    "Demand"
+  ],
+  "\u7684": [
+    "Bull's Eye",
+    "Mark",
+    "Target",
+    "Object",
+    "Adjective Ending"
+  ],
+  "\u7d04": [
+    "Promise",
+    "Approximately",
+    "Shrink"
+  ],
+  "\u82b8": [
+    "Technique",
+    "Art",
+    "Craft",
+    "Performance",
+    "Acting",
+    "Trick",
+    "Stunt"
+  ],
+  "\u57fa": [
+    "Fundamentals",
+    "Radical (chem)",
+    "Counter For Machines",
+    "Foundation"
+  ],
+  "\u6027": [
+    "Sex",
+    "Gender",
+    "Nature"
+  ],
+  "\u6280": [
+    "Skill",
+    "Art",
+    "Craft",
+    "Ability",
+    "Feat",
+    "Performance",
+    "Vocation",
+    "Arts"
+  ],
+  "\u683c": [
+    "Status",
+    "Rank",
+    "Capacity",
+    "Character",
+    "Case (law, Grammar)"
+  ],
+  "\u80fd": [
+    "Ability",
+    "Talent",
+    "Skill",
+    "Capacity"
+  ],
+  "\u8853": [
+    "Art",
+    "Technique",
+    "Skill",
+    "Means",
+    "Trick",
+    "Resources",
+    "Magic"
+  ],
+  "\u79c1": [
+    "Private",
+    "I",
+    "Me"
+  ],
+  "\u9aa8": [
+    "Skeleton",
+    "Bone",
+    "Remains",
+    "Frame"
+  ],
+  "\u5bfa": [
+    "Buddhist Temple"
+  ],
+  "\u5ca9": [
+    "Boulder",
+    "Rock",
+    "Cliff"
+  ],
+  "\u5e30": [
+    "Homecoming",
+    "Arrive At",
+    "Lead To",
+    "Result In"
+  ],
+  "\u6625": [
+    "Springtime",
+    "Spring (season)"
+  ],
+  "\u663c": [
+    "Daytime",
+    "Noon"
+  ],
+  "\u6674": [
+    "Clear Up"
+  ],
+  "\u79cb": [
+    "Autumn"
+  ],
+  "\u8a08": [
+    "Plot",
+    "Plan",
+    "Scheme",
+    "Measure"
+  ],
+  "\u5217": [
+    "File",
+    "Row",
+    "Rank",
+    "Tier",
+    "Column"
+  ],
+  "\u533a": [
+    "Ward",
+    "District"
+  ],
+  "\u5742": [
+    "Slope",
+    "Incline",
+    "Hill"
+  ],
+  "\u5f0f": [
+    "Style",
+    "Ceremony",
+    "Rite",
+    "Function",
+    "Method",
+    "System",
+    "Form",
+    "Expression"
+  ],
+  "\u4fe1": [
+    "Faith",
+    "Truth",
+    "Fidelity",
+    "Trust"
+  ],
+  "\u52c7": [
+    "Courage",
+    "Cheer Up",
+    "Be In High Spirits",
+    "Bravery",
+    "Heroism"
+  ],
+  "\u5358": [
+    "Simple",
+    "One",
+    "Single",
+    "Merely"
+  ],
+  "\u53f8": [
+    "Director",
+    "Official",
+    "Govt Office",
+    "Rule",
+    "Administer"
+  ],
+  "\u5909": [
+    "Unusual",
+    "Change",
+    "Strange"
+  ],
+  "\u592b": [
+    "Husband",
+    "Man"
+  ],
+  "\u5efa": [
+    "Build"
+  ],
+  "\u6628": [
+    "Yesterday",
+    "Previous"
+  ],
+  "\u6bd2": [
+    "Poison",
+    "Virus",
+    "Venom",
+    "Germ",
+    "Harm",
+    "Injury",
+    "Spite"
+  ],
+  "\u6cd5": [
+    "Method",
+    "Law",
+    "Rule",
+    "Principle",
+    "Model",
+    "System"
+  ],
+  "\u6ce3": [
+    "Cry",
+    "Weep",
+    "Moan"
+  ],
+  "\u6d45": [
+    "Shallow",
+    "Superficial",
+    "Frivolous",
+    "Wretched",
+    "Shameful"
+  ],
+  "\u7d00": [
+    "Chronicle",
+    "Account",
+    "Narrative",
+    "History",
+    "Annals",
+    "Geologic Period"
+  ],
+  "\u82f1": [
+    "England",
+    "English",
+    "Hero",
+    "Outstanding",
+    "Calyx"
+  ],
+  "\u8ecd": [
+    "Army",
+    "Force",
+    "Troops",
+    "War",
+    "Battle"
+  ],
+  "\u98ef": [
+    "Meal",
+    "Boiled Rice"
+  ],
+  "\u4ecf": [
+    "Buddha",
+    "The Dead",
+    "France"
+  ],
+  "\u7bc9": [
+    "Fabricate",
+    "Build",
+    "Construct"
+  ],
+  "\u6669": [
+    "Nightfall",
+    "Night"
+  ],
+  "\u5712": [
+    "Park",
+    "Garden",
+    "Yard",
+    "Farm"
+  ],
+  "\u66dc": [
+    "Weekday"
+  ],
+  "\u66f8": [
+    "Write"
+  ],
+  "\u9060": [
+    "Distant",
+    "Far"
+  ],
+  "\u9580": [
+    "Gate",
+    "Counter For Cannons"
+  ],
+  "\u4fc2": [
+    "Person In Charge",
+    "Connection",
+    "Duty",
+    "Concern Oneself"
+  ],
+  "\u53d6": [
+    "Take",
+    "Fetch",
+    "Take Up"
+  ],
+  "\u54c1": [
+    "Goods",
+    "Refinement",
+    "Dignity",
+    "Article",
+    "Counter For Meal Courses"
+  ],
+  "\u5b88": [
+    "Guard",
+    "Protect",
+    "Defend",
+    "Obey"
+  ],
+  "\u5e78": [
+    "Happiness",
+    "Blessing",
+    "Fortune"
+  ],
+  "\u6025": [
+    "Hurry",
+    "Emergency",
+    "Sudden",
+    "Steep"
+  ],
+  "\u771f": [
+    "True",
+    "Reality",
+    "Buddhist Sect"
+  ],
+  "\u7bb1": [
+    "Box",
+    "Chest",
+    "Case",
+    "Bin",
+    "Railway Car"
+  ],
+  "\u8377": [
+    "Baggage",
+    "Shoulder-pole Load",
+    "Bear (a Burden)",
+    "Shoulder (a Gun)",
+    "Load",
+    "Cargo",
+    "Freight"
+  ],
+  "\u9762": [
+    "Mask",
+    "Face",
+    "Features",
+    "Surface"
+  ],
+  "\u5178": [
+    "Code",
+    "Ceremony",
+    "Law",
+    "Rule"
+  ],
+  "\u559c": [
+    "Rejoice",
+    "Take Pleasure In"
+  ],
+  "\u5e9c": [
+    "Borough",
+    "Urban Prefecture",
+    "Govt Office",
+    "Representative Body",
+    "Storehouse"
+  ],
+  "\u6cbb": [
+    "Reign",
+    "Be At Peace",
+    "Calm Down",
+    "Subdue",
+    "Quell",
+    "Govt",
+    "Cure",
+    "Heal",
+    "Rule",
+    "Conserve"
+  ],
+  "\u6d74": [
+    "Bathe",
+    "Be Favored With",
+    "Bask In"
+  ],
+  "\u7b11": [
+    "Laugh"
+  ],
+  "\u8f9e": [
+    "Resign",
+    "Word",
+    "Term",
+    "Expression"
+  ],
+  "\u95a2": [
+    "Connection",
+    "Barrier",
+    "Gateway",
+    "Involve",
+    "Concerning"
+  ],
+  "\u4fdd": [
+    "Protect",
+    "Guarantee",
+    "Keep",
+    "Preserve",
+    "Sustain",
+    "Support"
+  ],
+  "\u5f01": [
+    "Valve",
+    "Petal",
+    "Braid",
+    "Speech",
+    "Dialect",
+    "Discrimination",
+    "Dispose Of",
+    "Distinguish",
+    "Conical Cap"
+  ],
+  "\u653f": [
+    "Politics",
+    "Government"
+  ],
+  "\u7559": [
+    "Detain",
+    "Fasten",
+    "Halt",
+    "Stop"
+  ],
+  "\u8a3c": [
+    "Evidence",
+    "Proof",
+    "Certificate"
+  ],
+  "\u967a": [
+    "Precipitous",
+    "Inaccessible Place",
+    "Impregnable Position",
+    "Steep Place",
+    "Sharp Eyes"
+  ],
+  "\u5371": [
+    "Dangerous",
+    "Fear",
+    "Uneasy"
+  ],
+  "\u5b58": [
+    "Exist",
+    "Suppose",
+    "Be Aware Of",
+    "Believe",
+    "Feel"
+  ],
+  "\u5c02": [
+    "Specialty",
+    "Exclusive",
+    "Mainly",
+    "Solely"
+  ],
+  "\u539f": [
+    "Meadow",
+    "Original",
+    "Primitive",
+    "Field",
+    "Plain",
+    "Prairie",
+    "Tundra",
+    "Wilderness"
+  ],
+  "\u7d30": [
+    "Dainty",
+    "Get Thin",
+    "Taper",
+    "Slender",
+    "Narrow",
+    "Detailed",
+    "Precise"
+  ],
+  "\u85ac": [
+    "Medicine",
+    "Chemical",
+    "Enamel",
+    "Gunpowder",
+    "Benefit"
+  ],
+  "\u9f3b": [
+    "Nose",
+    "Snout"
+  ],
+  "\u5074": [
+    "Side",
+    "Lean",
+    "Oppose",
+    "Regret"
+  ],
+  "\u5175": [
+    "Soldier",
+    "Private",
+    "Troops",
+    "Army",
+    "Warfare",
+    "Strategy",
+    "Tactics"
+  ],
+  "\u5802": [
+    "Public Chamber",
+    "Hall"
+  ],
+  "\u5869": [
+    "Salt"
+  ],
+  "\u5e2d": [
+    "Seat",
+    "Mat",
+    "Occasion",
+    "Place"
+  ],
+  "\u6557": [
+    "Failure",
+    "Defeat",
+    "Reversal"
+  ],
+  "\u679c": [
+    "Fruit",
+    "Reward",
+    "Carry Out",
+    "Achieve",
+    "Complete",
+    "End",
+    "Finish",
+    "Succeed"
+  ],
+  "\u6804": [
+    "Flourish",
+    "Prosperity",
+    "Honor",
+    "Glory",
+    "Splendor"
+  ],
+  "\u6885": [
+    "Plum"
+  ],
+  "\u7121": [
+    "Nothingness",
+    "None",
+    "Ain't",
+    "Nothing",
+    "Nil",
+    "Not"
+  ],
+  "\u7d50": [
+    "Tie",
+    "Bind",
+    "Contract",
+    "Join",
+    "Organize",
+    "Do Up Hair",
+    "Fasten"
+  ],
+  "\u56e0": [
+    "Cause",
+    "Factor",
+    "Be Associated With",
+    "Depend On",
+    "Be Limited To"
+  ],
+  "\u5e38": [
+    "Usual",
+    "Ordinary",
+    "Normal",
+    "Common",
+    "Regular",
+    "Continually",
+    "Always",
+    "Long-lasting"
+  ],
+  "\u8b58": [
+    "Discriminating",
+    "Know",
+    "Write"
+  ],
+  "\u975e": [
+    "Un-",
+    "Mistake",
+    "Negative",
+    "Injustice",
+    "Non-"
+  ],
+  "\u5e72": [
+    "Dry",
+    "Parch",
+    "Ebb",
+    "Recede",
+    "Interfere",
+    "Intercede"
+  ],
+  "\u5b98": [
+    "Bureaucrat",
+    "The Government",
+    "Organ"
+  ],
+  "\u5bdf": [
+    "Guess",
+    "Presume",
+    "Surmise",
+    "Judge",
+    "Understand"
+  ],
+  "\u5e95": [
+    "Bottom",
+    "Sole",
+    "Depth",
+    "Bottom Price",
+    "Base",
+    "Kind",
+    "Sort"
+  ],
+  "\u611b": [
+    "Love",
+    "Affection",
+    "Favourite"
+  ],
+  "\u7f72": [
+    "Signature",
+    "Govt Office",
+    "Police Station"
+  ],
+  "\u8b66": [
+    "Admonish",
+    "Commandment"
+  ],
+  "\u899a": [
+    "Memorize",
+    "Learn",
+    "Remember",
+    "Awake",
+    "Sober Up"
+  ],
+  "\u8aac": [
+    "Opinion",
+    "Theory",
+    "Explanation",
+    "Rumor"
+  ],
+  "\u8a13": [
+    "Instruction",
+    "Japanese Character Reading",
+    "Explanation",
+    "Read"
+  ],
+  "\u8a66": [
+    "Test",
+    "Try",
+    "Attempt",
+    "Experiment",
+    "Ordeal"
+  ],
+  "\u5f13": [
+    "Bow",
+    "Bow (archery, Violin)"
+  ],
+  "\u544a": [
+    "Revelation",
+    "Tell",
+    "Inform",
+    "Announce"
+  ],
+  "\u7a2e": [
+    "Species",
+    "Kind",
+    "Class",
+    "Variety",
+    "Seed"
+  ],
+  "\u9054": [
+    "Accomplished",
+    "Reach",
+    "Arrive",
+    "Attain"
+  ],
+  "\u985e": [
+    "Sort",
+    "Kind",
+    "Variety",
+    "Class",
+    "Genus"
+  ],
+  "\u5831": [
+    "Report",
+    "News",
+    "Reward",
+    "Retribution"
+  ],
+  "\u7b49": [
+    "Etc.",
+    "And So Forth",
+    "Class (first)",
+    "Quality",
+    "Equal",
+    "Similar"
+  ],
+  "\u6c7d": [
+    "Vapor",
+    "Steam"
+  ],
+  "\u501f": [
+    "Borrow",
+    "Rent"
+  ],
+  "\u713c": [
+    "Bake",
+    "Burning"
+  ],
+  "\u5ea7": [
+    "Squat",
+    "Seat",
+    "Cushion",
+    "Gathering",
+    "Sit"
+  ],
+  "\u5fd8": [
+    "Forget"
+  ],
+  "\u6d17": [
+    "Wash",
+    "Inquire Into",
+    "Probe"
+  ],
+  "\u80f8": [
+    "Bosom",
+    "Breast",
+    "Chest",
+    "Heart",
+    "Feelings"
+  ],
+  "\u8133": [
+    "Brain",
+    "Memory"
+  ],
+  "\u9a13": [
+    "Verification",
+    "Effect",
+    "Testing"
+  ],
+  "\u53ef": [
+    "Can",
+    "Passable",
+    "Mustn't",
+    "Should Not",
+    "Do Not"
+  ],
+  "\u8a31": [
+    "Permit",
+    "Approve"
+  ],
+  "\u679a": [
+    "Sheet Of...",
+    "Counter For Flat Thin Objects Or Sheets"
+  ],
+  "\u9759": [
+    "Quiet"
+  ],
+  "\u53e5": [
+    "Phrase",
+    "Clause",
+    "Sentence",
+    "Passage",
+    "Paragraph",
+    "Counter For Haiku"
+  ],
+  "\u7981": [
+    "Prohibition",
+    "Ban",
+    "Forbid"
+  ],
+  "\u52a0": [
+    "Add",
+    "Addition",
+    "Increase",
+    "Join",
+    "Include",
+    "Canada"
+  ],
+  "\u7bc0": [
+    "Node",
+    "Season",
+    "Period",
+    "Occasion",
+    "Verse",
+    "Clause",
+    "Stanza",
+    "Honor",
+    "Joint",
+    "Knuckle",
+    "Knob",
+    "Knot",
+    "Tune",
+    "Melody"
+  ],
+  "\u6e1b": [
+    "Dwindle",
+    "Decrease",
+    "Reduce",
+    "Decline",
+    "Curtail",
+    "Get Hungry"
+  ],
+  "\u9806": [
+    "Obey",
+    "Order",
+    "Turn",
+    "Right",
+    "Docility",
+    "Occasion"
+  ],
+  "\u5bb9": [
+    "Contain",
+    "Form",
+    "Looks"
+  ],
+  "\u5e03": [
+    "Linen",
+    "Cloth",
+    "Spread",
+    "Distribute"
+  ],
+  "\u6613": [
+    "Easy",
+    "Ready To",
+    "Simple",
+    "Fortune-telling",
+    "Divination"
+  ],
+  "\u8ca1": [
+    "Property",
+    "Money",
+    "Wealth",
+    "Assets"
+  ],
+  "\u82e5": [
+    "Young",
+    "If",
+    "Perhaps",
+    "Possibly",
+    "Low Number",
+    "Immature"
+  ],
+  "\u8a5e": [
+    "Part Of Speech",
+    "Words",
+    "Poetry"
+  ],
+  "\u6b74": [
+    "Curriculum",
+    "Continuation",
+    "Passage Of Time"
+  ],
+  "\u820c": [
+    "Tongue",
+    "Reed",
+    "Clapper"
+  ],
+  "\u518a": [
+    "Tome",
+    "Counter For Books",
+    "Volume"
+  ],
+  "\u5b87": [
+    "Eaves",
+    "Roof",
+    "House",
+    "Heaven"
+  ],
+  "\u5b99": [
+    "Mid-air",
+    "Air",
+    "Space",
+    "Sky",
+    "Memorization",
+    "Interval Of Time"
+  ],
+  "\u56e3": [
+    "Group",
+    "Association"
+  ],
+  "\u66b4": [
+    "Outburst",
+    "Rave",
+    "Fret",
+    "Force",
+    "Violence",
+    "Cruelty",
+    "Outrage"
+  ],
+  "\u6df7": [
+    "Mix",
+    "Blend",
+    "Confuse"
+  ],
+  "\u4e71": [
+    "Riot",
+    "War",
+    "Disorder",
+    "Disturb"
+  ],
+  "\u5f92": [
+    "On Foot",
+    "Junior",
+    "Emptiness",
+    "Vanity",
+    "Futility",
+    "Uselessness",
+    "Ephemeral Thing",
+    "Gang",
+    "Set",
+    "Party",
+    "People"
+  ],
+  "\u5f97": [
+    "Gain",
+    "Get",
+    "Find",
+    "Earn",
+    "Acquire",
+    "Can",
+    "May",
+    "Able To",
+    "Profit",
+    "Advantage",
+    "Benefit"
+  ],
+  "\u6539": [
+    "Reformation",
+    "Change",
+    "Modify",
+    "Mend",
+    "Renew",
+    "Examine",
+    "Inspect",
+    "Search"
+  ],
+  "\u7d9a": [
+    "Continue",
+    "Series",
+    "Sequel"
+  ],
+  "\u9023": [
+    "Take Along",
+    "Lead",
+    "Join",
+    "Connect",
+    "Party",
+    "Gang",
+    "Clique"
+  ],
+  "\u5584": [
+    "Virtuous",
+    "Good",
+    "Goodness"
+  ],
+  "\u56f0": [
+    "Quandary",
+    "Become Distressed",
+    "Annoyed"
+  ],
+  "\u6bd4": [
+    "Compare",
+    "Race",
+    "Ratio",
+    "Philippines"
+  ],
+  "\u707d": [
+    "Disaster",
+    "Calamity",
+    "Woe",
+    "Curse",
+    "Evil"
+  ],
+  "\u6a5f": [
+    "Loom",
+    "Mechanism",
+    "Machine",
+    "Airplane",
+    "Opportunity",
+    "Potency",
+    "Efficacy",
+    "Occasion"
+  ],
+  "\u7387": [
+    "Ratio",
+    "Rate",
+    "Proportion",
+    "%",
+    "Factor",
+    "Lead",
+    "Spearhead",
+    "Command"
+  ],
+  "\u98db": [
+    "Fly",
+    "Skip (pages)",
+    "Scatter"
+  ],
+  "\u5bb3": [
+    "Harm",
+    "Injury"
+  ],
+  "\u4f59": [
+    "Too Much",
+    "Myself",
+    "Surplus",
+    "Other",
+    "Remainder"
+  ],
+  "\u96e3": [
+    "Difficult",
+    "Impossible",
+    "Trouble",
+    "Accident",
+    "Defect"
+  ],
+  "\u68b0": [
+    "Contraption",
+    "Fetter",
+    "Machine",
+    "Instrument"
+  ],
+  "\u78ba": [
+    "Assurance",
+    "Firm",
+    "Tight",
+    "Hard",
+    "Solid",
+    "Confirm",
+    "Clear",
+    "Evident"
+  ],
+  "\u500b": [
+    "Individual",
+    "Counter For Articles"
+  ],
+  "\u5727": [
+    "Pressure",
+    "Push",
+    "Overwhelm",
+    "Oppress",
+    "Dominate"
+  ],
+  "\u5728": [
+    "Exist",
+    "Outskirts",
+    "Suburbs",
+    "Located In"
+  ],
+  "\u5922": [
+    "Dream",
+    "Vision",
+    "Illusion"
+  ],
+  "\u7523": [
+    "Products",
+    "Bear",
+    "Give Birth",
+    "Yield",
+    "Childbirth",
+    "Native",
+    "Property"
+  ],
+  "\u539a": [
+    "Thick",
+    "Heavy",
+    "Rich",
+    "Kind",
+    "Cordial",
+    "Brazen",
+    "Shameless"
+  ],
+  "\u59bb": [
+    "Wife",
+    "Spouse"
+  ],
+  "\u8b70": [
+    "Deliberation",
+    "Consultation",
+    "Debate",
+    "Consideration"
+  ],
+  "\u72af": [
+    "Crime",
+    "Sin",
+    "Offense"
+  ],
+  "\u7f6a": [
+    "Guilt",
+    "Sin",
+    "Crime",
+    "Fault",
+    "Blame",
+    "Offense"
+  ],
+  "\u9632": [
+    "Ward Off",
+    "Defend",
+    "Protect",
+    "Resist"
+  ],
+  "\u7a74": [
+    "Hole",
+    "Aperture",
+    "Slit",
+    "Cave",
+    "Den"
+  ],
+  "\u8ad6": [
+    "Argument",
+    "Discourse"
+  ],
+  "\u7d4c": [
+    "Sutra",
+    "Longitude",
+    "Pass Thru",
+    "Expire",
+    "Warp"
+  ],
+  "\u7b1b": [
+    "Flute",
+    "Clarinet",
+    "Pipe",
+    "Whistle",
+    "Bagpipe",
+    "Piccolo"
+  ],
+  "\u53f2": [
+    "History",
+    "Chronicle"
+  ],
+  "\u6575": [
+    "Enemy",
+    "Foe",
+    "Opponent"
+  ],
+  "\u6e08": [
+    "Settle (debt, Etc.)",
+    "Relieve (burden)",
+    "Finish",
+    "Come To An End",
+    "Excusable",
+    "Need Not"
+  ],
+  "\u59d4": [
+    "Committee",
+    "Entrust To",
+    "Leave To",
+    "Devote",
+    "Discard"
+  ],
+  "\u6319": [
+    "Raise",
+    "Plan",
+    "Project",
+    "Behavior",
+    "Actions"
+  ],
+  "\u5224": [
+    "Judgement",
+    "Signature",
+    "Stamp",
+    "Seal"
+  ],
+  "\u5236": [
+    "System",
+    "Law",
+    "Rule"
+  ],
+  "\u52d9": [
+    "Task",
+    "Duties"
+  ],
+  "\u67fb": [
+    "Investigate"
+  ],
+  "\u7dcf": [
+    "General",
+    "Whole",
+    "All",
+    "Full",
+    "Total"
+  ],
+  "\u8a2d": [
+    "Establishment",
+    "Provision",
+    "Prepare"
+  ],
+  "\u8cc7": [
+    "Assets",
+    "Resources",
+    "Capital",
+    "Funds",
+    "Data",
+    "Be Conducive To",
+    "Contribute To"
+  ],
+  "\u6a29": [
+    "Authority",
+    "Power",
+    "Rights"
+  ],
+  "\u4ef6": [
+    "Affair",
+    "Case",
+    "Matter",
+    "Item"
+  ],
+  "\u6d3e": [
+    "Faction",
+    "Group",
+    "Party",
+    "Clique",
+    "Sect",
+    "School"
+  ],
+  "\u7d20": [
+    "Elementary",
+    "Principle",
+    "Naked",
+    "Uncovered"
+  ],
+  "\u65ad": [
+    "Severance",
+    "Decline",
+    "Refuse",
+    "Apologize",
+    "Warn",
+    "Dismiss",
+    "Prohibit",
+    "Decision",
+    "Judgement",
+    "Cutting"
+  ],
+  "\u8a55": [
+    "Evaluate",
+    "Criticism",
+    "Comment"
+  ],
+  "\u6279": [
+    "Criticism",
+    "Strike"
+  ],
+  "\u4efb": [
+    "Responsibility",
+    "Duty",
+    "Term",
+    "Entrust To",
+    "Appoint"
+  ],
+  "\u691c": [
+    "Examination",
+    "Investigate"
+  ],
+  "\u6761": [
+    "Article",
+    "Clause",
+    "Item",
+    "Stripe",
+    "Streak"
+  ],
+  "\u8cac": [
+    "Blame",
+    "Condemn",
+    "Censure"
+  ],
+  "\u7701": [
+    "Focus",
+    "Government Ministry",
+    "Conserve"
+  ],
+  "\u5897": [
+    "Increase",
+    "Add",
+    "Augment",
+    "Gain",
+    "Promote"
+  ],
+  "\u7a0e": [
+    "Tax",
+    "Duty"
+  ],
+  "\u89e3": [
+    "Unravel",
+    "Notes",
+    "Key",
+    "Explanation",
+    "Understanding",
+    "Untie",
+    "Undo",
+    "Solve",
+    "Answer",
+    "Cancel",
+    "Absolve",
+    "Explain",
+    "Minute"
+  ],
+  "\u969b": [
+    "Occasion",
+    "Side",
+    "Edge",
+    "Verge",
+    "Dangerous",
+    "Adventurous",
+    "Indecent",
+    "Time",
+    "When"
+  ],
+  "\u8a8d": [
+    "Acknowledge",
+    "Witness",
+    "Discern",
+    "Recognize",
+    "Appreciate",
+    "Believe"
+  ],
+  "\u7fa9": [
+    "Righteousness",
+    "Justice",
+    "Morality",
+    "Honor",
+    "Loyalty",
+    "Meaning"
+  ],
+  "\u8a95": [
+    "Nativity",
+    "Be Born",
+    "Declension",
+    "Lie",
+    "Be Arbitrary"
+  ],
+  "\u904e": [
+    "Overdo",
+    "Exceed",
+    "Go Beyond",
+    "Error"
+  ],
+  "\u5bae": [
+    "Shinto Shrine",
+    "Constellations",
+    "Palace",
+    "Princess"
+  ],
+  "\u5404": [
+    "Each",
+    "Every",
+    "Either"
+  ],
+  "\u6848": [
+    "Plan",
+    "Suggestion",
+    "Draft",
+    "Ponder",
+    "Fear",
+    "Proposition",
+    "Idea",
+    "Expectation",
+    "Worry",
+    "Table",
+    "Bench"
+  ],
+  "\u7f6e": [
+    "Placement",
+    "Put",
+    "Set",
+    "Deposit",
+    "Leave Behind",
+    "Keep",
+    "Employ",
+    "Pawn"
+  ],
+  "\u8cbb": [
+    "Expense",
+    "Cost",
+    "Spend",
+    "Consume",
+    "Waste"
+  ],
+  "\u4fa1": [
+    "Value",
+    "Price"
+  ],
+  "\u52e2": [
+    "Forces",
+    "Energy",
+    "Military Strength"
+  ],
+  "\u55b6": [
+    "Occupation",
+    "Camp",
+    "Perform",
+    "Build",
+    "Conduct (business)"
+  ],
+  "\u793a": [
+    "Show",
+    "Indicate",
+    "Point Out",
+    "Express",
+    "Display"
+  ],
+  "\u7d71": [
+    "Overall",
+    "Relationship",
+    "Ruling",
+    "Governing"
+  ],
+  "\u9818": [
+    "Jurisdiction",
+    "Dominion",
+    "Territory",
+    "Fief",
+    "Reign"
+  ],
+  "\u7b56": [
+    "Scheme",
+    "Plan",
+    "Policy",
+    "Step",
+    "Means"
+  ],
+  "\u526f": [
+    "Vice-",
+    "Assistant",
+    "Aide",
+    "Duplicate",
+    "Copy"
+  ],
+  "\u89b3": [
+    "Outlook",
+    "Look",
+    "Appearance",
+    "Condition",
+    "View"
+  ],
+  "\u5024": [
+    "Price",
+    "Cost",
+    "Value"
+  ],
+  "\u5438": [
+    "Suck",
+    "Imbibe",
+    "Inhale",
+    "Sip"
+  ],
+  "\u57df": [
+    "Range",
+    "Region",
+    "Limits",
+    "Stage",
+    "Level"
+  ],
+  "\u59ff": [
+    "Figure",
+    "Form",
+    "Shape"
+  ],
+  "\u5fdc": [
+    "Apply",
+    "Answer",
+    "Yes",
+    "Ok",
+    "Reply",
+    "Accept"
+  ],
+  "\u63d0": [
+    "Propose",
+    "Take Along",
+    "Carry In Hand"
+  ],
+  "\u72b6": [
+    "Status Quo",
+    "Conditions",
+    "Circumstances",
+    "Form",
+    "Appearance"
+  ],
+  "\u614b": [
+    "Attitude",
+    "Condition",
+    "Figure",
+    "Appearance",
+    "Voice (of Verbs)"
+  ],
+  "\u8cc0": [
+    "Congratulations",
+    "Joy"
+  ],
+  "\u53ce": [
+    "Income",
+    "Obtain",
+    "Reap",
+    "Pay",
+    "Supply",
+    "Store"
+  ],
+  "\u505c": [
+    "Halt",
+    "Stopping"
+  ],
+  "\u9769": [
+    "Leather",
+    "Skin",
+    "Reform",
+    "Become Serious"
+  ],
+  "\u8077": [
+    "Post",
+    "Employment",
+    "Work"
+  ],
+  "\u898f": [
+    "Standard",
+    "Measure"
+  ],
+  "\u8b77": [
+    "Safeguard",
+    "Protect"
+  ],
+  "\u5272": [
+    "Proportion",
+    "Comparatively",
+    "Divide",
+    "Cut",
+    "Separate",
+    "Split"
+  ],
+  "\u88c1": [
+    "Tailor",
+    "Judge",
+    "Decision",
+    "Cut Out (pattern)"
+  ],
+  "\u6f14": [
+    "Performance",
+    "Act",
+    "Play",
+    "Render",
+    "Stage"
+  ],
+  "\u5f8b": [
+    "Rhythm",
+    "Law",
+    "Regulation",
+    "Gauge",
+    "Control"
+  ],
+  "\u5e2b": [
+    "Expert",
+    "Teacher",
+    "Master",
+    "Model",
+    "Exemplar",
+    "Army (incl. Counter)",
+    "War"
+  ],
+  "\u770b": [
+    "Watch Over",
+    "See"
+  ],
+  "\u6e96": [
+    "Semi-",
+    "Correspond To",
+    "Proportionate To",
+    "Conform",
+    "Imitate"
+  ],
+  "\u5247": [
+    "Rule",
+    "Follow",
+    "Based On",
+    "Model After"
+  ],
+  "\u5099": [
+    "Equip",
+    "Provision",
+    "Preparation"
+  ],
+  "\u5c0e": [
+    "Guidance",
+    "Leading",
+    "Conduct",
+    "Usher"
+  ],
+  "\u5e79": [
+    "Tree Trunk",
+    "Main Part",
+    "Talent",
+    "Capability"
+  ],
+  "\u5f35": [
+    "Lengthen",
+    "Counter For Bows & Stringed Instruments",
+    "Stretch",
+    "Spread",
+    "Put Up (tent)"
+  ],
+  "\u512a": [
+    "Tenderness",
+    "Excel",
+    "Surpass",
+    "Actor",
+    "Superiority",
+    "Gentleness"
+  ],
+  "\u5b85": [
+    "Home",
+    "House",
+    "Residence",
+    "Our House",
+    "My Husband"
+  ],
+  "\u73fe": [
+    "Present",
+    "Existing",
+    "Actual"
+  ],
+  "\u4e73": [
+    "Milk",
+    "Breasts"
+  ],
+  "\u547c": [
+    "Call",
+    "Call Out To",
+    "Invite"
+  ],
+  "\u57ce": [
+    "Castle"
+  ],
+  "\u4ff3": [
+    "Haiku",
+    "Actor"
+  ],
+  "\u62c5": [
+    "Shouldering",
+    "Carry",
+    "Raise",
+    "Bear"
+  ],
+  "\u984d": [
+    "Forehead",
+    "Tablet",
+    "Plaque",
+    "Framed Picture",
+    "Sum",
+    "Amount",
+    "Volume"
+  ],
+  "\u88fd": [
+    "Made In...",
+    "Manufacture"
+  ],
+  "\u8f38": [
+    "Transport",
+    "Send",
+    "Be Inferior"
+  ],
+  "\u71c3": [
+    "Burn",
+    "Blaze",
+    "Glow"
+  ],
+  "\u795d": [
+    "Celebrate",
+    "Congratulate"
+  ],
+  "\u5c4a": [
+    "Deliver",
+    "Reach",
+    "Arrive",
+    "Report",
+    "Notify",
+    "Forward"
+  ],
+  "\u5c64": [
+    "Stratum",
+    "Social Class",
+    "Layer",
+    "Story",
+    "Floor"
+  ],
+  "\u578b": [
+    "Mould",
+    "Type",
+    "Model"
+  ],
+  "\u5e81": [
+    "Government Office"
+  ],
+  "\u8996": [
+    "Inspection",
+    "Regard As",
+    "See",
+    "Look At"
+  ],
+  "\u5dee": [
+    "Distinction",
+    "Difference",
+    "Variation",
+    "Discrepancy",
+    "Margin",
+    "Balance"
+  ],
+  "\u7ba1": [
+    "Pipe",
+    "Tube",
+    "Wind Instrument",
+    "Drunken Talk",
+    "Control",
+    "Jurisdiction"
+  ],
+  "\u8c61": [
+    "Elephant",
+    "Pattern After",
+    "Imitate",
+    "Image",
+    "Shape",
+    "Sign (of The Times)"
+  ],
+  "\u91cf": [
+    "Quantity",
+    "Measure",
+    "Weight",
+    "Amount",
+    "Consider",
+    "Estimate",
+    "Surmise"
+  ],
+  "\u5883": [
+    "Boundary",
+    "Border",
+    "Region"
+  ],
+  "\u6b66": [
+    "Warrior",
+    "Military",
+    "Chivalry",
+    "Arms"
+  ],
+  "\u8cea": [
+    "Substance",
+    "Quality",
+    "Matter",
+    "Temperament"
+  ],
+  "\u8ff0": [
+    "Mention",
+    "State",
+    "Speak",
+    "Relate"
+  ],
+  "\u4f9b": [
+    "Submit",
+    "Offer",
+    "Present",
+    "Serve (meal)",
+    "Accompany"
+  ],
+  "\u5c55": [
+    "Unfold",
+    "Expand"
+  ],
+  "\u682a": [
+    "Stocks",
+    "Stump",
+    "Shares",
+    "Stock",
+    "Counter For Small Plants"
+  ],
+  "\u9650": [
+    "Limit",
+    "Restrict",
+    "To Best Of Ability"
+  ],
+  "\u7968": [
+    "Ballot",
+    "Label",
+    "Ticket",
+    "Sign"
+  ],
+  "\u666f": [
+    "Scenery",
+    "View"
+  ],
+  "\u88dc": [
+    "Supplement",
+    "Supply",
+    "Make Good",
+    "Offset",
+    "Compensate",
+    "Assistant",
+    "Learner"
+  ],
+  "\u5019": [
+    "Climate",
+    "Season",
+    "Weather",
+    "Wait For",
+    "Expect"
+  ],
+  "\u69cb": [
+    "Posture",
+    "Build",
+    "Pretend"
+  ],
+  "\u6a21": [
+    "Imitation",
+    "Copy",
+    "Mock"
+  ],
+  "\u52b9": [
+    "Merit",
+    "Efficacy",
+    "Efficiency",
+    "Benefit"
+  ],
+  "\u5c5e": [
+    "Belong",
+    "Genus",
+    "Subordinate Official",
+    "Affiliated"
+  ],
+  "\u6163": [
+    "Accustomed",
+    "Get Used To",
+    "Become Experienced"
+  ],
+  "\u8c4a": [
+    "Bountiful",
+    "Excellent",
+    "Rich"
+  ],
+  "\u6e80": [
+    "Full",
+    "Fullness",
+    "Enough",
+    "Satisfy"
+  ],
+  "\u80a5": [
+    "Fertilizer",
+    "Get Fat",
+    "Fertile",
+    "Manure",
+    "Pamper"
+  ],
+  "\u5dfb": [
+    "Scroll",
+    "Volume",
+    "Book",
+    "Part",
+    "Roll Up",
+    "Wind Up",
+    "Tie",
+    "Coil",
+    "Counter For Texts (or Book Scrolls)"
+  ],
+  "\u5c45": [
+    "Reside",
+    "To Be",
+    "Exist",
+    "Live With"
+  ],
+  "\u9020": [
+    "Create",
+    "Make",
+    "Structure",
+    "Physique"
+  ],
+  "\u6388": [
+    "Impart",
+    "Instruct",
+    "Grant",
+    "Confer"
+  ],
+  "\u5370": [
+    "Stamp",
+    "Seal",
+    "Mark",
+    "Imprint",
+    "Symbol",
+    "Emblem",
+    "Trademark",
+    "Evidence",
+    "Souvenir",
+    "India"
+  ],
+  "\u5275": [
+    "Genesis",
+    "Wound",
+    "Injury",
+    "Hurt",
+    "Start",
+    "Originate"
+  ],
+  "\u5fa9": [
+    "Restore",
+    "Return To",
+    "Revert",
+    "Resume"
+  ],
+  "\u5f80": [
+    "Journey",
+    "Travel",
+    "Chase Away",
+    "Let Go",
+    "Going",
+    "Before",
+    "Formerly"
+  ],
+  "\u7b46": [
+    "Writing Brush",
+    "Writing",
+    "Painting Brush",
+    "Handwriting"
+  ],
+  "\u8caf": [
+    "Savings",
+    "Store",
+    "Lay In",
+    "Keep",
+    "Wear Mustache"
+  ],
+  "\u6545": [
+    "Happenstance",
+    "Especially",
+    "Intentionally",
+    "Reason",
+    "Cause",
+    "Circumstances",
+    "The Late",
+    "Therefore",
+    "Consequently"
+  ],
+  "\u969c": [
+    "Hinder",
+    "Hurt",
+    "Harm"
+  ],
+  "\u5f93": [
+    "Accompany",
+    "Obey",
+    "Submit To",
+    "Comply",
+    "Follow",
+    "Secondary",
+    "Incidental",
+    "Subordinate"
+  ],
+  "\u6211": [
+    "Ego",
+    "I",
+    "Selfish",
+    "Our",
+    "Oneself"
+  ],
+  "\u6fc0": [
+    "Violent",
+    "Get Excited",
+    "Enraged",
+    "Chafe",
+    "Incite"
+  ],
+  "\u8a0e": [
+    "Chastise",
+    "Attack",
+    "Defeat",
+    "Destroy",
+    "Conquer"
+  ],
+  "\u90f5": [
+    "Mail",
+    "Stagecoach Stop"
+  ],
+  "\u91dd": [
+    "Needle",
+    "Pin",
+    "Staple",
+    "Stinger"
+  ],
+  "\u6cb3": [
+    "River"
+  ],
+  "\u518d": [
+    "Again",
+    "Twice",
+    "Second Time"
+  ],
+  "\u63a5": [
+    "Touch",
+    "Contact",
+    "Adjoin",
+    "Piece Together"
+  ],
+  "\u72ec": [
+    "Single",
+    "Alone",
+    "Spontaneously",
+    "Germany"
+  ],
+  "\u62db": [
+    "Beckon",
+    "Invite",
+    "Summon",
+    "Engage"
+  ],
+  "\u6bb5": [
+    "Grade",
+    "Steps",
+    "Stairs"
+  ],
+  "\u80c3": [
+    "Stomach",
+    "Paunch",
+    "Crop",
+    "Craw"
+  ],
+  "\u8179": [
+    "Abdomen",
+    "Belly",
+    "Stomach"
+  ],
+  "\u75db": [
+    "Pain",
+    "Hurt",
+    "Damage",
+    "Bruise"
+  ],
+  "\u9000": [
+    "Retreat",
+    "Withdraw",
+    "Retire",
+    "Resign",
+    "Repel",
+    "Expel",
+    "Reject"
+  ],
+  "\u7e54": [
+    "Weave",
+    "Fabric"
+  ],
+  "\u8cb8": [
+    "Lend"
+  ],
+  "\u8ff7": [
+    "Astray",
+    "Be Perplexed",
+    "In Doubt",
+    "Lost",
+    "Err",
+    "Illusion"
+  ],
+  "\u5c31": [
+    "Concerning",
+    "Settle",
+    "Take Position",
+    "Depart",
+    "Study",
+    "Per"
+  ],
+  "\u8a2a": [
+    "Call On",
+    "Visit",
+    "Look Up",
+    "Offer Sympathy"
+  ],
+  "\u6975": [
+    "Poles",
+    "Settlement",
+    "Conclusion",
+    "End",
+    "Highest Rank",
+    "Electric Poles",
+    "Very",
+    "Extremely",
+    "Most",
+    "Highly",
+    "10**48"
+  ],
+  "\u5065": [
+    "Healthy",
+    "Health",
+    "Strength",
+    "Persistence"
+  ],
+  "\u5eb7": [
+    "Ease",
+    "Peace"
+  ],
+  "\u7d66": [
+    "Salary",
+    "Wage",
+    "Gift",
+    "Allow",
+    "Grant",
+    "Bestow On"
+  ],
+  "\u9006": [
+    "Inverted",
+    "Reverse",
+    "Opposite",
+    "Wicked"
+  ],
+  "\u5eab": [
+    "Warehouse",
+    "Storehouse"
+  ],
+  "\u5150": [
+    "Newborn Babe",
+    "Child",
+    "Young Of Animals"
+  ],
+  "\u51b7": [
+    "Cool",
+    "Cold (beer, Person)",
+    "Chill"
+  ],
+  "\u5e7c": [
+    "Infancy",
+    "Childhood"
+  ],
+  "\u51e6": [
+    "Dispose",
+    "Manage",
+    "Deal With",
+    "Sentence",
+    "Condemn",
+    "Act",
+    "Behave",
+    "Place"
+  ],
+  "\u535a": [
+    "Dr.",
+    "Command",
+    "Esteem",
+    "Win Acclaim",
+    "Ph.d.",
+    "Exposition",
+    "Fair"
+  ],
+  "\u6e05": [
+    "Pure",
+    "Purify",
+    "Cleanse",
+    "Exorcise",
+    "Manchu Dynasty"
+  ],
+  "\u6f54": [
+    "Undefiled",
+    "Pure",
+    "Clean",
+    "Righteous",
+    "Gallant"
+  ],
+  "\u9332": [
+    "Record"
+  ],
+  "\u968a": [
+    "Regiment",
+    "Party",
+    "Company",
+    "Squad"
+  ],
+  "\u4fee": [
+    "Discipline",
+    "Conduct Oneself Well",
+    "Study",
+    "Master"
+  ],
+  "\u5238": [
+    "Ticket"
+  ],
+  "\u5a66": [
+    "Lady",
+    "Woman",
+    "Wife",
+    "Bride"
+  ],
+  "\u76ca": [
+    "Benefit",
+    "Gain",
+    "Profit",
+    "Advantage"
+  ],
+  "\u79fb": [
+    "Shift",
+    "Move",
+    "Change",
+    "Drift",
+    "Catch (cold, Fire)",
+    "Pass Into"
+  ],
+  "\u7a0b": [
+    "Extent",
+    "Degree",
+    "Law",
+    "Formula",
+    "Distance",
+    "Limits",
+    "Amount"
+  ],
+  "\u7cbe": [
+    "Refined",
+    "Ghost",
+    "Fairy",
+    "Energy",
+    "Vitality",
+    "Semen",
+    "Excellence",
+    "Purity",
+    "Skill"
+  ],
+  "\u7d76": [
+    "Discontinue",
+    "Sever",
+    "Cut Off",
+    "Abstain",
+    "Interrupt",
+    "Suppress",
+    "Be Beyond",
+    "Without Match",
+    "Peerless",
+    "Unparalleled"
+  ],
+  "\u4e26": [
+    "Row",
+    "And",
+    "Besides",
+    "As Well As",
+    "Line Up",
+    "Rank With",
+    "Rival",
+    "Equal"
+  ],
+  "\u61b2": [
+    "Constitution",
+    "Law"
+  ],
+  "\u8846": [
+    "Masses",
+    "Great Numbers",
+    "Multitude",
+    "Populace"
+  ],
+  "\u95a3": [
+    "Tower",
+    "Tall Building",
+    "Palace"
+  ],
+  "\u7a4d": [
+    "Volume",
+    "Product (x*y)",
+    "Acreage",
+    "Contents",
+    "Pile Up",
+    "Stack",
+    "Load",
+    "Amass"
+  ],
+  "\u81e3": [
+    "Retainer",
+    "Subject"
+  ],
+  "\u7565": [
+    "Abbreviation",
+    "Omission",
+    "Outline",
+    "Shorten",
+    "Capture",
+    "Plunder"
+  ],
+  "\u822a": [
+    "Navigate",
+    "Sail",
+    "Cruise",
+    "Fly"
+  ],
+  "\u5bc4": [
+    "Draw Near",
+    "Stop In",
+    "Bring Near",
+    "Gather",
+    "Collect",
+    "Send",
+    "Forward"
+  ],
+  "\u677f": [
+    "Plank",
+    "Board",
+    "Plate",
+    "Stage"
+  ],
+  "\u8857": [
+    "Boulevard",
+    "Street",
+    "Town"
+  ],
+  "\u5b97": [
+    "Religion",
+    "Sect",
+    "Denomination",
+    "Main Point",
+    "Origin",
+    "Essence"
+  ],
+  "\u7cfb": [
+    "Lineage",
+    "System"
+  ],
+  "\u904a": [
+    "Play"
+  ],
+  "\u65d7": [
+    "National Flag",
+    "Banner",
+    "Standard"
+  ],
+  "\u7167": [
+    "Illuminate",
+    "Shine",
+    "Compare",
+    "Bashful"
+  ],
+  "\u5feb": [
+    "Cheerful",
+    "Pleasant",
+    "Agreeable",
+    "Comfortable"
+  ],
+  "\u7248": [
+    "Printing Block",
+    "Printing Plate",
+    "Edition",
+    "Impression",
+    "Label"
+  ],
+  "\u8ca7": [
+    "Poverty",
+    "Poor"
+  ],
+  "\u9069": [
+    "Suitable",
+    "Occasional",
+    "Rare",
+    "Qualified",
+    "Capable"
+  ],
+  "\u9810": [
+    "Deposit",
+    "Custody",
+    "Leave With",
+    "Entrust To"
+  ],
+  "\u5ef6": [
+    "Prolong",
+    "Stretching"
+  ],
+  "\u7fcc": [
+    "The Following",
+    "Next"
+  ],
+  "\u89a7": [
+    "Perusal",
+    "See"
+  ],
+  "\u80cc": [
+    "Stature",
+    "Height",
+    "Back",
+    "Behind",
+    "Disobey",
+    "Defy",
+    "Go Back On",
+    "Rebel"
+  ],
+  "\u7de8": [
+    "Compilation",
+    "Knit",
+    "Plait",
+    "Braid",
+    "Twist",
+    "Editing",
+    "Completed Poem",
+    "Part Of A Book"
+  ],
+  "\u9664": [
+    "Exclude",
+    "Division (x/3)",
+    "Remove",
+    "Abolish",
+    "Cancel",
+    "Except"
+  ],
+  "\u68d2": [
+    "Rod",
+    "Stick",
+    "Cane",
+    "Pole",
+    "Club",
+    "Line"
+  ],
+  "\u5009": [
+    "Godown",
+    "Warehouse",
+    "Storehouse",
+    "Cellar",
+    "Treasury"
+  ],
+  "\u5b6b": [
+    "Grandchild",
+    "Descendants"
+  ],
+  "\u5de3": [
+    "Nest",
+    "Rookery",
+    "Hive",
+    "Cobweb",
+    "Den"
+  ],
+  "\u5e2f": [
+    "Sash",
+    "Belt",
+    "Obi",
+    "Zone",
+    "Region"
+  ],
+  "\u5f84": [
+    "Diameter",
+    "Path",
+    "Method"
+  ],
+  "\u6551": [
+    "Salvation",
+    "Save",
+    "Help",
+    "Rescue",
+    "Reclaim"
+  ],
+  "\u6563": [
+    "Scatter",
+    "Disperse",
+    "Spend",
+    "Squander"
+  ],
+  "\u7c89": [
+    "Flour",
+    "Powder",
+    "Dust"
+  ],
+  "\u8108": [
+    "Vein",
+    "Pulse",
+    "Hope"
+  ],
+  "\u83dc": [
+    "Vegetable",
+    "Side Dish",
+    "Greens"
+  ],
+  "\u8ca8": [
+    "Freight",
+    "Goods",
+    "Property"
+  ],
+  "\u9678": [
+    "Land",
+    "Six"
+  ],
+  "\u4f3c": [
+    "Becoming",
+    "Resemble",
+    "Counterfeit",
+    "Imitate",
+    "Suitable"
+  ],
+  "\u5747": [
+    "Level",
+    "Average"
+  ],
+  "\u5893": [
+    "Grave",
+    "Tomb"
+  ],
+  "\u5bcc": [
+    "Wealth",
+    "Enrich",
+    "Abundant"
+  ],
+  "\u5fb3": [
+    "Benevolence",
+    "Virtue",
+    "Goodness",
+    "Commanding Respect"
+  ],
+  "\u63a2": [
+    "Grope",
+    "Search",
+    "Look For"
+  ],
+  "\u5e8f": [
+    "Preface",
+    "Beginning",
+    "Order",
+    "Precedence",
+    "Occasion",
+    "Chance",
+    "Incidentally"
+  ],
+  "\u5fd7": [
+    "Intention",
+    "Plan",
+    "Resolve",
+    "Aspire",
+    "Motive",
+    "Hopes",
+    "Shilling"
+  ],
+  "\u6069": [
+    "Grace",
+    "Kindness",
+    "Goodness",
+    "Favor",
+    "Mercy",
+    "Blessing",
+    "Benefit"
+  ],
+  "\u63a1": [
+    "Pick",
+    "Take",
+    "Fetch",
+    "Take Up"
+  ],
+  "\u685c": [
+    "Cherry"
+  ],
+  "\u6c38": [
+    "Eternity",
+    "Long",
+    "Lengthy"
+  ],
+  "\u6db2": [
+    "Fluid",
+    "Liquid",
+    "Juice",
+    "Sap",
+    "Secretion"
+  ],
+  "\u773c": [
+    "Eyeball"
+  ],
+  "\u7956": [
+    "Ancestor",
+    "Pioneer",
+    "Founder"
+  ],
+  "\u7e3e": [
+    "Exploits",
+    "Achievements",
+    "Unreeling Cocoons"
+  ],
+  "\u8208": [
+    "Entertain",
+    "Revive",
+    "Retrieve",
+    "Interest",
+    "Pleasure"
+  ],
+  "\u885b": [
+    "Defense",
+    "Protection"
+  ],
+  "\u8907": [
+    "Duplicate",
+    "Double",
+    "Compound",
+    "Multiple"
+  ],
+  "\u96d1": [
+    "Miscellaneous"
+  ],
+  "\u8cdb": [
+    "Approve",
+    "Praise",
+    "Title Or Inscription On Picture",
+    "Assist",
+    "Agree With"
+  ],
+  "\u9178": [
+    "Acid",
+    "Bitterness",
+    "Sour",
+    "Tart"
+  ],
+  "\u92ad": [
+    "Coin",
+    ".01 Yen",
+    "Money"
+  ],
+  "\u98fc": [
+    "Domesticate",
+    "Raise",
+    "Keep",
+    "Feed"
+  ],
+  "\u50b7": [
+    "Wound",
+    "Hurt",
+    "Injure",
+    "Impair",
+    "Pain",
+    "Injury",
+    "Cut",
+    "Gash",
+    "Scar",
+    "Weak Point"
+  ],
+  "\u515a": [
+    "Party",
+    "Faction",
+    "Clique"
+  ],
+  "\u5375": [
+    "Egg",
+    "Ovum",
+    "Spawn",
+    "Roe"
+  ],
+  "\u53b3": [
+    "Stern",
+    "Strictness",
+    "Severity",
+    "Rigidity"
+  ],
+  "\u6368": [
+    "Discard",
+    "Throw Away",
+    "Abandon",
+    "Resign",
+    "Reject",
+    "Sacrifice"
+  ],
+  "\u5bc6": [
+    "Secrecy",
+    "Density (pop)",
+    "Minuteness",
+    "Carefulness"
+  ],
+  "\u6b32": [
+    "Longing",
+    "Covetousness",
+    "Greed",
+    "Passion",
+    "Desire",
+    "Craving"
+  ],
+  "\u6696": [
+    "Warmth"
+  ],
+  "\u673a": [
+    "Desk",
+    "Table"
+  ],
+  "\u79d8": [
+    "Secret",
+    "Conceal"
+  ],
+  "\u8a33": [
+    "Translate",
+    "Reason",
+    "Circumstance",
+    "Case"
+  ],
+  "\u67d3": [
+    "Dye",
+    "Color",
+    "Paint",
+    "Stain",
+    "Print"
+  ],
+  "\u7c21": [
+    "Simplicity",
+    "Brevity"
+  ],
+  "\u9589": [
+    "Closed",
+    "Shut"
+  ],
+  "\u8a8c": [
+    "Document",
+    "Records"
+  ],
+  "\u7a93": [
+    "Window",
+    "Pane"
+  ],
+  "\u5426": [
+    "Negate",
+    "No",
+    "Noes",
+    "Refuse",
+    "Decline",
+    "Deny"
+  ],
+  "\u7b4b": [
+    "Muscle",
+    "Sinew",
+    "Tendon",
+    "Fiber",
+    "Plot",
+    "Plan",
+    "Descent"
+  ],
+  "\u5782": [
+    "Droop",
+    "Suspend",
+    "Hang",
+    "Slouch"
+  ],
+  "\u5b9d": [
+    "Treasure",
+    "Wealth",
+    "Valuables"
+  ],
+  "\u5ba3": [
+    "Proclaim",
+    "Say",
+    "Announce"
+  ],
+  "\u5c0a": [
+    "Revered",
+    "Valuable",
+    "Precious",
+    "Noble",
+    "Exalted"
+  ],
+  "\u5fe0": [
+    "Loyalty",
+    "Fidelity",
+    "Faithfulness"
+  ],
+  "\u62e1": [
+    "Broaden",
+    "Extend",
+    "Expand",
+    "Enlarge"
+  ],
+  "\u64cd": [
+    "Maneuver",
+    "Manipulate",
+    "Operate",
+    "Steer",
+    "Chastity",
+    "Virginity",
+    "Fidelity"
+  ],
+  "\u656c": [
+    "Awe",
+    "Respect",
+    "Honor",
+    "Revere"
+  ],
+  "\u66ae": [
+    "Evening",
+    "Twilight",
+    "Season's End",
+    "Livelihood",
+    "Make A Living",
+    "Spend Time"
+  ],
+  "\u7070": [
+    "Ashes",
+    "Puckery Juice",
+    "Cremate"
+  ],
+  "\u719f": [
+    "Mellow",
+    "Ripen",
+    "Mature",
+    "Acquire Skill"
+  ],
+  "\u7570": [
+    "Uncommon",
+    "Different",
+    "Queerness",
+    "Strangeness",
+    "Wonderful",
+    "Curious",
+    "Unusual"
+  ],
+  "\u7687": [
+    "Emperor"
+  ],
+  "\u76db": [
+    "Boom",
+    "Prosper",
+    "Copulate"
+  ],
+  "\u7802": [
+    "Sand"
+  ],
+  "\u7cd6": [
+    "Sugar"
+  ],
+  "\u7d0d": [
+    "Settlement",
+    "Obtain",
+    "Reap",
+    "Pay",
+    "Supply",
+    "Store"
+  ],
+  "\u80ba": [
+    "Lungs"
+  ],
+  "\u8457": [
+    "Renowned",
+    "Publish",
+    "Write",
+    "Remarkable",
+    "Phenomenal",
+    "Put On",
+    "Don",
+    "Wear",
+    "Arrival",
+    "Finish (race)",
+    "Counter For Suits Of Clothing",
+    "Literary Work"
+  ],
+  "\u84b8": [
+    "Steam",
+    "Heat",
+    "Sultry",
+    "Foment",
+    "Get Musty"
+  ],
+  "\u8535": [
+    "Storehouse",
+    "Hide",
+    "Own",
+    "Have",
+    "Possess"
+  ],
+  "\u88c5": [
+    "Attire",
+    "Dress",
+    "Pretend",
+    "Disguise",
+    "Profess"
+  ],
+  "\u88cf": [
+    "Back",
+    "Amidst",
+    "In",
+    "Reverse",
+    "Inside",
+    "Palm",
+    "Sole",
+    "Rear",
+    "Lining",
+    "Wrong Side"
+  ],
+  "\u8af8": [
+    "Various",
+    "Many",
+    "Several",
+    "Together"
+  ],
+  "\u8cc3": [
+    "Fare",
+    "Fee",
+    "Hire",
+    "Rent",
+    "Wages",
+    "Charge"
+  ],
+  "\u8aa4": [
+    "Mistake",
+    "Err",
+    "Do Wrong",
+    "Mislead"
+  ],
+  "\u81d3": [
+    "Entrails",
+    "Viscera",
+    "Bowels"
+  ],
+  "\u8cb4": [
+    "Precious",
+    "Value",
+    "Prize",
+    "Esteem",
+    "Honor"
+  ],
+  "\u964d": [
+    "Descend",
+    "Precipitate",
+    "Fall",
+    "Surrender"
+  ],
+  "\u7e2e": [
+    "Shrink",
+    "Contract",
+    "Shrivel",
+    "Wrinkle",
+    "Reduce"
+  ],
+  "\u7d14": [
+    "Genuine",
+    "Purity",
+    "Innocence",
+    "Net (profit)"
+  ],
+  "\u7e26": [
+    "Vertical",
+    "Length",
+    "Height",
+    "Self-indulgent",
+    "Wayward"
+  ],
+  "\u8056": [
+    "Holy",
+    "Saint",
+    "Sage",
+    "Master",
+    "Priest"
+  ],
+  "\u78c1": [
+    "Magnet",
+    "Porcelain"
+  ],
+  "\u7d05": [
+    "Crimson",
+    "Deep Red"
+  ],
+  "\u5c04": [
+    "Shoot",
+    "Shine Into",
+    "Onto",
+    "Archery"
+  ],
+  "\u5e55": [
+    "Curtain",
+    "Bunting",
+    "Act Of Play"
+  ],
+  "\u62dd": [
+    "Worship",
+    "Adore",
+    "Pray To"
+  ],
+  "\u63a8": [
+    "Conjecture",
+    "Infer",
+    "Guess",
+    "Suppose",
+    "Support",
+    "Push (for)"
+  ],
+  "\u63ee": [
+    "Brandish",
+    "Wave",
+    "Wag",
+    "Swing",
+    "Shake"
+  ],
+  "\u6cbf": [
+    "Run Alongside",
+    "Follow Along",
+    "Run Along",
+    "Lie Along"
+  ],
+  "\u6e90": [
+    "Source",
+    "Origin"
+  ],
+  "\u5287": [
+    "Drama",
+    "Play"
+  ],
+  "\u52e4": [
+    "Diligence",
+    "Become Employed",
+    "Serve"
+  ],
+  "\u627f": [
+    "Acquiesce",
+    "Hear",
+    "Listen To",
+    "Be Informed",
+    "Receive"
+  ],
+  "\u640d": [
+    "Damage",
+    "Loss",
+    "Disadvantage",
+    "Hurt",
+    "Injure"
+  ],
+  "\u679d": [
+    "Bough",
+    "Branch",
+    "Twig",
+    "Limb",
+    "Counter For Branches"
+  ],
+  "\u8c46": [
+    "Beans",
+    "Pea",
+    "Midget"
+  ],
+  "\u523b": [
+    "Engrave",
+    "Cut Fine",
+    "Chop",
+    "Hash",
+    "Mince",
+    "Time",
+    "Carving"
+  ],
+  "\u6e2c": [
+    "Fathom",
+    "Plan",
+    "Scheme",
+    "Measure"
+  ],
+  "\u7834": [
+    "Rend",
+    "Rip",
+    "Tear",
+    "Break",
+    "Destroy",
+    "Defeat",
+    "Frustrate"
+  ],
+  "\u820e": [
+    "Cottage",
+    "Inn",
+    "Hut",
+    "House",
+    "Mansion"
+  ],
+  "\u8b1b": [
+    "Lecture",
+    "Club",
+    "Association"
+  ],
+  "\u5df1": [
+    "Self"
+  ],
+  "\u6e56": [
+    "Lake"
+  ],
+  "\u9285": [
+    "Copper"
+  ],
+  "\u6cb9": [
+    "Oil",
+    "Fat"
+  ],
+  "\u65e7": [
+    "Old Times",
+    "Old Things",
+    "Old Friend",
+    "Former",
+    "Ex-"
+  ],
+  "\u8cbf": [
+    "Trade",
+    "Exchange"
+  ],
+  "\u5c06": [
+    "Leader",
+    "Commander",
+    "General",
+    "Admiral",
+    "Or",
+    "And Again",
+    "Soon",
+    "From Now On",
+    "Just About"
+  ],
+  "\u76df": [
+    "Alliance",
+    "Oath"
+  ],
+  "\u907a": [
+    "Bequeath",
+    "Leave Behind",
+    "Reserve"
+  ],
+  "\u662d": [
+    "Shining",
+    "Bright"
+  ],
+  "\u6f01": [
+    "Fishing",
+    "Fishery"
+  ],
+  "\u5146": [
+    "Portent",
+    "10**12",
+    "Trillion",
+    "Sign",
+    "Omen",
+    "Symptoms"
+  ],
+  "\u81e8": [
+    "Look To",
+    "Face",
+    "Meet",
+    "Confront",
+    "Attend",
+    "Call On"
+  ],
+  "\u520a": [
+    "Publish",
+    "Carve",
+    "Engrave"
+  ],
+  "\u594f": [
+    "Play Music",
+    "Speak To A Ruler",
+    "Complete"
+  ],
+  "\u7247": [
+    "One-sided",
+    "Leaf",
+    "Sheet",
+    "Right-side Kata Radical (no. 91)"
+  ],
+  "\u7fa4": [
+    "Flock",
+    "Group",
+    "Crowd",
+    "Herd",
+    "Swarm",
+    "Cluster"
+  ],
+  "\u92fc": [
+    "Steel"
+  ],
+  "\u67f1": [
+    "Pillar",
+    "Post",
+    "Cylinder",
+    "Support"
+  ],
+  "\u5531": [
+    "Chant",
+    "Recite",
+    "Call Upon",
+    "Yell"
+  ],
+  "\u5b5d": [
+    "Filial Piety",
+    "Child's Respect"
+  ],
+  "\u6a39": [
+    "Timber",
+    "Trees",
+    "Wood",
+    "Establish",
+    "Set Up"
+  ],
+  "\u70ad": [
+    "Charcoal",
+    "Coal"
+  ],
+  "\u7551": [
+    "Farm",
+    "Field",
+    "Garden",
+    "One's Specialty",
+    "(kokuji)"
+  ],
+  "\u5305": [
+    "Wrap",
+    "Pack Up",
+    "Cover",
+    "Conceal"
+  ],
+  "\u8863": [
+    "Garment",
+    "Clothes",
+    "Dressing"
+  ],
+  "\u4ec1": [
+    "Humanity",
+    "Virtue",
+    "Benevolence",
+    "Charity",
+    "Man",
+    "Kernel"
+  ],
+  "\u9271": [
+    "Mineral",
+    "Ore"
+  ],
+  "\u81f3": [
+    "Climax",
+    "Arrive",
+    "Proceed",
+    "Reach",
+    "Attain",
+    "Result In"
+  ],
+  "\u8aa0": [
+    "Sincerity",
+    "Admonish",
+    "Warn",
+    "Prohibit",
+    "Truth",
+    "Fidelity"
+  ],
+  "\u90f7": [
+    "Home Town",
+    "Village",
+    "Native Place",
+    "District"
+  ],
+  "\u7267": [
+    "Breed",
+    "Care For",
+    "Shepherd",
+    "Feed",
+    "Pasture"
+  ],
+  "\u5237": [
+    "Printing",
+    "Print",
+    "Brush"
+  ],
+  "\u6717": [
+    "Melodious",
+    "Clear",
+    "Bright",
+    "Serene",
+    "Cheerful"
+  ],
+  "\u6f6e": [
+    "Tide",
+    "Salt Water",
+    "Opportunity"
+  ],
+  "\u5bf8": [
+    "Measurement",
+    "Tenth Of A Shaku",
+    "A Little",
+    "Small"
+  ],
+  "\u82bd": [
+    "Bud",
+    "Sprout",
+    "Spear",
+    "Germ"
+  ],
+  "\u4ff5": [
+    "Bag",
+    "Bale",
+    "Sack",
+    "Counter For Bags"
+  ],
+  "\u7dbf": [
+    "Cotton"
+  ],
+  "\u5c3a": [
+    "Shaku",
+    "Japanese Foot",
+    "Measure",
+    "Scale",
+    "Rule"
+  ],
+  "\u5e33": [
+    "Notebook",
+    "Account Book",
+    "Album",
+    "Curtain",
+    "Veil",
+    "Net",
+    "Tent"
+  ],
+  "\u706f": [
+    "Lamp",
+    "A Light",
+    "Light",
+    "Counter For Lights"
+  ],
+  "\u73ed": [
+    "Squad",
+    "Corps",
+    "Unit",
+    "Group"
+  ],
+  "\u965b": [
+    "Highness",
+    "Steps (of Throne)"
+  ],
+  "\u540e": [
+    "Empress",
+    "Queen",
+    "After",
+    "Behind",
+    "Back",
+    "Later"
+  ],
+  "\u596e": [
+    "Stirred Up",
+    "Be Invigorated",
+    "Flourish"
+  ],
+  "\u9802": [
+    "Place On The Head",
+    "Receive",
+    "Top Of Head",
+    "Top",
+    "Summit",
+    "Peak"
+  ],
+  "\u8015": [
+    "Till",
+    "Plow",
+    "Cultivate"
+  ],
+  "\u90e1": [
+    "County",
+    "District"
+  ],
+  "\u7a40": [
+    "Cereals",
+    "Grain"
+  ],
+  "\u8178": [
+    "Intestines",
+    "Guts",
+    "Bowels",
+    "Viscera"
+  ],
+  "\u7d79": [
+    "Silk"
+  ],
+  "\u8695": [
+    "Silkworm"
+  ]
+}
