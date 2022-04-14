@@ -6,6 +6,10 @@ import "./kana.css";
 import Kanji from "./Kanji.json"
 import KanjiMeanings from "./KanjiMeanings.json"
 //import KanjiLevels from "./KanjiLevels.json"
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 const Hiragana = {'a': 'あ', 'i': 'い', 'u': 'う', 'e': 'え', 'o': 'お', 'ka': 'か', 'ki': 'き', 'ku': 'く', 'ke': 'け', 'ko': 'こ', 'sa': 'さ', 'shi': 'し', 'su': 'す', 'se': 'せ', 'so': 'そ', 'ta': 'た', 'chi': 'ち', 'tsu': 'つ', 'te': 'て', 'to': 'と', 'na': 'な', 'ni': 'に', 'nu': 'ぬ', 'ne': 'ね', 'no': 'の', 'ha': 'は', 'hi': 'ひ', 'fu': 'ふ', 'he': 'へ', 'ho': 'ほ', 'ma': 'ま', 'mi': 'み', 'mu': 'む', 'me': 'め', 'mo': 'も', 'ya': 'や', 'yu': 'ゆ', 'yo': 'よ', 'ra': 'ら', 'ri': 'り', 'ru': 'る', 're': 'れ', 'ro': 'ろ', 'wa': 'わ', 'wo': 'を', 'n': 'ん'}
 
@@ -122,6 +126,13 @@ export default class KanaGame extends Component{
     HS = newhs
   }
   answer(a){
+    const options = {
+    autoClose: 7000,
+    hideProgressBar: false,
+    position: toast.center,
+    pauseOnHover: true,
+    pauseOnFocusLoss: false
+};
     if (this.state.t === "Kanji"){
       var s = false
       for (let an of this.state.a){
@@ -134,11 +145,14 @@ export default class KanaGame extends Component{
     if (s === true){
       this.q(1)
       this.set_hs(this.state.score, true)
-      //alert("Correct")
     } else {
       this.set_hs(this.state.score, false)
       this.q(-1)
-      //alert("Incorrect, Answer: "+this.state.a)
+      let ans = ""
+      for (let answ of this.state.a){
+        ans += answ+", "
+      }
+      toast("Incorrect: "+ans, options)
     }
     a.value = "";
     
@@ -148,11 +162,10 @@ export default class KanaGame extends Component{
     if (a.value.toLowerCase() === this.state.a){
       this.q(1)
       this.set_hs(this.state.score, true)
-      //alert("Correct")
     } else {
       this.set_hs(this.state.score, false)
       this.q(-1)
-      //alert("Incorrect, Answer: "+this.state.a)
+      toast("Incorrect: "+this.state.a)
     }
     a.value = "";
     
@@ -267,6 +280,7 @@ export default class KanaGame extends Component{
         </form>
         <br/>
         {this.buttons()}
+        <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={true} theme="dark" closeOnClick={false} rtl={false} pauseOnFocusLoss={false} pauseOnHover={true} draggablePercent={10} limit={1} />
       </div>
     );
   }
