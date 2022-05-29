@@ -7,13 +7,6 @@ import { CircularProgressbar , buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css'
 
 
-
-
-
-
-
-
-
 export default class TargetedCV extends Component{
   constructor(props){
     super(props);
@@ -82,6 +75,13 @@ export default class TargetedCV extends Component{
           }
           console.log(this)
         }}>
+        Skill extraction:
+        <br/>
+        To extract skills automatically just paste a Job Description into the box, check extract skills and click Set Job Description. The EMSI machine learning algorithm will extract the skills and put them into the skills section.
+        <br/><br/>
+        If you wish to manually select skills (for example if you've ran out of EMSI requests this month) just type them into the New Skills section and click Update Skills
+
+
         <label for="Job">Job Description</label>
         <br/>
         <textarea name="Job" className="jobdesc" id="Job" type="text" required />
@@ -106,7 +106,7 @@ export default class TargetedCV extends Component{
         <br/>
         <textarea className="jobdesc" name="Skills" id="Skills" type="text" value={this.state.skills.join("\n")} />
         <br/>
-        <label for="NewSkills">NewSkills</label>
+        <label for="NewSkills">New Skills</label>
         <br/>
         <textarea className="jobdesc" name="NewSkills" id="NewSkills" type="text" required />
         <input type="submit" value="update skills" />
@@ -141,8 +141,12 @@ export default class TargetedCV extends Component{
   cvform(){
     return (
         <>
+        CV Scoring:
+        <br/>
+        Once the skills section is populated just paste your CV into the CV section. The score below updates in real time as you edit your CV aiming toward 100%
+        <br/><br/>
         <form>
-        <label for="CV">CV Scoring</label>
+        <label for="CV">CV</label>
         <br/>
         <textarea className="jobdesc" name="CV" id="CV" type="text" onChange={(e)=>{e.preventDefault();
           this.setState({score: this.score(e.target.value)});
@@ -166,6 +170,17 @@ export default class TargetedCV extends Component{
       <div className="App-header">
         <br/>
         <h1>CV Targeter</h1>
+        The CV Targeter works in 2 parts. Firstly there's the skill extraction. Then there's CV scoring.
+        To automatically extract skills you must first authorise. This is because it uses an API endpoint I do not own (I couldn't acquire enough data to train my own model). I have created an API key to use for testing purposes but you only get 50 requests a month so if it has ran out of requests create your own API key for free <a href="https://skills.emsidata.com/access">HERE </a>
+        
+        <br/>
+        Client ID: 5955s58kspsg06wy
+        <br/>
+        Client Secret: NKPkAMMm
+        <br/>
+
+
+        
         <br/>
         {this.authform()}
         <br/>
