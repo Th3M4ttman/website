@@ -286,7 +286,7 @@ export default class Home extends Component {
             <div className="holder">
               {this.ima()}
               {this.down()}
-            </div>
+            </div> 
           </div>
           <div className="App-header">
             <br/>

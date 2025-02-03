@@ -41,7 +41,7 @@ html,body
     color: #61DBFB;
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 20%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     fill: none;
     stroke: black;
@@ -57,7 +57,7 @@ html,body
     color: #3EB489;
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 25%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -69,7 +69,7 @@ html,body
     color: #C8A2C8;
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 25%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -81,7 +81,7 @@ html,body
     color: #FF0000;
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 15%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -93,7 +93,7 @@ html,body
     color: #FF007F;
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 15%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -105,7 +105,7 @@ html,body
     color: var(--torange);
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 15%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -117,7 +117,7 @@ html,body
     color: var(--twhite);
     text-align: center;
     vertical-align: middle;
-    width: 50%;
+    width: 15%;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -129,6 +129,8 @@ html,body
   transition-duration: 0.4s;
   height: 10%;
   vertical-align: middle;
+  display: flex;
+  justify-content: center;
 }
 .imabutton:hover{
   background-color: var(--torange);
@@ -137,7 +139,7 @@ html,body
 .imaselect{
     display: flex;
     justify-content: center;
-    
+    width: 100%;
 }
 
 
@@ -155,10 +157,10 @@ html,body
 }
 .bgimg {
     background-image: url("../public/background.jpg");
-    height: 60vh;
-    width: 80%;
-    left: 10%;
-    right: 10%;
+    height: 100vh;
+    width: 100vw;
+    left: 0%;
+    right: 0%;
     position: relative;
     background-size: 100%, 100%;
     
@@ -177,8 +179,8 @@ html,body
   width: 100%;
   position: relative;
   top: 45%;
-  left: 5%;
-  right: 5%;
+  left: 0%;
+  right: 0%;
   
 }
 
