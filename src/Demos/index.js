@@ -352,6 +352,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
   const results = (_tags) => {
     let t = []
     console.log(_tags)
+    // eslint-disable-next-line
     if (_tags == [undefined]){
       let out = []
       for (let demo of demos){
@@ -364,6 +365,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of demos){
       let inc = []
+      // eslint-disable-next-line
       if (tags == [undefined]){
         inc.push(true)
       } else {
@@ -381,6 +383,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of micro_demos){
       let inc = []
+      // eslint-disable-next-line
       if (tags == [undefined]){
         inc.push(true)
       } else {

@@ -947,6 +947,7 @@ input[type="checkbox"]:checked {
   background: transparent;
 }
 .panel-header button:focus {
+  border: none;
 }
 
 .panel-body {
