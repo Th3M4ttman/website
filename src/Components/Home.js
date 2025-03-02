@@ -269,9 +269,10 @@ export default class Home extends Component {
   down(){
     if (this.state.chosen !== 0){
       return(<button className="downbutton" onClick={(e)=>{
-        document.querySelector("body").scrollTo(0,500)
+        document.getElementsByClassName("titlef")[0].scrollIntoView();
+        //querySelector("body").scrollTo(0,500)
         
-      }}><p className="downtext">v</p></button>);
+      }}><p className="downtext">Read More</p></button>);
     } else {
       return null
     }

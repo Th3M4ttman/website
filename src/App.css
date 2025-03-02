@@ -6,6 +6,7 @@ html,body
     overflow-x: hidden;
     background-color: var(--tblack);
     color: var(--twhite);
+    scroll-behavior: smooth;
 }
 
 .App {
@@ -356,23 +357,25 @@ textarea:focus {
 }
 
 .downbutton{
-  position: absolute;
-  top: 70vh;
-  width: 50px;
-  height: 20px;
+  width: fit-content;
+  height: 50px;
   border: 2px solid var(--torange);
   border-radius: 15px;
   background-color: var(--tblack);
   color: var(--torange);
+  margin: auto;
 }
 .downtext{
   position: relative;
-  bottom: 6px;
   vertical-align: center;
+  font-size: 80%;
+
 }
 .dcontent{
+  position: relative;
   font-size: 80%;
   width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
+

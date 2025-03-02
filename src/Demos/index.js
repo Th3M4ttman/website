@@ -352,7 +352,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
   const results = (_tags) => {
     let t = []
     console.log(_tags)
-    if (_tags === [undefined]){
+    if (_tags == [undefined]){
       let out = []
       for (let demo of demos){
         out.push(<DemoCard demo={demo} key={demo.title} add={handleAddition} t={tags}/>)
@@ -364,7 +364,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of demos){
       let inc = []
-      if (tags === [undefined]){
+      if (tags == [undefined]){
         inc.push(true)
       } else {
       for (let tag of tags){
@@ -381,7 +381,7 @@ const delimiters = [KeyCodes.comma, KeyCodes.enter];
     }
     for (let demo of micro_demos){
       let inc = []
-      if (tags === [undefined]){
+      if (tags == [undefined]){
         inc.push(true)
       } else {
       for (let tag of tags){
