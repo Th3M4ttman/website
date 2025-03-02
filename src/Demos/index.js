@@ -172,7 +172,7 @@ export class DemoCard extends Component {
   render(){
     return(
       <>
-      <div className={this.boxclass}>
+      <div className={this.boxclass} onClick={() => {this.toggleActive()}}>
     <div className="panel-header" onClick={() => {this.toggleActive()}}>
       {this.demo.split_title(this.state.active)}
     </div>
@@ -189,8 +189,9 @@ export class DemoCard extends Component {
 }
 
 const demos = [
+  
   new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer"),
-  new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "http://pypi.com/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors"),
+  new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "https://github.com/Th3M4ttman/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors"),
   new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "http://demo.matthewharris.tech/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />)),
   new Demo("KanaGame", "A japanese kana reading game.", "http://demo.matthewharris.tech/KanaGame", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<KanaGame />)),
   new Demo("TargetedCV", "Extract keywords and score your cv against a job posting", "http://demo.matthewharris.tech/TargetedCV", ["Javascript"], ["Software", "Web"], [], "/Javascript.svg", (<TargetedCV />))
