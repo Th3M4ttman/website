@@ -192,9 +192,9 @@ const demos = [
 
   new Demo("SRG", "Attempts to consolidate Sexual, Relationship and Gender attributes to a 1 byte value and displays it as a pretty shield or badge.", "http://Srgindex.herokuapp.com", ["Javascript", "Python"], ["Web"], ["Flask", "Node", "React"], "/srgdemo.png", "https://github.com/Th3M4ttman/SRGServer"),
   new Demo("EzTools", "A suite of python modules packed to the brim with utility functions.", "https://github.com/Th3M4ttman/ezcolors", ["Python"], ["Software"], [], "/Python.svg", "https://github.com/Th3M4ttman/ezcolors"),
-  new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "https://portfolio-6krjjs7mn-th3m4ttmans-projects.vercel.app/demo/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />)),
-  new Demo("KanaGame", "A japanese kana reading game.", "https://portfolio-6krjjs7mn-th3m4ttmans-projects.vercel.app/demo/KanaGame", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<KanaGame />)),
-  new Demo("TargetedCV", "Extract keywords and score your cv against a job posting", "https://portfolio-6krjjs7mn-th3m4ttmans-projects.vercel.app/demo/TargetedCV", ["Javascript"], ["Software", "Web"], [], "/Javascript.svg", (<TargetedCV />))
+  new Demo("Wordle-Clone", "A simple clone of the word game: wordle.", "https://website-th3m4ttmans-projects.vercel.app/demo/Wordle-Clone", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<Wordle />)),
+  new Demo("KanaGame", "A japanese kana reading game.", "https://website-th3m4ttmans-projects.vercel.app/demo/KanaGame", ["Javascript"], ["Games", "Web"], [], "/Javascript.svg", (<KanaGame />)),
+  new Demo("TargetedCV", "Extract keywords and score your cv against a job posting", "https://website-th3m4ttmans-projects.vercel.app/demo/TargetedCV", ["Javascript"], ["Software", "Web"], [], "/Javascript.svg", (<TargetedCV />))
 ]
 
 export class DemoPage extends Component{
@@ -237,7 +237,7 @@ const micro_demos = [
         out += word.substring(0,1) + "ay "
       }
     };
-    return out}, "PigLatin", "Translates text to pig latn. ","https://portfolio-6krjjs7mn-th3m4ttmans-projects.vercel.app/demo/PigLatin", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/pig.png"),
+    return out}, "PigLatin", "Translates text to pig latn. ","https://website-th3m4ttmans-projects.vercel.app/demo/PigLatin", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/pig.png"),
     new Micro_Demo((e) => {
     let out = "";
     let up = true;
@@ -250,7 +250,7 @@ const micro_demos = [
         up = true;
       }
     };
-    return out}, "Sarcastasize", "Turns any text into sarcastic upper-lower case text","https://portfolio-6krjjs7mn-th3m4ttmans-projects.vercel.app/demo/Sarcastasize", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/spongebob.gif")
+    return out}, "Sarcastasize", "Turns any text into sarcastic upper-lower case text","https://website-th3m4ttmans-projects.vercel.app/demo/Sarcastasize", "Input", ["Javascript"], ["Web", "Micro Demo"], [], "/spongebob.gif")
 ];
 
 export class MicroDemoPage extends Component{
