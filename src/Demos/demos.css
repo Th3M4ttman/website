@@ -597,7 +597,7 @@ input[type="checkbox"]:checked {
 
 
 .democard{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--torange);
   background-color: var(--tblack);
@@ -606,7 +606,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .democardg{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--games);
   background-color: var(--tblack);
@@ -615,7 +615,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .democards{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--software);
   background-color: var(--tblack);
@@ -624,7 +624,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .democardw{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--web);
   background-color: var(--tblack);
@@ -633,7 +633,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .democardwg{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--web);
   background-color: var(--tblack);
@@ -685,7 +685,7 @@ input[type="checkbox"]:checked {
 }
 
 .microdemocards{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--software);
   background-color: var(--tblack);
@@ -694,7 +694,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .microdemocardw{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--web);
   background-color: var(--tblack);
@@ -703,7 +703,7 @@ input[type="checkbox"]:checked {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .microdemocardg{
-  width: 80%;
+  width: 100%;
   padding: 25px 5%;
   color: var(--games);
   background-color: var(--tblack);
@@ -800,7 +800,7 @@ input[type="checkbox"]:checked {
 }
 
 .demoimg{
-  width: 100%;
+  width: 50%;
 }
 
 .onlyrun{

@@ -272,6 +272,7 @@ const qoptions = {
     }
     return(
       <div className="App-header">
+        <br />
         <span className="scores"><div className="score"><p className="kana">Score<br/> {this.state.score}</p></div>
         <div className="highscore"><p className="kana">Highscore<br/>{HS}</p></div>
         </span>

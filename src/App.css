@@ -350,6 +350,7 @@ textarea:focus {
 
 .demosearch{
   position: relative;
+  width: 100%;
   margin: 0;
   padding: 0;
   z-index: 5;
@@ -377,5 +378,12 @@ textarea:focus {
   width: 100%;
   padding-left: 20%;
   padding-right: 20%;
+
 }
 
+.demoseachbox{
+  position: relative;
+  margin: auto;
+  vertical-align: center;
+  width: 100%;
+}
