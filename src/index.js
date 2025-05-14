@@ -23,6 +23,7 @@ import { DemoRouter, DemoSearch } from "./Demos";
 
 const rootElement = document.getElementById("root");
 
+
 if (window.location.host.split('.')[0] === 'demo'){
     ReactDOM.render(
     <>
