@@ -12,7 +12,7 @@ export default class Notfound extends Component {
       <br/>
       <div className="lost">Oops looks like you're lost...</div>
        <br/><br/>
-      <img src="/notfound.gif" alt="Not Found" width="100%" />
+      <img src="/notfound.gif" alt="Not Found" height="60%" />
       <br/><br/>
       <a className="lostlink" href="https://matthewharris.tech"> Home </a>
       </div>

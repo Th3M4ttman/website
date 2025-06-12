@@ -26,11 +26,9 @@ html,body
 }
 
 .navbar-collapse {
- position: absolute;
  top: 100%;
- left: 50%;
+ right: 0%;
  width: 50%;
- background-color: #222222;
  z-index: 1;
 }
 
@@ -329,6 +327,8 @@ textarea:focus {
 #container {
     position: relative
 }
+
+
 
 #tsparticles {
     position: absolute;

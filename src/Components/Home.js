@@ -291,7 +291,6 @@ export default class Home extends Component {
           </div>
           <div className="App-header">
             <br/>
-            Desktop
             {this.content()}
             <br/><br/><br/><br/><br/><br/>
           </div>

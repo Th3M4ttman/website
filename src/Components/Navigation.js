@@ -4,43 +4,47 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../App.css";
 import { Outlet } from "react-router-dom";
 
-export default class Navigation extends Component{
-
+export default class Navigation extends Component {
   render() {
     return (
       <>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="Home">
-        <img
-          alt=""
-          src="/logo.png"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />{' '}
-      Matthew Harris
-      </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="collapse">
-<Container>
-                    <Nav>
-                        <Nav.Link href="/Home">Home</Nav.Link>
-                        <Nav.Link href="/Programming">Programming</Nav.Link>
-                        <Nav.Link href="/Music">Music</Nav.Link>
-                        <Nav.Link href="/Art">Art</Nav.Link>
-                        <Nav.Link eventKey={2} href="/Contact">Contact</Nav.Link>
-                     <Nav.Link href="/Certificates">Certificates</Nav.Link>
-                    </Nav>
-</Container>
-                </Navbar.Collapse>
-            </Navbar>
-            <div className="App">
-            <Outlet />
-            </div>
-            
-            
-  
-</>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container fluid>
+          <Navbar.Brand href="/Home">
+            <img
+              alt="Logo"
+              src="/logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}
+            Matthew Harris
+          </Navbar.Brand>
+
+          {/* Hamburger toggle for smaller screens */}
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          {/* Collapsible area */}
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="/Home">Home</Nav.Link>
+              <Nav.Link href="/Programming">Programming</Nav.Link>
+              <Nav.Link href="/Music">Music</Nav.Link>
+              <Nav.Link href="/Art">Art</Nav.Link>
+              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/Certificates">Certificates</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          </Container>
+          
+        </Navbar>
+        
+        <div className="App">
+          <Outlet />
+        </div>
+
+
+      </>
     );
   }
 }
