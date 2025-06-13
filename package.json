@@ -32,6 +32,7 @@
     "react-toastify": "^8.2.0",
     "react-tsparticles": "^2.12.2",
     "sass": "^1.49.9",
+
     "tsparticles": "^3.8.1",
     "web-vitals": "^2.1.4"
   },
