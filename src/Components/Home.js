@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import {BrowserView, MobileView} from 'react-device-detect';
 import { DemoSearch } from "../Demos";
 
+import ParticleBackground from "../Components/particletest";
 
 const title = (title, sub, un) => {
   if (sub === true){
@@ -281,12 +282,13 @@ export default class Home extends Component {
   return (
     <>
       <BrowserView>
+      <ParticleBackground />
       <div className="App-header">
         <div className="App-Holder">
           <div className="bgimg">
             <div className="holder">
               {this.ima()}
-              {this.down()}
+              {this.down()}             
             </div> 
           </div>
           <div className="App-header">
@@ -294,15 +296,16 @@ export default class Home extends Component {
             {this.content()}
             <br/><br/><br/><br/><br/><br/>
           </div>
+          
         </div>
       </div>
       </BrowserView>
       <MobileView>
 
       <div className="App-header">
-        {this.down()}
-        <div className="mbgimg">
+        <div>
           {this.ima()}
+          {this.down()}
         </div>
         <div className="App-header">
           {this.content()}

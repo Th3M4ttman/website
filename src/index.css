@@ -17,3 +17,24 @@ body {
   height: 100%;
   margin: 0;
 }
+.foot{
+  position: relative;
+  top: 100%;
+  background-color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 2vmin);
+  color: var(--tbrown);
+  z-index: -1;
+}
+
+.bounds{
+  
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+}

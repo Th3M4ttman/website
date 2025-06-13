@@ -8,7 +8,7 @@ export default class Navigation extends Component {
   render() {
     return (
       <>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="Navbar">
           <Container fluid>
           <Navbar.Brand href="/Home">
             <img
@@ -22,7 +22,7 @@ export default class Navigation extends Component {
           </Navbar.Brand>
 
           {/* Hamburger toggle for smaller screens */}
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="Navbar"/>
 
           {/* Collapsible area */}
           <Navbar.Collapse id="responsive-navbar-nav">

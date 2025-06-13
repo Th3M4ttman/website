@@ -1,109 +1,44 @@
-import Particles from "react-tsparticles";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "../App.css";
-import React, { Component } from 'react';
+import React from "react";
+import Particles from '@tsparticles/react';
+import { loadFull } from "tsparticles";
 
-
-const Particle = () => {
-  const particlesInit = (main) => {
-    console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+export default function ParticleBackground() {
+  const particlesInit = async (engine) => {
+    console.log("Loading tsparticles engine");
+    await loadFull(engine);
   };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
   return (
-<>
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
-      width="100%"
-      height="50vh"
       options={{
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: false,
-              mode: "push",
-            },
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: false,
-          },
-          modes: {
-            bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
-            },
-            push: {
-              quantity: 4,
-            },
-            repulse: {
-              distance: 200,
-              duration: 0.4,
-            },
-          },
-        },
+        fullScreen: { enable: true },
         particles: {
-          color: {
-            value: "#ffffff",
+          number: {
+            value: 50,
           },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
-          collisions: {
-            enable: true,
+          size: {
+            value: 3,
           },
           move: {
-            direction: "none",
             enable: true,
-            outMode: "bounce",
-            random: false,
-            speed: 6,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
-            },
-            value: 80,
-          },
-          opacity: {
-            value: 0.5,
+            speed: 2,
           },
           shape: {
             type: "circle",
           },
-          size: {
-            random: true,
-            value: 5,
+          color: {
+            value: "#ffffff",
+          },
+          opacity: {
+            value: 0.8,
           },
         },
-        detectRetina: true,
+        background: {
+          color: "#000000",
+        },
       }}
-     /></>
+    />
   );
-};
-
-export default class Particletest extends Component{
-render(){
-  return(
-    <div id="container">
-     <Particle id="particlebox"/>
-    </div>
- );
-};
 }

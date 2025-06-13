@@ -1,17 +1,31 @@
-html,body
-{
+html,body,#root {
     width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-color: var(--tblack);
+    background-color: transparent;
     color: var(--twhite);
     scroll-behavior: smooth;
 }
 
+
+
+.particles-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999 !important;
+  pointer-events: none;
+}
+
+
+
+
 .App {
   
-  background-color: var(--tblack);
+  
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -21,15 +35,18 @@ html,body
 }
 
 .holder{
+ background-color: transparent;
  position: relative;
  top: 35vh;
 }
-
+.Navbar{
+   z-index: 2;
+}
 .navbar-collapse {
  top: 100%;
  right: 0%;
  width: 50%;
- z-index: 1;
+ z-index: 2;
 }
 
 .webdev{
@@ -145,7 +162,7 @@ html,body
 
 
 .mbgimg {
-    background-image: url("../public/mbackground.jpg");
+    /*background-image: url("../public/mbackground.jpg");*/
     
     width:100%;
     height: 500px;
@@ -155,7 +172,7 @@ html,body
     
 }
 .bgimg {
-    background-image: url("../public/background.jpg");
+    /*background-image: url("../public/background.jpg");*/
     height: 100vh;
     width: 100vw;
     left: 0%;
@@ -232,6 +249,7 @@ html,body
 }
 
 .App-Holder{
+  background-color: transparent;
   position: block;
   width: 100%;
   align-items: center;
@@ -240,7 +258,7 @@ html,body
 }
 
 .App-header {
-  background-color: var(--tblack);
+  background-color: transparent;
   min-height: 100%;
   width: 100%;
   margin: 0;
@@ -322,6 +340,7 @@ textarea:focus {
   justify-content: center;
   font-size: calc(5px + 2vmin);
   color: var(--tbrown);
+  z-index: 0;
 }
 
 #container {
